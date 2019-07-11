@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++ -O2 -Wall -fPIC -fvisibility=hidden -std=c++11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -o libsw.dylib -install_name @rpath/libsw.dylib CMakeFiles/sw.dir/src/driver.cc.o 

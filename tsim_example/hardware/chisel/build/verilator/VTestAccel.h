@@ -12,6 +12,7 @@
 #include "VTestAccel__Dpi.h"
 
 class VTestAccel__Syms;
+class VerilatedVcd;
 
 //----------
 
@@ -76,9 +77,7 @@ VL_MODULE(VTestAccel) {
 	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT___T_94,0,0);
 	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT___T_99,0,0);
 	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT___T_121,0,0);
-	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___T_24,0,0);
-	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___T_24,0,0);
-	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__ready,0,0);
+	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT__ready,0,0);
 	VL_SIG(TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_value,31,0);
 	VL_SIG(TestAccel__DOT__sim_shell__DOT__mod_host__DOT_____05Freq_value,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__rf__DOT___RAND_0,31,0);
@@ -96,10 +95,10 @@ VL_MODULE(VTestAccel) {
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__rf__DOT___RAND_6,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_6,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__rf__DOT___RAND_7,31,0);
-    };
-    struct {
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_7,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__rf__DOT___RAND_8,31,0);
+    };
+    struct {
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_8,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__rf__DOT___RAND_9,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_9,31,0);
@@ -110,6 +109,7 @@ VL_MODULE(VTestAccel) {
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__rf__DOT___RAND_12,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__rf__DOT__rdata,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__rf__DOT___RAND_13,31,0);
+	VL_SIG(TestAccel__DOT__vta_accel__DOT__rf__DOT__initvar,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_0,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__cycles,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_1,31,0);
@@ -117,11 +117,12 @@ VL_MODULE(VTestAccel) {
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_4,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT___T_110,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT___T_159,31,0);
+	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_8,31,0);
+	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__initvar,31,0);
 	VL_SIGW(TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___GEN_1,64,0,3);
-	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___RAND_1,31,0);
+	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__initvar,31,0);
 	VL_SIGW(TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_1,64,0,3);
-	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___RAND_1,31,0);
-	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___RAND_2,31,0);
+	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__initvar,31,0);
 	VL_SIG64(TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_bits,63,0);
 	VL_SIG64(TestAccel__DOT__sim_shell__DOT__mod_mem__DOT_____05Frd_value,63,0);
 	VL_SIG64(TestAccel__DOT__vta_accel__DOT__ce__DOT__reg1,63,0);
@@ -147,6 +148,7 @@ VL_MODULE(VTestAccel) {
     // Begin mtask footprint  all: 
     VL_SIG8(__Vclklast__TOP__clock,0,0);
     VL_SIG8(__Vclklast__TOP__sim_clock,0,0);
+    VL_SIG(__Vm_traceActivity,31,0);
     
     // INTERNAL VARIABLES
     // Internals; generally not touched by application code
@@ -165,6 +167,8 @@ VL_MODULE(VTestAccel) {
     VTestAccel(const char* name="TOP");
     /// Destroy the model; called (often implicitly) by application code
     ~VTestAccel();
+    /// Trace signals in the model; called by application code
+    void trace(VerilatedVcdC* tfp, int levels, int options=0);
     
     // API METHODS
     /// Evaluate the model.  Application must call when inputs change.
@@ -197,6 +201,18 @@ VL_MODULE(VTestAccel) {
     static void _sequent__TOP__1(VTestAccel__Syms* __restrict vlSymsp);
     static void _sequent__TOP__2(VTestAccel__Syms* __restrict vlSymsp);
     static void _settle__TOP__4(VTestAccel__Syms* __restrict vlSymsp) VL_ATTR_COLD;
+    static void traceChgThis(VTestAccel__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
+    static void traceChgThis__2(VTestAccel__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
+    static void traceChgThis__3(VTestAccel__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
+    static void traceChgThis__4(VTestAccel__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
+    static void traceChgThis__5(VTestAccel__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
+    static void traceFullThis(VTestAccel__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code) VL_ATTR_COLD;
+    static void traceFullThis__1(VTestAccel__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code) VL_ATTR_COLD;
+    static void traceInitThis(VTestAccel__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code) VL_ATTR_COLD;
+    static void traceInitThis__1(VTestAccel__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code) VL_ATTR_COLD;
+    static void traceInit(VerilatedVcd* vcdp, void* userthis, uint32_t code);
+    static void traceFull(VerilatedVcd* vcdp, void* userthis, uint32_t code);
+    static void traceChg(VerilatedVcd* vcdp, void* userthis, uint32_t code);
 } VL_ATTR_ALIGNED(128);
 
 #endif // guard

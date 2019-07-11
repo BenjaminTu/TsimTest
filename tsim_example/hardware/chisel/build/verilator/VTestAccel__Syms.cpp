@@ -8,6 +8,7 @@
 VTestAccel__Syms::VTestAccel__Syms(VTestAccel* topp, const char* namep)
 	// Setup locals
 	: __Vm_namep(namep)
+	, __Vm_activity(false)
 	, __Vm_didInit(false)
 	// Setup submodule names
 {

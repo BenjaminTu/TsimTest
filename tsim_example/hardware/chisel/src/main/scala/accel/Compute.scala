@@ -188,13 +188,12 @@ class Accumulator(dataBits: Int = 8) extends Module {
   } .elsewhen (io.valid) {
     reg := reg +& io.in
     printf("slice sum: %d \n", reg +& io.in)
-    // printf("ready %d:", io.ready)
+    // printf("ready %d:\n", io.ready)
   } 
 
-  printf("leave: %d\n", RegNext(io.valid))
+  // printf("leave: %d\n", RegNext(io.valid))
 
-  val ready = RegNext(io.valid)
-  io.ready := ready
+  io.ready := io.valid
   io.sum := reg
   // printf("io.datavalid: %d \n", io.valid)
   // printf("io.accumin: %d \n", io.in)

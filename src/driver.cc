@@ -70,10 +70,10 @@ class Device {
     loader_ = DPILoader::Global();
   }
 
-  uint32_t Run(uint32_t length, void* inp1, void* inp2, uint32_t shiftVal, void* out, uint32_t reset) {
+  uint32_t Run(uint32_t c, uint32_t length, void* inp, void* out) {
     uint32_t cycles;
     this->Init();
-    this->Launch(length, inp1, inp2, shiftVal, out, reset);
+    this->Launch(c, length, inp, out);
     cycles = this->WaitForCompletion();
     return cycles;
   }
@@ -84,26 +84,14 @@ class Device {
     dpi_->SimResume();
   }
 
-  void Launch(uint32_t length, void* inp1, void* inp2, uint32_t shiftVal, void* out, uint32_t reset) {
-    dpi_->WriteReg(0x08, shiftVal);
-    dpi_->WriteReg(0x0c, length); // vector length
-
-    dpi_->WriteReg(0x18, get_half_addr(inp1, false));
-    dpi_->WriteReg(0x1c, get_half_addr(inp1, true));
-
-    dpi_->WriteReg(0x20, get_half_addr(inp2, false));
-    dpi_->WriteReg(0x24, get_half_addr(inp2, true));
-    dpi_->WriteReg(0x28, get_half_addr(out, false));
-    dpi_->WriteReg(0x2c, get_half_addr(out, true));
+  void Launch(uint32_t c, uint32_t length, void* inp, void* out) {
+    dpi_->WriteReg(0x08, c);
+    dpi_->WriteReg(0x0c, length);
+    dpi_->WriteReg(0x10, get_half_addr(inp, false));
+    dpi_->WriteReg(0x14, get_half_addr(inp, true));
+    dpi_->WriteReg(0x18, get_half_addr(out, false));
+    dpi_->WriteReg(0x1c, get_half_addr(out, true));
     dpi_->WriteReg(0x00, 0x1); // launch
-    dpi_->WriteReg(0x00, 0x0); // launch
-
-    if (reset == 1) {
-      dpi_->WriteReg(0x10, 0x1); // reset accum
-      dpi_->WriteReg(0x10, 0x0); // stop reset accum
-    }
-    dpi_->WriteReg(0x14, 0x1); // reset dot
-    dpi_->WriteReg(0x14, 0x0); // stop reset dot
   }
 
   uint32_t WaitForCompletion() {
@@ -138,25 +126,8 @@ TVM_REGISTER_GLOBAL("tvm.vta.driver")
 .set_body([](TVMArgs args, TVMRetValue* rv) {
     DLTensor* A = args[0];
     DLTensor* B = args[1];
-    DLTensor* C = args[3];
     Device dev_;
-    printf("\nA:\n");
-    for (int i = 0; i < A->shape[0]; i++) {
-      printf("%hhu, ", (static_cast<uint8_t*>(A->data))[i]);
-    }
-    printf("\nB:\n");
-    for (int i = 0; i < B->shape[0]; i++) {
-      printf("%hhu, ", (static_cast<uint8_t*>(B->data))[i]);
-    }
-    printf("\nC:\n");
-    for (int i = 0; i < C->shape[0]; i++) {
-      printf("%llu, \n ", (static_cast<uint64_t*>(C->data))[i]);
-    }
-    printf("\n shiftVal: %d\n", static_cast<int>(args[2]));
-    printf("\n");
-
-
-    uint32_t cycles = dev_.Run(A->shape[0], A->data, B->data, static_cast<int>(args[2]), C->data, static_cast<int>(args[4]));
+    uint32_t cycles = dev_.Run(static_cast<int>(args[2]), A->shape[0], A->data, B->data);
     *rv = static_cast<int>(cycles);
   });
 

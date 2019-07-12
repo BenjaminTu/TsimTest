@@ -32,16 +32,12 @@ import vta.dpi._
   * -------------------------|-----
   *  Control status register | 0x00
   *  Cycle counter           | 0x04
-  *  Shift value             | 0x08
+  *  Constant value          | 0x08
   *  Vector length           | 0x0c
-  *  Reset Accumulator       | 0x10
-  *  Reset Dot Module        | 0x14
-  *  Input1 pointer lsb      | 0x18
-  *  Input1 pointer msb      | 0x1c
-  *  Input2 pointer lsb      | 0x20
-  *  Input2 pointer msb      | 0x24
-  *  Output pointer lsb      | 0x28
-  *  Output pointer msb      | 0x2c
+  *  Input pointer lsb       | 0x10
+  *  Input pointer msb       | 0x14
+  *  Output pointer lsb      | 0x18
+  *  Output pointer msb      | 0x1c
   * -------------------------------
 
   * ------------------------------

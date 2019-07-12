@@ -38,8 +38,8 @@ import vta.dpi._
 case class AccelConfig() {
   val nCtrl = 1
   val nECnt = 1
-  val nVals = 4
-  val nPtrs = 3
+  val nVals = 2
+  val nPtrs = 2
   val regBits = 32
   val ptrBits = 2*regBits
 }

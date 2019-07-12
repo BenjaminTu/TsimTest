@@ -71,7 +71,7 @@ void VTestAccel::traceChgThis__2(VTestAccel__Syms* __restrict vlSymsp, Verilated
 	vcdp->chgBit(c+11,(((2U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)) 
 			    | (4U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)))));
 	vcdp->chgBit(c+12,((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_0)));
-	vcdp->chgBit(c+13,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce_io_finish));
+	vcdp->chgBit(c+13,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__ready));
 	vcdp->chgBit(c+14,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce_io_ecnt_0_valid));
 	vcdp->chgBus(c+15,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__cycles),32);
 	vcdp->chgBus(c+16,(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_2),32);
@@ -93,32 +93,31 @@ void VTestAccel::traceChgThis__2(VTestAccel__Syms* __restrict vlSymsp, Verilated
 	vcdp->chgBus(c+32,(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_10),32);
 	vcdp->chgBus(c+33,(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_11),32);
 	vcdp->chgBit(c+34,((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_5)));
+	vcdp->chgBit(c+35,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__ready));
 	VL_EXTEND_WQ(128,64, __Vtemp81, vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg1);
 	VL_EXTEND_WQ(128,64, __Vtemp82, vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg2);
 	VL_MUL_W(4, __Vtemp83, __Vtemp81, __Vtemp82);
-	vcdp->chgQuad(c+35,((VL_ULL(0x7fffffffffffffff) 
+	vcdp->chgQuad(c+36,((VL_ULL(0x7fffffffffffffff) 
 			     & (((QData)((IData)(__Vtemp83[1U])) 
 				 << 0x20U) | (QData)((IData)(
 							     __Vtemp83[0U]))))),63);
-	vcdp->chgQuad(c+37,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__reg__024),64);
-	vcdp->chgBit(c+39,((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_4)));
-	vcdp->chgBit(c+40,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum_io_valid));
+	vcdp->chgQuad(c+38,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__reg__024),64);
+	vcdp->chgBit(c+40,((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_4)));
+	vcdp->chgBit(c+41,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum_io_valid));
 	VL_EXTEND_WQ(319,64, __Vtemp85, vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__reg__024);
 	VL_SHIFTL_WWI(319,319,8, __Vtemp86, __Vtemp85, 
 		      (0xffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_2));
-	vcdp->chgQuad(c+41,((VL_ULL(0x7fffffffffffffff) 
+	vcdp->chgQuad(c+42,((VL_ULL(0x7fffffffffffffff) 
 			     & (((QData)((IData)(__Vtemp86[1U])) 
 				 << 0x20U) | (QData)((IData)(
 							     __Vtemp86[0U]))))),63);
-	vcdp->chgBus(c+43,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state),3);
-	vcdp->chgQuad(c+44,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg1),64);
-	vcdp->chgQuad(c+46,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg2),64);
-	vcdp->chgBus(c+48,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__cnt),32);
-	vcdp->chgQuad(c+49,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr1),64);
-	vcdp->chgQuad(c+51,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr2),64);
-	vcdp->chgQuad(c+53,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__waddr),64);
-	vcdp->chgBit(c+55,(((6U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)) 
-			    & (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_99))));
+	vcdp->chgBus(c+44,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state),3);
+	vcdp->chgQuad(c+45,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg1),64);
+	vcdp->chgQuad(c+47,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg2),64);
+	vcdp->chgBus(c+49,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__cnt),32);
+	vcdp->chgQuad(c+50,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr1),64);
+	vcdp->chgQuad(c+52,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr2),64);
+	vcdp->chgQuad(c+54,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__waddr),64);
     }
 }
 

@@ -501,8 +501,7 @@ circuit TestAccel :
         node _T_159 = tail(_T_158, 1) @[Compute.scala 169:16]
         cnt <= _T_159 @[Compute.scala 169:9]
         skip @[Compute.scala 168:38]
-    node _T_160 = and(io.mem.wr.valid, last) @[Compute.scala 174:32]
-    io.finish <= _T_160 @[Compute.scala 174:13]
+    io.finish <= overallAccum.io.ready @[Compute.scala 174:13]
     
   module Accel : 
     input clock : Clock

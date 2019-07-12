@@ -39,19 +39,17 @@ void VTestAccel::_initial__TOP__3(VTestAccel__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    VTestAccel::_initial__TOP__3\n"); );
     VTestAccel* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
-    // INITIAL at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:568
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___RAND_0 
-	= (((QData)((IData)(VL_RANDOM_I(32))) << 0x20U) 
-	   | (QData)((IData)(VL_RANDOM_I(32))));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__reg__024 
-	= vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___RAND_0;
-    // INITIAL at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:568
+    // INITIAL at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:576
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___RAND_0 
 	= (((QData)((IData)(VL_RANDOM_I(32))) << 0x20U) 
 	   | (QData)((IData)(VL_RANDOM_I(32))));
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__reg__024 
 	= vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___RAND_0;
-    // INITIAL at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:807
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___RAND_1 
+	= VL_RANDOM_I(32);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__ready 
+	= (1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___RAND_1);
+    // INITIAL at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:832
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_0 
 	= VL_RANDOM_I(32);
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state 
@@ -89,6 +87,16 @@ void VTestAccel::_initial__TOP__3(VTestAccel__Syms* __restrict vlSymsp) {
 	   | (QData)((IData)(VL_RANDOM_I(32))));
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__waddr 
 	= vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_7;
+    // INITIAL at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:576
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___RAND_0 
+	= (((QData)((IData)(VL_RANDOM_I(32))) << 0x20U) 
+	   | (QData)((IData)(VL_RANDOM_I(32))));
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__reg__024 
+	= vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___RAND_0;
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___RAND_1 
+	= VL_RANDOM_I(32);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__ready 
+	= (1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___RAND_1);
     // INITIAL at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:298
     vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___RAND_0 
 	= VL_RANDOM_I(32);
@@ -228,10 +236,6 @@ void VTestAccel::_settle__TOP__4(VTestAccel__Syms* __restrict vlSymsp) {
     vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_80 
 	= ((~ (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__state)) 
 	   & (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_valid));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce_io_finish 
-	= ((6U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)) 
-	   & ((6U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)) 
-	      & (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_99)));
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce_io_ecnt_0_valid 
 	= ((6U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)) 
 	   & (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_99));
@@ -355,7 +359,6 @@ void VTestAccel::_ctor_var_reset() {
     TestAccel__DOT__sim_shell__DOT__mod_mem__DOT_____05Freset = VL_RAND_RESET_I(1);
     TestAccel__DOT__sim_shell__DOT__mod_mem__DOT_____05Frd_valid = VL_RAND_RESET_I(8);
     TestAccel__DOT__sim_shell__DOT__mod_mem__DOT_____05Frd_value = VL_RAND_RESET_Q(64);
-    TestAccel__DOT__vta_accel__DOT__ce_io_finish = VL_RAND_RESET_I(1);
     TestAccel__DOT__vta_accel__DOT__ce_io_ecnt_0_valid = VL_RAND_RESET_I(1);
     TestAccel__DOT__vta_accel__DOT__rf__DOT__state = VL_RAND_RESET_I(1);
     TestAccel__DOT__vta_accel__DOT__rf__DOT___RAND_0 = VL_RAND_RESET_I(32);
@@ -436,10 +439,14 @@ void VTestAccel::_ctor_var_reset() {
     TestAccel__DOT__vta_accel__DOT__ce__DOT__initvar = VL_RAND_RESET_I(32);
     TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__reg__024 = VL_RAND_RESET_Q(64);
     TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___RAND_0 = VL_RAND_RESET_Q(64);
+    TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__ready = VL_RAND_RESET_I(1);
+    TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___RAND_1 = VL_RAND_RESET_I(32);
     VL_RAND_RESET_W(65,TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___GEN_2);
     TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__initvar = VL_RAND_RESET_I(32);
     TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__reg__024 = VL_RAND_RESET_Q(64);
     TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___RAND_0 = VL_RAND_RESET_Q(64);
+    TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__ready = VL_RAND_RESET_I(1);
+    TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___RAND_1 = VL_RAND_RESET_I(32);
     VL_RAND_RESET_W(65,TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_2);
     TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__initvar = VL_RAND_RESET_I(32);
     __Vm_traceActivity = VL_RAND_RESET_I(32);

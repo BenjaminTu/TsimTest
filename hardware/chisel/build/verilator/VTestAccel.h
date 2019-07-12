@@ -47,7 +47,6 @@ VL_MODULE(VTestAccel) {
 	VL_SIG8(TestAccel__DOT__sim_shell__DOT__mod_host__DOT_____05Freq_addr,7,0);
 	VL_SIG8(TestAccel__DOT__sim_shell__DOT__mod_mem__DOT_____05Freset,0,0);
 	VL_SIG8(TestAccel__DOT__sim_shell__DOT__mod_mem__DOT_____05Frd_valid,7,0);
-	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce_io_finish,0,0);
 	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce_io_ecnt_0_valid,0,0);
 	VL_SIG8(TestAccel__DOT__vta_accel__DOT__rf__DOT__state,0,0);
 	VL_SIG8(TestAccel__DOT__vta_accel__DOT__rf__DOT___T_74,0,0);
@@ -78,6 +77,8 @@ VL_MODULE(VTestAccel) {
 	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT___T_94,0,0);
 	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT___T_99,0,0);
 	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT___T_121,0,0);
+	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__ready,0,0);
+	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__ready,0,0);
 	VL_SIG(TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_value,31,0);
 	VL_SIG(TestAccel__DOT__sim_shell__DOT__mod_host__DOT_____05Freq_value,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__rf__DOT___RAND_0,31,0);
@@ -96,9 +97,9 @@ VL_MODULE(VTestAccel) {
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_6,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__rf__DOT___RAND_7,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_7,31,0);
-	VL_SIG(TestAccel__DOT__vta_accel__DOT__rf__DOT___RAND_8,31,0);
     };
     struct {
+	VL_SIG(TestAccel__DOT__vta_accel__DOT__rf__DOT___RAND_8,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_8,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__rf__DOT___RAND_9,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_9,31,0);
@@ -118,8 +119,10 @@ VL_MODULE(VTestAccel) {
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT___T_110,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT___T_159,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__initvar,31,0);
+	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___RAND_1,31,0);
 	VL_SIGW(TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___GEN_2,64,0,3);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__initvar,31,0);
+	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___RAND_1,31,0);
 	VL_SIGW(TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_2,64,0,3);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__initvar,31,0);
 	VL_SIG64(TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_bits,63,0);

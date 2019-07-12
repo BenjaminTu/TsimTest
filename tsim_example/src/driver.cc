@@ -96,6 +96,7 @@ class Device {
     dpi_->WriteReg(0x28, get_half_addr(out, false));
     dpi_->WriteReg(0x2c, get_half_addr(out, true));
     dpi_->WriteReg(0x00, 0x1); // launch
+    dpi_->WriteReg(0x00, 0x0); // launch
 
     if (reset == 1) {
       dpi_->WriteReg(0x10, 0x1); // reset accum

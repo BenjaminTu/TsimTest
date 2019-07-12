@@ -49,7 +49,7 @@ void VTestAccel::_initial__TOP__3(VTestAccel__Syms* __restrict vlSymsp) {
 	= VL_RANDOM_I(32);
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__ready 
 	= (1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___RAND_1);
-    // INITIAL at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:832
+    // INITIAL at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:834
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_0 
 	= VL_RANDOM_I(32);
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state 
@@ -87,6 +87,10 @@ void VTestAccel::_initial__TOP__3(VTestAccel__Syms* __restrict vlSymsp) {
 	   | (QData)((IData)(VL_RANDOM_I(32))));
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__waddr 
 	= vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_7;
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_8 
+	= VL_RANDOM_I(32);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__ready 
+	= (1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_8);
     // INITIAL at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:576
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___RAND_0 
 	= (((QData)((IData)(VL_RANDOM_I(32))) << 0x20U) 
@@ -436,6 +440,8 @@ void VTestAccel::_ctor_var_reset() {
     TestAccel__DOT__vta_accel__DOT__ce__DOT___T_118 = VL_RAND_RESET_Q(64);
     TestAccel__DOT__vta_accel__DOT__ce__DOT___T_121 = VL_RAND_RESET_I(1);
     TestAccel__DOT__vta_accel__DOT__ce__DOT___T_159 = VL_RAND_RESET_I(32);
+    TestAccel__DOT__vta_accel__DOT__ce__DOT__ready = VL_RAND_RESET_I(1);
+    TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_8 = VL_RAND_RESET_I(32);
     TestAccel__DOT__vta_accel__DOT__ce__DOT__initvar = VL_RAND_RESET_I(32);
     TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__reg__024 = VL_RAND_RESET_Q(64);
     TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___RAND_0 = VL_RAND_RESET_Q(64);

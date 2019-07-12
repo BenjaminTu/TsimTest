@@ -170,8 +170,8 @@ class Compute(implicit config: AccelConfig) extends Module {
   }
 
   // done when read/write are equal to length
-
-  io.finish := overallAccum.io.ready // data has been added
+  val ready = RegNext(overallAccum.io.ready)
+  io.finish := ready // data has been added
 }
 
 class Accumulator(dataBits: Int = 8) extends Module {

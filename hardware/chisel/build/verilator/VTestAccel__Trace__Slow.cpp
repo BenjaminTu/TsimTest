@@ -59,20 +59,20 @@ void VTestAccel::traceInitThis__1(VTestAccel__Syms* __restrict vlSymsp, Verilate
     if (0 && vcdp && c) {}  // Prevent unused
     // Body
     {
-	vcdp->declBit(c+64,"clock",-1);
-	vcdp->declBit(c+65,"reset",-1);
-	vcdp->declBit(c+66,"sim_clock",-1);
-	vcdp->declBit(c+67,"sim_wait",-1);
-	vcdp->declBit(c+64,"TestAccel clock",-1);
-	vcdp->declBit(c+65,"TestAccel reset",-1);
-	vcdp->declBit(c+66,"TestAccel sim_clock",-1);
-	vcdp->declBit(c+67,"TestAccel sim_wait",-1);
-	vcdp->declBit(c+64,"TestAccel sim_shell_clock",-1);
-	vcdp->declBit(c+65,"TestAccel sim_shell_reset",-1);
-	vcdp->declBit(c+56,"TestAccel sim_shell_host_req_valid",-1);
-	vcdp->declBit(c+57,"TestAccel sim_shell_host_req_opcode",-1);
-	vcdp->declBus(c+58,"TestAccel sim_shell_host_req_addr",-1,7,0);
-	vcdp->declBus(c+59,"TestAccel sim_shell_host_req_value",-1,31,0);
+	vcdp->declBit(c+65,"clock",-1);
+	vcdp->declBit(c+66,"reset",-1);
+	vcdp->declBit(c+67,"sim_clock",-1);
+	vcdp->declBit(c+68,"sim_wait",-1);
+	vcdp->declBit(c+65,"TestAccel clock",-1);
+	vcdp->declBit(c+66,"TestAccel reset",-1);
+	vcdp->declBit(c+67,"TestAccel sim_clock",-1);
+	vcdp->declBit(c+68,"TestAccel sim_wait",-1);
+	vcdp->declBit(c+65,"TestAccel sim_shell_clock",-1);
+	vcdp->declBit(c+66,"TestAccel sim_shell_reset",-1);
+	vcdp->declBit(c+57,"TestAccel sim_shell_host_req_valid",-1);
+	vcdp->declBit(c+58,"TestAccel sim_shell_host_req_opcode",-1);
+	vcdp->declBus(c+59,"TestAccel sim_shell_host_req_addr",-1,7,0);
+	vcdp->declBus(c+60,"TestAccel sim_shell_host_req_value",-1,31,0);
 	vcdp->declBit(c+1,"TestAccel sim_shell_host_req_deq",-1);
 	vcdp->declBit(c+2,"TestAccel sim_shell_host_resp_valid",-1);
 	vcdp->declBus(c+3,"TestAccel sim_shell_host_resp_bits",-1,31,0);
@@ -82,16 +82,16 @@ void VTestAccel::traceInitThis__1(VTestAccel__Syms* __restrict vlSymsp, Verilate
 	vcdp->declBit(c+8,"TestAccel sim_shell_mem_wr_valid",-1);
 	vcdp->declQuad(c+9,"TestAccel sim_shell_mem_wr_bits",-1,63,0);
 	vcdp->declBit(c+11,"TestAccel sim_shell_mem_rd_ready",-1);
-	vcdp->declBit(c+60,"TestAccel sim_shell_mem_rd_valid",-1);
-	vcdp->declQuad(c+61,"TestAccel sim_shell_mem_rd_bits",-1,63,0);
-	vcdp->declBit(c+66,"TestAccel sim_shell_sim_clock",-1);
-	vcdp->declBit(c+63,"TestAccel sim_shell_sim_wait",-1);
-	vcdp->declBit(c+64,"TestAccel vta_accel_clock",-1);
-	vcdp->declBit(c+65,"TestAccel vta_accel_reset",-1);
-	vcdp->declBit(c+56,"TestAccel vta_accel_io_host_req_valid",-1);
-	vcdp->declBit(c+57,"TestAccel vta_accel_io_host_req_opcode",-1);
-	vcdp->declBus(c+58,"TestAccel vta_accel_io_host_req_addr",-1,7,0);
-	vcdp->declBus(c+59,"TestAccel vta_accel_io_host_req_value",-1,31,0);
+	vcdp->declBit(c+61,"TestAccel sim_shell_mem_rd_valid",-1);
+	vcdp->declQuad(c+62,"TestAccel sim_shell_mem_rd_bits",-1,63,0);
+	vcdp->declBit(c+67,"TestAccel sim_shell_sim_clock",-1);
+	vcdp->declBit(c+64,"TestAccel sim_shell_sim_wait",-1);
+	vcdp->declBit(c+65,"TestAccel vta_accel_clock",-1);
+	vcdp->declBit(c+66,"TestAccel vta_accel_reset",-1);
+	vcdp->declBit(c+57,"TestAccel vta_accel_io_host_req_valid",-1);
+	vcdp->declBit(c+58,"TestAccel vta_accel_io_host_req_opcode",-1);
+	vcdp->declBus(c+59,"TestAccel vta_accel_io_host_req_addr",-1,7,0);
+	vcdp->declBus(c+60,"TestAccel vta_accel_io_host_req_value",-1,31,0);
 	vcdp->declBit(c+1,"TestAccel vta_accel_io_host_req_deq",-1);
 	vcdp->declBit(c+2,"TestAccel vta_accel_io_host_resp_valid",-1);
 	vcdp->declBus(c+3,"TestAccel vta_accel_io_host_resp_bits",-1,31,0);
@@ -101,14 +101,14 @@ void VTestAccel::traceInitThis__1(VTestAccel__Syms* __restrict vlSymsp, Verilate
 	vcdp->declBit(c+8,"TestAccel vta_accel_io_mem_wr_valid",-1);
 	vcdp->declQuad(c+9,"TestAccel vta_accel_io_mem_wr_bits",-1,63,0);
 	vcdp->declBit(c+11,"TestAccel vta_accel_io_mem_rd_ready",-1);
-	vcdp->declBit(c+60,"TestAccel vta_accel_io_mem_rd_valid",-1);
-	vcdp->declQuad(c+61,"TestAccel vta_accel_io_mem_rd_bits",-1,63,0);
-	vcdp->declBit(c+64,"TestAccel sim_shell clock",-1);
-	vcdp->declBit(c+65,"TestAccel sim_shell reset",-1);
-	vcdp->declBit(c+56,"TestAccel sim_shell host_req_valid",-1);
-	vcdp->declBit(c+57,"TestAccel sim_shell host_req_opcode",-1);
-	vcdp->declBus(c+58,"TestAccel sim_shell host_req_addr",-1,7,0);
-	vcdp->declBus(c+59,"TestAccel sim_shell host_req_value",-1,31,0);
+	vcdp->declBit(c+61,"TestAccel vta_accel_io_mem_rd_valid",-1);
+	vcdp->declQuad(c+62,"TestAccel vta_accel_io_mem_rd_bits",-1,63,0);
+	vcdp->declBit(c+65,"TestAccel sim_shell clock",-1);
+	vcdp->declBit(c+66,"TestAccel sim_shell reset",-1);
+	vcdp->declBit(c+57,"TestAccel sim_shell host_req_valid",-1);
+	vcdp->declBit(c+58,"TestAccel sim_shell host_req_opcode",-1);
+	vcdp->declBus(c+59,"TestAccel sim_shell host_req_addr",-1,7,0);
+	vcdp->declBus(c+60,"TestAccel sim_shell host_req_value",-1,31,0);
 	vcdp->declBit(c+1,"TestAccel sim_shell host_req_deq",-1);
 	vcdp->declBit(c+2,"TestAccel sim_shell host_resp_valid",-1);
 	vcdp->declBus(c+3,"TestAccel sim_shell host_resp_bits",-1,31,0);
@@ -118,48 +118,48 @@ void VTestAccel::traceInitThis__1(VTestAccel__Syms* __restrict vlSymsp, Verilate
 	vcdp->declBit(c+8,"TestAccel sim_shell mem_wr_valid",-1);
 	vcdp->declQuad(c+9,"TestAccel sim_shell mem_wr_bits",-1,63,0);
 	vcdp->declBit(c+11,"TestAccel sim_shell mem_rd_ready",-1);
-	vcdp->declBit(c+60,"TestAccel sim_shell mem_rd_valid",-1);
-	vcdp->declQuad(c+61,"TestAccel sim_shell mem_rd_bits",-1,63,0);
-	vcdp->declBit(c+66,"TestAccel sim_shell sim_clock",-1);
-	vcdp->declBit(c+63,"TestAccel sim_shell sim_wait",-1);
-	vcdp->declBit(c+63,"TestAccel sim_shell mod_sim_dpi_wait",-1);
-	vcdp->declBit(c+65,"TestAccel sim_shell mod_sim_reset",-1);
-	vcdp->declBit(c+66,"TestAccel sim_shell mod_sim_clock",-1);
-	vcdp->declBit(c+56,"TestAccel sim_shell mod_host_dpi_req_valid",-1);
-	vcdp->declBit(c+57,"TestAccel sim_shell mod_host_dpi_req_opcode",-1);
-	vcdp->declBus(c+58,"TestAccel sim_shell mod_host_dpi_req_addr",-1,7,0);
-	vcdp->declBus(c+59,"TestAccel sim_shell mod_host_dpi_req_value",-1,31,0);
+	vcdp->declBit(c+61,"TestAccel sim_shell mem_rd_valid",-1);
+	vcdp->declQuad(c+62,"TestAccel sim_shell mem_rd_bits",-1,63,0);
+	vcdp->declBit(c+67,"TestAccel sim_shell sim_clock",-1);
+	vcdp->declBit(c+64,"TestAccel sim_shell sim_wait",-1);
+	vcdp->declBit(c+64,"TestAccel sim_shell mod_sim_dpi_wait",-1);
+	vcdp->declBit(c+66,"TestAccel sim_shell mod_sim_reset",-1);
+	vcdp->declBit(c+67,"TestAccel sim_shell mod_sim_clock",-1);
+	vcdp->declBit(c+57,"TestAccel sim_shell mod_host_dpi_req_valid",-1);
+	vcdp->declBit(c+58,"TestAccel sim_shell mod_host_dpi_req_opcode",-1);
+	vcdp->declBus(c+59,"TestAccel sim_shell mod_host_dpi_req_addr",-1,7,0);
+	vcdp->declBus(c+60,"TestAccel sim_shell mod_host_dpi_req_value",-1,31,0);
 	vcdp->declBit(c+1,"TestAccel sim_shell mod_host_dpi_req_deq",-1);
 	vcdp->declBit(c+2,"TestAccel sim_shell mod_host_dpi_resp_valid",-1);
 	vcdp->declBus(c+3,"TestAccel sim_shell mod_host_dpi_resp_bits",-1,31,0);
-	vcdp->declBit(c+65,"TestAccel sim_shell mod_host_reset",-1);
-	vcdp->declBit(c+64,"TestAccel sim_shell mod_host_clock",-1);
+	vcdp->declBit(c+66,"TestAccel sim_shell mod_host_reset",-1);
+	vcdp->declBit(c+65,"TestAccel sim_shell mod_host_clock",-1);
 	vcdp->declBit(c+4,"TestAccel sim_shell mod_mem_dpi_req_valid",-1);
 	vcdp->declBit(c+5,"TestAccel sim_shell mod_mem_dpi_req_opcode",-1);
-	vcdp->declBus(c+68,"TestAccel sim_shell mod_mem_dpi_req_len",-1,7,0);
+	vcdp->declBus(c+69,"TestAccel sim_shell mod_mem_dpi_req_len",-1,7,0);
 	vcdp->declQuad(c+6,"TestAccel sim_shell mod_mem_dpi_req_addr",-1,63,0);
 	vcdp->declBit(c+8,"TestAccel sim_shell mod_mem_dpi_wr_valid",-1);
 	vcdp->declQuad(c+9,"TestAccel sim_shell mod_mem_dpi_wr_bits",-1,63,0);
 	vcdp->declBit(c+11,"TestAccel sim_shell mod_mem_dpi_rd_ready",-1);
-	vcdp->declBit(c+60,"TestAccel sim_shell mod_mem_dpi_rd_valid",-1);
-	vcdp->declQuad(c+61,"TestAccel sim_shell mod_mem_dpi_rd_bits",-1,63,0);
-	vcdp->declBit(c+65,"TestAccel sim_shell mod_mem_reset",-1);
-	vcdp->declBit(c+64,"TestAccel sim_shell mod_mem_clock",-1);
-	vcdp->declBit(c+66,"TestAccel sim_shell mod_sim clock",-1);
-	vcdp->declBit(c+65,"TestAccel sim_shell mod_sim reset",-1);
-	vcdp->declBit(c+63,"TestAccel sim_shell mod_sim dpi_wait",-1);
+	vcdp->declBit(c+61,"TestAccel sim_shell mod_mem_dpi_rd_valid",-1);
+	vcdp->declQuad(c+62,"TestAccel sim_shell mod_mem_dpi_rd_bits",-1,63,0);
+	vcdp->declBit(c+66,"TestAccel sim_shell mod_mem_reset",-1);
+	vcdp->declBit(c+65,"TestAccel sim_shell mod_mem_clock",-1);
+	vcdp->declBit(c+67,"TestAccel sim_shell mod_sim clock",-1);
+	vcdp->declBit(c+66,"TestAccel sim_shell mod_sim reset",-1);
+	vcdp->declBit(c+64,"TestAccel sim_shell mod_sim dpi_wait",-1);
 	// Tracing: TestAccel sim_shell mod_sim __reset // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/VTASimDPI.v:36
 	// Tracing: TestAccel sim_shell mod_sim __wait // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/VTASimDPI.v:37
 	// Tracing: TestAccel sim_shell mod_sim __exit // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/VTASimDPI.v:38
-	vcdp->declBit(c+63,"TestAccel sim_shell mod_sim wait_reg",-1);
-	vcdp->declBus(c+69,"TestAccel sim_shell mod_host ADDR_BITS",-1,31,0);
-	vcdp->declBus(c+70,"TestAccel sim_shell mod_host DATA_BITS",-1,31,0);
-	vcdp->declBit(c+64,"TestAccel sim_shell mod_host clock",-1);
-	vcdp->declBit(c+65,"TestAccel sim_shell mod_host reset",-1);
-	vcdp->declBit(c+56,"TestAccel sim_shell mod_host dpi_req_valid",-1);
-	vcdp->declBit(c+57,"TestAccel sim_shell mod_host dpi_req_opcode",-1);
-	vcdp->declBus(c+58,"TestAccel sim_shell mod_host dpi_req_addr",-1,7,0);
-	vcdp->declBus(c+59,"TestAccel sim_shell mod_host dpi_req_value",-1,31,0);
+	vcdp->declBit(c+64,"TestAccel sim_shell mod_sim wait_reg",-1);
+	vcdp->declBus(c+70,"TestAccel sim_shell mod_host ADDR_BITS",-1,31,0);
+	vcdp->declBus(c+71,"TestAccel sim_shell mod_host DATA_BITS",-1,31,0);
+	vcdp->declBit(c+65,"TestAccel sim_shell mod_host clock",-1);
+	vcdp->declBit(c+66,"TestAccel sim_shell mod_host reset",-1);
+	vcdp->declBit(c+57,"TestAccel sim_shell mod_host dpi_req_valid",-1);
+	vcdp->declBit(c+58,"TestAccel sim_shell mod_host dpi_req_opcode",-1);
+	vcdp->declBus(c+59,"TestAccel sim_shell mod_host dpi_req_addr",-1,7,0);
+	vcdp->declBus(c+60,"TestAccel sim_shell mod_host dpi_req_value",-1,31,0);
 	vcdp->declBit(c+1,"TestAccel sim_shell mod_host dpi_req_deq",-1);
 	vcdp->declBit(c+2,"TestAccel sim_shell mod_host dpi_resp_valid",-1);
 	vcdp->declBus(c+3,"TestAccel sim_shell mod_host dpi_resp_bits",-1,31,0);
@@ -171,19 +171,19 @@ void VTestAccel::traceInitThis__1(VTestAccel__Syms* __restrict vlSymsp, Verilate
 	// Tracing: TestAccel sim_shell mod_host __req_deq // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/VTAHostDPI.v:56
 	// Tracing: TestAccel sim_shell mod_host __resp_valid // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/VTAHostDPI.v:57
 	// Tracing: TestAccel sim_shell mod_host __resp_bits // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/VTAHostDPI.v:58
-	vcdp->declBus(c+69,"TestAccel sim_shell mod_mem LEN_BITS",-1,31,0);
-	vcdp->declBus(c+71,"TestAccel sim_shell mod_mem ADDR_BITS",-1,31,0);
-	vcdp->declBus(c+71,"TestAccel sim_shell mod_mem DATA_BITS",-1,31,0);
-	vcdp->declBit(c+64,"TestAccel sim_shell mod_mem clock",-1);
-	vcdp->declBit(c+65,"TestAccel sim_shell mod_mem reset",-1);
+	vcdp->declBus(c+70,"TestAccel sim_shell mod_mem LEN_BITS",-1,31,0);
+	vcdp->declBus(c+72,"TestAccel sim_shell mod_mem ADDR_BITS",-1,31,0);
+	vcdp->declBus(c+72,"TestAccel sim_shell mod_mem DATA_BITS",-1,31,0);
+	vcdp->declBit(c+65,"TestAccel sim_shell mod_mem clock",-1);
+	vcdp->declBit(c+66,"TestAccel sim_shell mod_mem reset",-1);
 	vcdp->declBit(c+4,"TestAccel sim_shell mod_mem dpi_req_valid",-1);
 	vcdp->declBit(c+5,"TestAccel sim_shell mod_mem dpi_req_opcode",-1);
-	vcdp->declBus(c+68,"TestAccel sim_shell mod_mem dpi_req_len",-1,7,0);
+	vcdp->declBus(c+69,"TestAccel sim_shell mod_mem dpi_req_len",-1,7,0);
 	vcdp->declQuad(c+6,"TestAccel sim_shell mod_mem dpi_req_addr",-1,63,0);
 	vcdp->declBit(c+8,"TestAccel sim_shell mod_mem dpi_wr_valid",-1);
 	vcdp->declQuad(c+9,"TestAccel sim_shell mod_mem dpi_wr_bits",-1,63,0);
-	vcdp->declBit(c+60,"TestAccel sim_shell mod_mem dpi_rd_valid",-1);
-	vcdp->declQuad(c+61,"TestAccel sim_shell mod_mem dpi_rd_bits",-1,63,0);
+	vcdp->declBit(c+61,"TestAccel sim_shell mod_mem dpi_rd_valid",-1);
+	vcdp->declQuad(c+62,"TestAccel sim_shell mod_mem dpi_rd_bits",-1,63,0);
 	vcdp->declBit(c+11,"TestAccel sim_shell mod_mem dpi_rd_ready",-1);
 	// Tracing: TestAccel sim_shell mod_mem __reset // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/VTAMemDPI.v:57
 	// Tracing: TestAccel sim_shell mod_mem __req_valid // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/VTAMemDPI.v:58
@@ -195,12 +195,12 @@ void VTestAccel::traceInitThis__1(VTestAccel__Syms* __restrict vlSymsp, Verilate
 	// Tracing: TestAccel sim_shell mod_mem __rd_valid // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/VTAMemDPI.v:64
 	// Tracing: TestAccel sim_shell mod_mem __rd_value // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/VTAMemDPI.v:65
 	// Tracing: TestAccel sim_shell mod_mem __rd_ready // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/VTAMemDPI.v:66
-	vcdp->declBit(c+64,"TestAccel vta_accel clock",-1);
-	vcdp->declBit(c+65,"TestAccel vta_accel reset",-1);
-	vcdp->declBit(c+56,"TestAccel vta_accel io_host_req_valid",-1);
-	vcdp->declBit(c+57,"TestAccel vta_accel io_host_req_opcode",-1);
-	vcdp->declBus(c+58,"TestAccel vta_accel io_host_req_addr",-1,7,0);
-	vcdp->declBus(c+59,"TestAccel vta_accel io_host_req_value",-1,31,0);
+	vcdp->declBit(c+65,"TestAccel vta_accel clock",-1);
+	vcdp->declBit(c+66,"TestAccel vta_accel reset",-1);
+	vcdp->declBit(c+57,"TestAccel vta_accel io_host_req_valid",-1);
+	vcdp->declBit(c+58,"TestAccel vta_accel io_host_req_opcode",-1);
+	vcdp->declBus(c+59,"TestAccel vta_accel io_host_req_addr",-1,7,0);
+	vcdp->declBus(c+60,"TestAccel vta_accel io_host_req_value",-1,31,0);
 	vcdp->declBit(c+1,"TestAccel vta_accel io_host_req_deq",-1);
 	vcdp->declBit(c+2,"TestAccel vta_accel io_host_resp_valid",-1);
 	vcdp->declBus(c+3,"TestAccel vta_accel io_host_resp_bits",-1,31,0);
@@ -210,10 +210,10 @@ void VTestAccel::traceInitThis__1(VTestAccel__Syms* __restrict vlSymsp, Verilate
 	vcdp->declBit(c+8,"TestAccel vta_accel io_mem_wr_valid",-1);
 	vcdp->declQuad(c+9,"TestAccel vta_accel io_mem_wr_bits",-1,63,0);
 	vcdp->declBit(c+11,"TestAccel vta_accel io_mem_rd_ready",-1);
-	vcdp->declBit(c+60,"TestAccel vta_accel io_mem_rd_valid",-1);
-	vcdp->declQuad(c+61,"TestAccel vta_accel io_mem_rd_bits",-1,63,0);
-	vcdp->declBit(c+64,"TestAccel vta_accel rf_clock",-1);
-	vcdp->declBit(c+65,"TestAccel vta_accel rf_reset",-1);
+	vcdp->declBit(c+61,"TestAccel vta_accel io_mem_rd_valid",-1);
+	vcdp->declQuad(c+62,"TestAccel vta_accel io_mem_rd_bits",-1,63,0);
+	vcdp->declBit(c+65,"TestAccel vta_accel rf_clock",-1);
+	vcdp->declBit(c+66,"TestAccel vta_accel rf_reset",-1);
 	vcdp->declBit(c+12,"TestAccel vta_accel rf_io_launch",-1);
 	vcdp->declBit(c+13,"TestAccel vta_accel rf_io_finish",-1);
 	vcdp->declBit(c+14,"TestAccel vta_accel rf_io_ecnt_0_valid",-1);
@@ -225,15 +225,15 @@ void VTestAccel::traceInitThis__1(VTestAccel__Syms* __restrict vlSymsp, Verilate
 	vcdp->declQuad(c+20,"TestAccel vta_accel rf_io_ptrs_0",-1,63,0);
 	vcdp->declQuad(c+22,"TestAccel vta_accel rf_io_ptrs_1",-1,63,0);
 	vcdp->declQuad(c+24,"TestAccel vta_accel rf_io_ptrs_2",-1,63,0);
-	vcdp->declBit(c+56,"TestAccel vta_accel rf_io_host_req_valid",-1);
-	vcdp->declBit(c+57,"TestAccel vta_accel rf_io_host_req_opcode",-1);
-	vcdp->declBus(c+58,"TestAccel vta_accel rf_io_host_req_addr",-1,7,0);
-	vcdp->declBus(c+59,"TestAccel vta_accel rf_io_host_req_value",-1,31,0);
+	vcdp->declBit(c+57,"TestAccel vta_accel rf_io_host_req_valid",-1);
+	vcdp->declBit(c+58,"TestAccel vta_accel rf_io_host_req_opcode",-1);
+	vcdp->declBus(c+59,"TestAccel vta_accel rf_io_host_req_addr",-1,7,0);
+	vcdp->declBus(c+60,"TestAccel vta_accel rf_io_host_req_value",-1,31,0);
 	vcdp->declBit(c+1,"TestAccel vta_accel rf_io_host_req_deq",-1);
 	vcdp->declBit(c+2,"TestAccel vta_accel rf_io_host_resp_valid",-1);
 	vcdp->declBus(c+3,"TestAccel vta_accel rf_io_host_resp_bits",-1,31,0);
-	vcdp->declBit(c+64,"TestAccel vta_accel ce_clock",-1);
-	vcdp->declBit(c+65,"TestAccel vta_accel ce_reset",-1);
+	vcdp->declBit(c+65,"TestAccel vta_accel ce_clock",-1);
+	vcdp->declBit(c+66,"TestAccel vta_accel ce_reset",-1);
 	vcdp->declBit(c+12,"TestAccel vta_accel ce_io_launch",-1);
 	vcdp->declBit(c+13,"TestAccel vta_accel ce_io_finish",-1);
 	vcdp->declBit(c+14,"TestAccel vta_accel ce_io_ecnt_0_valid",-1);
@@ -251,10 +251,10 @@ void VTestAccel::traceInitThis__1(VTestAccel__Syms* __restrict vlSymsp, Verilate
 	vcdp->declBit(c+8,"TestAccel vta_accel ce_io_mem_wr_valid",-1);
 	vcdp->declQuad(c+9,"TestAccel vta_accel ce_io_mem_wr_bits",-1,63,0);
 	vcdp->declBit(c+11,"TestAccel vta_accel ce_io_mem_rd_ready",-1);
-	vcdp->declBit(c+60,"TestAccel vta_accel ce_io_mem_rd_valid",-1);
-	vcdp->declQuad(c+61,"TestAccel vta_accel ce_io_mem_rd_bits",-1,63,0);
-	vcdp->declBit(c+64,"TestAccel vta_accel rf clock",-1);
-	vcdp->declBit(c+65,"TestAccel vta_accel rf reset",-1);
+	vcdp->declBit(c+61,"TestAccel vta_accel ce_io_mem_rd_valid",-1);
+	vcdp->declQuad(c+62,"TestAccel vta_accel ce_io_mem_rd_bits",-1,63,0);
+	vcdp->declBit(c+65,"TestAccel vta_accel rf clock",-1);
+	vcdp->declBit(c+66,"TestAccel vta_accel rf reset",-1);
 	vcdp->declBit(c+12,"TestAccel vta_accel rf io_launch",-1);
 	vcdp->declBit(c+13,"TestAccel vta_accel rf io_finish",-1);
 	vcdp->declBit(c+14,"TestAccel vta_accel rf io_ecnt_0_valid",-1);
@@ -266,10 +266,10 @@ void VTestAccel::traceInitThis__1(VTestAccel__Syms* __restrict vlSymsp, Verilate
 	vcdp->declQuad(c+20,"TestAccel vta_accel rf io_ptrs_0",-1,63,0);
 	vcdp->declQuad(c+22,"TestAccel vta_accel rf io_ptrs_1",-1,63,0);
 	vcdp->declQuad(c+24,"TestAccel vta_accel rf io_ptrs_2",-1,63,0);
-	vcdp->declBit(c+56,"TestAccel vta_accel rf io_host_req_valid",-1);
-	vcdp->declBit(c+57,"TestAccel vta_accel rf io_host_req_opcode",-1);
-	vcdp->declBus(c+58,"TestAccel vta_accel rf io_host_req_addr",-1,7,0);
-	vcdp->declBus(c+59,"TestAccel vta_accel rf io_host_req_value",-1,31,0);
+	vcdp->declBit(c+57,"TestAccel vta_accel rf io_host_req_valid",-1);
+	vcdp->declBit(c+58,"TestAccel vta_accel rf io_host_req_opcode",-1);
+	vcdp->declBus(c+59,"TestAccel vta_accel rf io_host_req_addr",-1,7,0);
+	vcdp->declBus(c+60,"TestAccel vta_accel rf io_host_req_value",-1,31,0);
 	vcdp->declBit(c+1,"TestAccel vta_accel rf io_host_req_deq",-1);
 	vcdp->declBit(c+2,"TestAccel vta_accel rf io_host_resp_valid",-1);
 	vcdp->declBus(c+3,"TestAccel vta_accel rf io_host_resp_bits",-1,31,0);
@@ -362,9 +362,9 @@ void VTestAccel::traceInitThis__1(VTestAccel__Syms* __restrict vlSymsp, Verilate
 	// Tracing: TestAccel vta_accel rf _T_258 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:206
 	// Tracing: TestAccel vta_accel rf _T_260 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:207
 	// Tracing: TestAccel vta_accel rf _GEN_17 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:208
-	vcdp->declBus(c+72,"TestAccel vta_accel rf initvar",-1,31,0);
-	vcdp->declBit(c+64,"TestAccel vta_accel ce clock",-1);
-	vcdp->declBit(c+65,"TestAccel vta_accel ce reset",-1);
+	vcdp->declBus(c+73,"TestAccel vta_accel rf initvar",-1,31,0);
+	vcdp->declBit(c+65,"TestAccel vta_accel ce clock",-1);
+	vcdp->declBit(c+66,"TestAccel vta_accel ce reset",-1);
 	vcdp->declBit(c+12,"TestAccel vta_accel ce io_launch",-1);
 	vcdp->declBit(c+13,"TestAccel vta_accel ce io_finish",-1);
 	vcdp->declBit(c+14,"TestAccel vta_accel ce io_ecnt_0_valid",-1);
@@ -382,37 +382,37 @@ void VTestAccel::traceInitThis__1(VTestAccel__Syms* __restrict vlSymsp, Verilate
 	vcdp->declBit(c+8,"TestAccel vta_accel ce io_mem_wr_valid",-1);
 	vcdp->declQuad(c+9,"TestAccel vta_accel ce io_mem_wr_bits",-1,63,0);
 	vcdp->declBit(c+11,"TestAccel vta_accel ce io_mem_rd_ready",-1);
-	vcdp->declBit(c+60,"TestAccel vta_accel ce io_mem_rd_valid",-1);
-	vcdp->declQuad(c+61,"TestAccel vta_accel ce io_mem_rd_bits",-1,63,0);
-	vcdp->declBit(c+64,"TestAccel vta_accel ce sliceAccum_clock",-1);
-	vcdp->declBit(c+65,"TestAccel vta_accel ce sliceAccum_reset",-1);
+	vcdp->declBit(c+61,"TestAccel vta_accel ce io_mem_rd_valid",-1);
+	vcdp->declQuad(c+62,"TestAccel vta_accel ce io_mem_rd_bits",-1,63,0);
+	vcdp->declBit(c+65,"TestAccel vta_accel ce sliceAccum_clock",-1);
+	vcdp->declBit(c+66,"TestAccel vta_accel ce sliceAccum_reset",-1);
 	vcdp->declBit(c+34,"TestAccel vta_accel ce sliceAccum_io_rst",-1);
 	vcdp->declBit(c+5,"TestAccel vta_accel ce sliceAccum_io_valid",-1);
 	vcdp->declBit(c+35,"TestAccel vta_accel ce sliceAccum_io_ready",-1);
 	vcdp->declQuad(c+36,"TestAccel vta_accel ce sliceAccum_io_in",-1,62,0);
 	vcdp->declQuad(c+38,"TestAccel vta_accel ce sliceAccum_io_sum",-1,63,0);
-	vcdp->declBit(c+64,"TestAccel vta_accel ce overallAccum_clock",-1);
-	vcdp->declBit(c+65,"TestAccel vta_accel ce overallAccum_reset",-1);
+	vcdp->declBit(c+65,"TestAccel vta_accel ce overallAccum_clock",-1);
+	vcdp->declBit(c+66,"TestAccel vta_accel ce overallAccum_reset",-1);
 	vcdp->declBit(c+40,"TestAccel vta_accel ce overallAccum_io_rst",-1);
 	vcdp->declBit(c+41,"TestAccel vta_accel ce overallAccum_io_valid",-1);
-	vcdp->declBit(c+13,"TestAccel vta_accel ce overallAccum_io_ready",-1);
-	vcdp->declQuad(c+42,"TestAccel vta_accel ce overallAccum_io_in",-1,62,0);
+	vcdp->declBit(c+42,"TestAccel vta_accel ce overallAccum_io_ready",-1);
+	vcdp->declQuad(c+43,"TestAccel vta_accel ce overallAccum_io_in",-1,62,0);
 	vcdp->declQuad(c+9,"TestAccel vta_accel ce overallAccum_io_sum",-1,63,0);
-	vcdp->declBus(c+44,"TestAccel vta_accel ce state",-1,2,0);
+	vcdp->declBus(c+45,"TestAccel vta_accel ce state",-1,2,0);
 	// Tracing: TestAccel vta_accel ce _RAND_0 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:661
 	vcdp->declBus(c+15,"TestAccel vta_accel ce cycles",-1,31,0);
 	// Tracing: TestAccel vta_accel ce _RAND_1 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:663
-	vcdp->declQuad(c+45,"TestAccel vta_accel ce reg1",-1,63,0);
+	vcdp->declQuad(c+46,"TestAccel vta_accel ce reg1",-1,63,0);
 	// Tracing: TestAccel vta_accel ce _RAND_2 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:665
-	vcdp->declQuad(c+47,"TestAccel vta_accel ce reg2",-1,63,0);
+	vcdp->declQuad(c+48,"TestAccel vta_accel ce reg2",-1,63,0);
 	// Tracing: TestAccel vta_accel ce _RAND_3 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:667
-	vcdp->declBus(c+49,"TestAccel vta_accel ce cnt",-1,31,0);
+	vcdp->declBus(c+50,"TestAccel vta_accel ce cnt",-1,31,0);
 	// Tracing: TestAccel vta_accel ce _RAND_4 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:669
-	vcdp->declQuad(c+50,"TestAccel vta_accel ce raddr1",-1,63,0);
+	vcdp->declQuad(c+51,"TestAccel vta_accel ce raddr1",-1,63,0);
 	// Tracing: TestAccel vta_accel ce _RAND_5 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:671
-	vcdp->declQuad(c+52,"TestAccel vta_accel ce raddr2",-1,63,0);
+	vcdp->declQuad(c+53,"TestAccel vta_accel ce raddr2",-1,63,0);
 	// Tracing: TestAccel vta_accel ce _RAND_6 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:673
-	vcdp->declQuad(c+54,"TestAccel vta_accel ce waddr",-1,63,0);
+	vcdp->declQuad(c+55,"TestAccel vta_accel ce waddr",-1,63,0);
 	// Tracing: TestAccel vta_accel ce _RAND_7 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:675
 	// Tracing: TestAccel vta_accel ce _T_88 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:676
 	// Tracing: TestAccel vta_accel ce _GEN_0 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:677
@@ -465,9 +465,11 @@ void VTestAccel::traceInitThis__1(VTestAccel__Syms* __restrict vlSymsp, Verilate
 	// Tracing: TestAccel vta_accel ce _T_158 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:724
 	// Tracing: TestAccel vta_accel ce _T_159 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:725
 	// Tracing: TestAccel vta_accel ce _GEN_19 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:726
-	vcdp->declBus(c+73,"TestAccel vta_accel ce initvar",-1,31,0);
-	vcdp->declBit(c+64,"TestAccel vta_accel ce sliceAccum clock",-1);
-	vcdp->declBit(c+65,"TestAccel vta_accel ce sliceAccum reset",-1);
+	vcdp->declBit(c+13,"TestAccel vta_accel ce ready",-1);
+	// Tracing: TestAccel vta_accel ce _RAND_8 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:728
+	vcdp->declBus(c+74,"TestAccel vta_accel ce initvar",-1,31,0);
+	vcdp->declBit(c+65,"TestAccel vta_accel ce sliceAccum clock",-1);
+	vcdp->declBit(c+66,"TestAccel vta_accel ce sliceAccum reset",-1);
 	vcdp->declBit(c+34,"TestAccel vta_accel ce sliceAccum io_rst",-1);
 	vcdp->declBit(c+5,"TestAccel vta_accel ce sliceAccum io_valid",-1);
 	vcdp->declBit(c+35,"TestAccel vta_accel ce sliceAccum io_ready",-1);
@@ -486,17 +488,17 @@ void VTestAccel::traceInitThis__1(VTestAccel__Syms* __restrict vlSymsp, Verilate
 	// Tracing: TestAccel vta_accel ce sliceAccum _GEN_3 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:545
 	// Tracing: TestAccel vta_accel ce sliceAccum _GEN_6 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:546
 	// Tracing: TestAccel vta_accel ce sliceAccum _GEN_7 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:547
-	vcdp->declBus(c+74,"TestAccel vta_accel ce sliceAccum initvar",-1,31,0);
-	vcdp->declBit(c+64,"TestAccel vta_accel ce overallAccum clock",-1);
-	vcdp->declBit(c+65,"TestAccel vta_accel ce overallAccum reset",-1);
+	vcdp->declBus(c+75,"TestAccel vta_accel ce sliceAccum initvar",-1,31,0);
+	vcdp->declBit(c+65,"TestAccel vta_accel ce overallAccum clock",-1);
+	vcdp->declBit(c+66,"TestAccel vta_accel ce overallAccum reset",-1);
 	vcdp->declBit(c+40,"TestAccel vta_accel ce overallAccum io_rst",-1);
 	vcdp->declBit(c+41,"TestAccel vta_accel ce overallAccum io_valid",-1);
-	vcdp->declBit(c+13,"TestAccel vta_accel ce overallAccum io_ready",-1);
-	vcdp->declQuad(c+42,"TestAccel vta_accel ce overallAccum io_in",-1,62,0);
+	vcdp->declBit(c+42,"TestAccel vta_accel ce overallAccum io_ready",-1);
+	vcdp->declQuad(c+43,"TestAccel vta_accel ce overallAccum io_in",-1,62,0);
 	vcdp->declQuad(c+9,"TestAccel vta_accel ce overallAccum io_sum",-1,63,0);
 	vcdp->declQuad(c+9,"TestAccel vta_accel ce overallAccum reg$",-1,63,0);
 	// Tracing: TestAccel vta_accel ce overallAccum _RAND_0 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:536
-	vcdp->declBit(c+13,"TestAccel vta_accel ce overallAccum ready",-1);
+	vcdp->declBit(c+42,"TestAccel vta_accel ce overallAccum ready",-1);
 	// Tracing: TestAccel vta_accel ce overallAccum _RAND_1 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:538
 	// Tracing: TestAccel vta_accel ce overallAccum _GEN_4 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:539
 	// Tracing: TestAccel vta_accel ce overallAccum _T_21 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:540
@@ -507,7 +509,7 @@ void VTestAccel::traceInitThis__1(VTestAccel__Syms* __restrict vlSymsp, Verilate
 	// Tracing: TestAccel vta_accel ce overallAccum _GEN_3 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:545
 	// Tracing: TestAccel vta_accel ce overallAccum _GEN_6 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:546
 	// Tracing: TestAccel vta_accel ce overallAccum _GEN_7 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:547
-	vcdp->declBus(c+75,"TestAccel vta_accel ce overallAccum initvar",-1,31,0);
+	vcdp->declBus(c+76,"TestAccel vta_accel ce overallAccum initvar",-1,31,0);
     }
 }
 
@@ -541,7 +543,7 @@ void VTestAccel::traceFullThis__1(VTestAccel__Syms* __restrict vlSymsp, Verilate
 	vcdp->fullBit(c+11,(((2U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)) 
 			     | (4U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)))));
 	vcdp->fullBit(c+12,((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_0)));
-	vcdp->fullBit(c+13,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__ready));
+	vcdp->fullBit(c+13,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__ready));
 	vcdp->fullBit(c+14,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce_io_ecnt_0_valid));
 	vcdp->fullBus(c+15,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__cycles),32);
 	vcdp->fullBus(c+16,(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_2),32);
@@ -574,38 +576,39 @@ void VTestAccel::traceFullThis__1(VTestAccel__Syms* __restrict vlSymsp, Verilate
 	vcdp->fullQuad(c+38,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__reg__024),64);
 	vcdp->fullBit(c+40,((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_4)));
 	vcdp->fullBit(c+41,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum_io_valid));
+	vcdp->fullBit(c+42,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__ready));
 	VL_EXTEND_WQ(319,64, __Vtemp78, vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__reg__024);
 	VL_SHIFTL_WWI(319,319,8, __Vtemp79, __Vtemp78, 
 		      (0xffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_2));
-	vcdp->fullQuad(c+42,((VL_ULL(0x7fffffffffffffff) 
+	vcdp->fullQuad(c+43,((VL_ULL(0x7fffffffffffffff) 
 			      & (((QData)((IData)(__Vtemp79[1U])) 
 				  << 0x20U) | (QData)((IData)(
 							      __Vtemp79[0U]))))),63);
-	vcdp->fullBus(c+44,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state),3);
-	vcdp->fullQuad(c+45,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg1),64);
-	vcdp->fullQuad(c+47,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg2),64);
-	vcdp->fullBus(c+49,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__cnt),32);
-	vcdp->fullQuad(c+50,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr1),64);
-	vcdp->fullQuad(c+52,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr2),64);
-	vcdp->fullQuad(c+54,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__waddr),64);
-	vcdp->fullBit(c+56,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_valid));
-	vcdp->fullBit(c+57,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_opcode));
-	vcdp->fullBus(c+58,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_addr),8);
-	vcdp->fullBus(c+59,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_value),32);
-	vcdp->fullBit(c+60,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_valid));
-	vcdp->fullQuad(c+61,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_bits),64);
-	vcdp->fullBit(c+63,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_sim__DOT__wait_reg));
-	vcdp->fullBit(c+64,(vlTOPp->clock));
-	vcdp->fullBit(c+65,(vlTOPp->reset));
-	vcdp->fullBit(c+66,(vlTOPp->sim_clock));
-	vcdp->fullBit(c+67,(vlTOPp->sim_wait));
-	vcdp->fullBus(c+68,(0U),8);
-	vcdp->fullBus(c+69,(8U),32);
-	vcdp->fullBus(c+70,(0x20U),32);
-	vcdp->fullBus(c+71,(0x40U),32);
-	vcdp->fullBus(c+72,(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__initvar),32);
-	vcdp->fullBus(c+73,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__initvar),32);
-	vcdp->fullBus(c+74,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__initvar),32);
-	vcdp->fullBus(c+75,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__initvar),32);
+	vcdp->fullBus(c+45,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state),3);
+	vcdp->fullQuad(c+46,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg1),64);
+	vcdp->fullQuad(c+48,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg2),64);
+	vcdp->fullBus(c+50,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__cnt),32);
+	vcdp->fullQuad(c+51,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr1),64);
+	vcdp->fullQuad(c+53,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr2),64);
+	vcdp->fullQuad(c+55,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__waddr),64);
+	vcdp->fullBit(c+57,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_valid));
+	vcdp->fullBit(c+58,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_opcode));
+	vcdp->fullBus(c+59,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_addr),8);
+	vcdp->fullBus(c+60,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_value),32);
+	vcdp->fullBit(c+61,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_valid));
+	vcdp->fullQuad(c+62,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_bits),64);
+	vcdp->fullBit(c+64,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_sim__DOT__wait_reg));
+	vcdp->fullBit(c+65,(vlTOPp->clock));
+	vcdp->fullBit(c+66,(vlTOPp->reset));
+	vcdp->fullBit(c+67,(vlTOPp->sim_clock));
+	vcdp->fullBit(c+68,(vlTOPp->sim_wait));
+	vcdp->fullBus(c+69,(0U),8);
+	vcdp->fullBus(c+70,(8U),32);
+	vcdp->fullBus(c+71,(0x20U),32);
+	vcdp->fullBus(c+72,(0x40U),32);
+	vcdp->fullBus(c+73,(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__initvar),32);
+	vcdp->fullBus(c+74,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__initvar),32);
+	vcdp->fullBus(c+75,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__initvar),32);
+	vcdp->fullBus(c+76,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__initvar),32);
     }
 }

@@ -51,6 +51,44 @@ void VTestAccel::_initial__TOP__3(VTestAccel__Syms* __restrict vlSymsp) {
 	   | (QData)((IData)(VL_RANDOM_I(32))));
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__reg__024 
 	= vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___RAND_0;
+    // INITIAL at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:807
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_0 
+	= VL_RANDOM_I(32);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state 
+	= (7U & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_0);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_1 
+	= VL_RANDOM_I(32);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__cycles 
+	= vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_1;
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_2 
+	= (((QData)((IData)(VL_RANDOM_I(32))) << 0x20U) 
+	   | (QData)((IData)(VL_RANDOM_I(32))));
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg1 
+	= vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_2;
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_3 
+	= (((QData)((IData)(VL_RANDOM_I(32))) << 0x20U) 
+	   | (QData)((IData)(VL_RANDOM_I(32))));
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg2 
+	= vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_3;
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_4 
+	= VL_RANDOM_I(32);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__cnt 
+	= vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_4;
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_5 
+	= (((QData)((IData)(VL_RANDOM_I(32))) << 0x20U) 
+	   | (QData)((IData)(VL_RANDOM_I(32))));
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr1 
+	= vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_5;
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_6 
+	= (((QData)((IData)(VL_RANDOM_I(32))) << 0x20U) 
+	   | (QData)((IData)(VL_RANDOM_I(32))));
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr2 
+	= vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_6;
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_7 
+	= (((QData)((IData)(VL_RANDOM_I(32))) << 0x20U) 
+	   | (QData)((IData)(VL_RANDOM_I(32))));
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__waddr 
+	= vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_7;
     // INITIAL at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:298
     vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___RAND_0 
 	= VL_RANDOM_I(32);
@@ -108,48 +146,6 @@ void VTestAccel::_initial__TOP__3(VTestAccel__Syms* __restrict vlSymsp) {
 	= VL_RANDOM_I(32);
     vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__rdata 
 	= vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___RAND_13;
-    // INITIAL at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:807
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_0 
-	= VL_RANDOM_I(32);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state 
-	= (7U & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_0);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_1 
-	= VL_RANDOM_I(32);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__cycles 
-	= vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_1;
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_2 
-	= (((QData)((IData)(VL_RANDOM_I(32))) << 0x20U) 
-	   | (QData)((IData)(VL_RANDOM_I(32))));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg1 
-	= vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_2;
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_3 
-	= (((QData)((IData)(VL_RANDOM_I(32))) << 0x20U) 
-	   | (QData)((IData)(VL_RANDOM_I(32))));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg2 
-	= vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_3;
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_4 
-	= VL_RANDOM_I(32);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__cnt 
-	= vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_4;
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_5 
-	= (((QData)((IData)(VL_RANDOM_I(32))) << 0x20U) 
-	   | (QData)((IData)(VL_RANDOM_I(32))));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr1 
-	= vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_5;
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_6 
-	= (((QData)((IData)(VL_RANDOM_I(32))) << 0x20U) 
-	   | (QData)((IData)(VL_RANDOM_I(32))));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr2 
-	= vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_6;
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_7 
-	= (((QData)((IData)(VL_RANDOM_I(32))) << 0x20U) 
-	   | (QData)((IData)(VL_RANDOM_I(32))));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__waddr 
-	= vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_7;
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_8 
-	= VL_RANDOM_I(32);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__ready 
-	= (1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_8);
 }
 
 void VTestAccel::_settle__TOP__4(VTestAccel__Syms* __restrict vlSymsp) {
@@ -175,11 +171,6 @@ void VTestAccel::_settle__TOP__4(VTestAccel__Syms* __restrict vlSymsp) {
     vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_77 
 	= ((IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_valid) 
 	   & (~ (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_opcode)));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_74 
-	= (1U & (~ (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__state)));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_80 
-	= ((~ (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__state)) 
-	   & (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_valid));
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_110 
 	= ((IData)(1U) + vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__cycles);
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_115 
@@ -188,10 +179,6 @@ void VTestAccel::_settle__TOP__4(VTestAccel__Syms* __restrict vlSymsp) {
 	= (VL_ULL(1) + vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr2);
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_159 
 	= ((IData)(1U) + vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__cnt);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_99 
-	= (vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__cnt 
-	   == (vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_3 
-	       - (IData)(1U)));
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_88 
 	= (0U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state));
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_89 
@@ -220,30 +207,66 @@ void VTestAccel::_settle__TOP__4(VTestAccel__Syms* __restrict vlSymsp) {
 								    __Vtemp51[0U])))));
     VL_ADD_W(3, __Vtemp53, __Vtemp48, __Vtemp52);
     VL_EXTEND_WQ(65,64, __Vtemp54, vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__reg__024);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___GEN_1[0U] 
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___GEN_2[0U] 
 	= ((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_5)
 	    ? 0U : ((5U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state))
 		     ? __Vtemp53[0U] : __Vtemp54[0U]));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___GEN_1[1U] 
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___GEN_2[1U] 
 	= ((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_5)
 	    ? 0U : ((5U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state))
 		     ? __Vtemp53[1U] : __Vtemp54[1U]));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___GEN_1[2U] 
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___GEN_2[2U] 
 	= (1U & ((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_5)
 		  ? 0U : ((5U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state))
 			   ? __Vtemp53[2U] : __Vtemp54[2U])));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_235 
-	= ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_80) 
-	   & (~ (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_opcode)));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_156 
-	= ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_80) 
-	   & (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_opcode));
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_99 
+	= (vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__cnt 
+	   == (vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_3 
+	       - (IData)(1U)));
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_74 
+	= (1U & (~ (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__state)));
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_80 
+	= ((~ (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__state)) 
+	   & (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_valid));
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce_io_finish 
+	= ((6U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)) 
+	   & ((6U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)) 
+	      & (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_99)));
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce_io_ecnt_0_valid 
 	= ((6U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)) 
 	   & (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_99));
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum_io_valid 
 	= ((6U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)) 
 	   & (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_99));
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_235 
+	= ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_80) 
+	   & (~ (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_opcode)));
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_156 
+	= ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_80) 
+	   & (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_opcode));
+    VL_EXTEND_WQ(65,64, __Vtemp62, vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__reg__024);
+    VL_EXTEND_WQ(319,64, __Vtemp64, vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__reg__024);
+    VL_SHIFTL_WWI(319,319,8, __Vtemp65, __Vtemp64, 
+		  (0xffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_2));
+    VL_EXTEND_WQ(65,63, __Vtemp67, (VL_ULL(0x7fffffffffffffff) 
+				    & (((QData)((IData)(
+							__Vtemp65[1U])) 
+					<< 0x20U) | (QData)((IData)(
+								    __Vtemp65[0U])))));
+    VL_ADD_W(3, __Vtemp68, __Vtemp62, __Vtemp67);
+    VL_EXTEND_WQ(65,64, __Vtemp69, vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__reg__024);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_2[0U] 
+	= ((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_4)
+	    ? 0U : ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum_io_valid)
+		     ? __Vtemp68[0U] : __Vtemp69[0U]));
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_2[1U] 
+	= ((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_4)
+	    ? 0U : ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum_io_valid)
+		     ? __Vtemp68[1U] : __Vtemp69[1U]));
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_2[2U] 
+	= (1U & ((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_4)
+		  ? 0U : ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum_io_valid)
+			   ? __Vtemp68[2U] : __Vtemp69[2U])));
     vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_159 
 	= ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_156) 
 	   & (0U == (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_addr)));
@@ -280,29 +303,6 @@ void VTestAccel::_settle__TOP__4(VTestAccel__Syms* __restrict vlSymsp) {
     vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_225 
 	= ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_156) 
 	   & (0x2cU == (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_addr)));
-    VL_EXTEND_WQ(65,64, __Vtemp62, vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__reg__024);
-    VL_EXTEND_WQ(319,64, __Vtemp64, vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__reg__024);
-    VL_SHIFTL_WWI(319,319,8, __Vtemp65, __Vtemp64, 
-		  (0xffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_2));
-    VL_EXTEND_WQ(65,63, __Vtemp67, (VL_ULL(0x7fffffffffffffff) 
-				    & (((QData)((IData)(
-							__Vtemp65[1U])) 
-					<< 0x20U) | (QData)((IData)(
-								    __Vtemp65[0U])))));
-    VL_ADD_W(3, __Vtemp68, __Vtemp62, __Vtemp67);
-    VL_EXTEND_WQ(65,64, __Vtemp69, vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__reg__024);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_1[0U] 
-	= ((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_4)
-	    ? 0U : ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum_io_valid)
-		     ? __Vtemp68[0U] : __Vtemp69[0U]));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_1[1U] 
-	= ((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_4)
-	    ? 0U : ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum_io_valid)
-		     ? __Vtemp68[1U] : __Vtemp69[1U]));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_1[2U] 
-	= (1U & ((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_4)
-		  ? 0U : ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum_io_valid)
-			   ? __Vtemp68[2U] : __Vtemp69[2U])));
 }
 
 void VTestAccel::_eval_initial(VTestAccel__Syms* __restrict vlSymsp) {
@@ -355,6 +355,7 @@ void VTestAccel::_ctor_var_reset() {
     TestAccel__DOT__sim_shell__DOT__mod_mem__DOT_____05Freset = VL_RAND_RESET_I(1);
     TestAccel__DOT__sim_shell__DOT__mod_mem__DOT_____05Frd_valid = VL_RAND_RESET_I(8);
     TestAccel__DOT__sim_shell__DOT__mod_mem__DOT_____05Frd_value = VL_RAND_RESET_Q(64);
+    TestAccel__DOT__vta_accel__DOT__ce_io_finish = VL_RAND_RESET_I(1);
     TestAccel__DOT__vta_accel__DOT__ce_io_ecnt_0_valid = VL_RAND_RESET_I(1);
     TestAccel__DOT__vta_accel__DOT__rf__DOT__state = VL_RAND_RESET_I(1);
     TestAccel__DOT__vta_accel__DOT__rf__DOT___RAND_0 = VL_RAND_RESET_I(32);
@@ -432,16 +433,14 @@ void VTestAccel::_ctor_var_reset() {
     TestAccel__DOT__vta_accel__DOT__ce__DOT___T_118 = VL_RAND_RESET_Q(64);
     TestAccel__DOT__vta_accel__DOT__ce__DOT___T_121 = VL_RAND_RESET_I(1);
     TestAccel__DOT__vta_accel__DOT__ce__DOT___T_159 = VL_RAND_RESET_I(32);
-    TestAccel__DOT__vta_accel__DOT__ce__DOT__ready = VL_RAND_RESET_I(1);
-    TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_8 = VL_RAND_RESET_I(32);
     TestAccel__DOT__vta_accel__DOT__ce__DOT__initvar = VL_RAND_RESET_I(32);
     TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__reg__024 = VL_RAND_RESET_Q(64);
     TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___RAND_0 = VL_RAND_RESET_Q(64);
-    VL_RAND_RESET_W(65,TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___GEN_1);
+    VL_RAND_RESET_W(65,TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___GEN_2);
     TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__initvar = VL_RAND_RESET_I(32);
     TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__reg__024 = VL_RAND_RESET_Q(64);
     TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___RAND_0 = VL_RAND_RESET_Q(64);
-    VL_RAND_RESET_W(65,TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_1);
+    VL_RAND_RESET_W(65,TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_2);
     TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__initvar = VL_RAND_RESET_I(32);
     __Vm_traceActivity = VL_RAND_RESET_I(32);
 }

@@ -133,7 +133,6 @@ VL_INLINE_OPT void VTestAccel::_sequent__TOP__1(VTestAccel__Syms* __restrict vlS
     VL_SIG8(__Vtask_TestAccel__DOT__sim_shell__DOT__mod_host__DOT__VTAHostDPI__1__req_addr,7,0);
     VL_SIG8(__Vtask_TestAccel__DOT__sim_shell__DOT__mod_mem__DOT__VTAMemDPI__2__rd_valid,7,0);
     VL_SIG8(__Vdly__TestAccel__DOT__vta_accel__DOT__rf__DOT__state,0,0);
-    VL_SIG8(__Vdly__TestAccel__DOT__vta_accel__DOT__ce__DOT__state,2,0);
     VL_SIG(__Vtask_TestAccel__DOT__sim_shell__DOT__mod_host__DOT__VTAHostDPI__1__req_value,31,0);
     VL_SIGW(__Vtemp2,95,0,3);
     VL_SIGW(__Vtemp4,319,0,10);
@@ -184,8 +183,6 @@ VL_INLINE_OPT void VTestAccel::_sequent__TOP__1(VTestAccel__Syms* __restrict vlS
 	VL_FWRITEF(0x80000002U,"slice sum: %20# \n",
 		   65,__Vtemp9);
     }
-    __Vdly__TestAccel__DOT__vta_accel__DOT__ce__DOT__state 
-	= vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state;
     __Vdly__TestAccel__DOT__vta_accel__DOT__rf__DOT__state 
 	= vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__state;
     // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:581
@@ -238,19 +235,6 @@ VL_INLINE_OPT void VTestAccel::_sequent__TOP__1(VTestAccel__Syms* __restrict vlS
 	vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem__DOT_____05Frd_value 
 	    = __Vtask_TestAccel__DOT__sim_shell__DOT__mod_mem__DOT__VTAMemDPI__2__rd_value;
     }
-    // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:852
-    if (VL_UNLIKELY((((2U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)) 
-		      & (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_valid)) 
-		     & (~ (IData)(vlTOPp->reset))))) {
-	VL_FWRITEF(0x80000002U,"slice inputs1: %3# \n",
-		   8,(0xffU & (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_bits)));
-    }
-    if (VL_UNLIKELY((((4U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)) 
-		      & (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_valid)) 
-		     & (~ (IData)(vlTOPp->reset))))) {
-	VL_FWRITEF(0x80000002U,"slice inputs2: %3#\n\n",
-		   8,(0xffU & (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_bits)));
-    }
     // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/VTAHostDPI.v:79
     if (((IData)(vlTOPp->reset) | (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host__DOT_____05Freset))) {
 	vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host__DOT_____05Freq_valid = 0U;
@@ -270,56 +254,29 @@ VL_INLINE_OPT void VTestAccel::_sequent__TOP__1(VTestAccel__Syms* __restrict vlS
 	vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host__DOT_____05Freq_value 
 	    = __Vtask_TestAccel__DOT__sim_shell__DOT__mod_host__DOT__VTAHostDPI__1__req_value;
     }
+    // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:848
+    if (VL_UNLIKELY((((2U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)) 
+		      & (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_valid)) 
+		     & (~ (IData)(vlTOPp->reset))))) {
+	VL_FWRITEF(0x80000002U,"slice inputs1: %3# \n",
+		   8,(0xffU & (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_bits)));
+    }
+    if (VL_UNLIKELY((((4U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)) 
+		      & (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_valid)) 
+		     & (~ (IData)(vlTOPp->reset))))) {
+	VL_FWRITEF(0x80000002U,"slice inputs2: %3#\n\n",
+		   8,(0xffU & (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_bits)));
+    }
     // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/VTAHostDPI.v:67
     vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_opcode 
 	= (1U & (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host__DOT_____05Freq_opcode));
-    // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:852
+    // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:848
     if ((0U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state))) {
 	vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__cnt = 0U;
     } else {
 	if ((6U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state))) {
 	    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__cnt 
 		= vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_159;
-	}
-    }
-    // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:852
-    if (vlTOPp->reset) {
-	__Vdly__TestAccel__DOT__vta_accel__DOT__ce__DOT__state = 0U;
-    } else {
-	if (vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_88) {
-	    if ((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_0)) {
-		__Vdly__TestAccel__DOT__vta_accel__DOT__ce__DOT__state = 1U;
-	    }
-	} else {
-	    if (vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_89) {
-		__Vdly__TestAccel__DOT__vta_accel__DOT__ce__DOT__state = 2U;
-	    } else {
-		if (vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_90) {
-		    if (vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_valid) {
-			__Vdly__TestAccel__DOT__vta_accel__DOT__ce__DOT__state = 3U;
-		    }
-		} else {
-		    if (vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_91) {
-			__Vdly__TestAccel__DOT__vta_accel__DOT__ce__DOT__state = 4U;
-		    } else {
-			if (vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_92) {
-			    if (vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_valid) {
-				__Vdly__TestAccel__DOT__vta_accel__DOT__ce__DOT__state = 5U;
-			    }
-			} else {
-			    if (vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_93) {
-				__Vdly__TestAccel__DOT__vta_accel__DOT__ce__DOT__state = 6U;
-			    } else {
-				if (vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_94) {
-				    __Vdly__TestAccel__DOT__vta_accel__DOT__ce__DOT__state 
-					= ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_99)
-					    ? 0U : 1U);
-				}
-			    }
-			}
-		    }
-		}
-	    }
 	}
     }
     // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:363
@@ -341,17 +298,17 @@ VL_INLINE_OPT void VTestAccel::_sequent__TOP__1(VTestAccel__Syms* __restrict vlS
     // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:581
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__reg__024 
 	= ((IData)(vlTOPp->reset) ? VL_ULL(0) : (((QData)((IData)(
-								  vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___GEN_1[1U])) 
+								  vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___GEN_2[1U])) 
 						  << 0x20U) 
 						 | (QData)((IData)(
-								   vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___GEN_1[0U]))));
-    // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:852
+								   vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___GEN_2[0U]))));
+    // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:848
     if (((2U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)) 
 	 & (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_valid))) {
 	vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg1 
 	    = (QData)((IData)((0xffU & (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_bits))));
     }
-    // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:852
+    // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:848
     if (((4U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)) 
 	 & (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_valid))) {
 	vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg2 
@@ -363,17 +320,17 @@ VL_INLINE_OPT void VTestAccel::_sequent__TOP__1(VTestAccel__Syms* __restrict vlS
     // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:581
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__reg__024 
 	= ((IData)(vlTOPp->reset) ? VL_ULL(0) : (((QData)((IData)(
-								  vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_1[1U])) 
+								  vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_2[1U])) 
 						  << 0x20U) 
 						 | (QData)((IData)(
-								   vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_1[0U]))));
-    // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:852
+								   vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_2[0U]))));
+    // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:848
     if ((0U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state))) {
 	vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__waddr 
 	    = (((QData)((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_11)) 
 		<< 0x20U) | (QData)((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_10)));
     }
-    // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:852
+    // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:848
     if ((0U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state))) {
 	vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr1 
 	    = (((QData)((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_7)) 
@@ -384,7 +341,7 @@ VL_INLINE_OPT void VTestAccel::_sequent__TOP__1(VTestAccel__Syms* __restrict vlS
 		= vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_115;
 	}
     }
-    // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:852
+    // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:848
     if ((0U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state))) {
 	vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr2 
 	    = (((QData)((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_9)) 
@@ -450,9 +407,6 @@ VL_INLINE_OPT void VTestAccel::_sequent__TOP__1(VTestAccel__Syms* __restrict vlS
     // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/VTAMemDPI.v:74
     vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_bits 
 	= vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem__DOT_____05Frd_value;
-    // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/VTAMemDPI.v:74
-    vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_valid 
-	= (1U & (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem__DOT_____05Frd_valid));
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_115 
 	= (VL_ULL(1) + vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr1);
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_118 
@@ -570,28 +524,12 @@ VL_INLINE_OPT void VTestAccel::_sequent__TOP__1(VTestAccel__Syms* __restrict vlS
 	    }
 	}
     }
-    // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:363
-    if (vlTOPp->reset) {
-	vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_0 = 0U;
-    } else {
-	if (vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__ready) {
-	    vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_0 = 2U;
-	} else {
-	    if (vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_159) {
-		vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_0 
-		    = vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_value;
-	    }
-	}
-    }
     vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_235 
 	= ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_80) 
 	   & (~ (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_opcode)));
     vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_156 
 	= ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_80) 
 	   & (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_opcode));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_159 
-	= ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_156) 
-	   & (0U == (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_addr)));
     vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_165 
 	= ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_156) 
 	   & (4U == (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_addr)));
@@ -625,25 +563,72 @@ VL_INLINE_OPT void VTestAccel::_sequent__TOP__1(VTestAccel__Syms* __restrict vlS
     vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_225 
 	= ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_156) 
 	   & (0x2cU == (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_addr)));
-    // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:852
+    // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:848
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__cycles 
 	= ((IData)(vlTOPp->reset) ? 0U : ((0U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state))
 					   ? 0U : vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_110));
-    // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/VTAHostDPI.v:67
-    vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_value 
-	= vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host__DOT_____05Freq_value;
-    // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:852
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__ready 
-	= ((6U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)) 
-	   & (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_99));
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_110 
+	= ((IData)(1U) + vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__cycles);
+    // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:848
+    if (vlTOPp->reset) {
+	vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state = 0U;
+    } else {
+	if (vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_88) {
+	    if ((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_0)) {
+		vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state = 1U;
+	    }
+	} else {
+	    if (vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_89) {
+		vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state = 2U;
+	    } else {
+		if (vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_90) {
+		    if (vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_valid) {
+			vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state = 3U;
+		    }
+		} else {
+		    if (vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_91) {
+			vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state = 4U;
+		    } else {
+			if (vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_92) {
+			    if (vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_valid) {
+				vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state = 5U;
+			    }
+			} else {
+			    if (vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_93) {
+				vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state = 6U;
+			    } else {
+				if (vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_94) {
+				    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state 
+					= ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_99)
+					    ? 0U : 1U);
+				}
+			    }
+			}
+		    }
+		}
+	    }
+	}
+    }
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_99 
 	= (vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__cnt 
 	   == (vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_3 
 	       - (IData)(1U)));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state 
-	= __Vdly__TestAccel__DOT__vta_accel__DOT__ce__DOT__state;
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_110 
-	= ((IData)(1U) + vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__cycles);
+    // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/VTAMemDPI.v:74
+    vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_valid 
+	= (1U & (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem__DOT_____05Frd_valid));
+    // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:363
+    if (vlTOPp->reset) {
+	vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_0 = 0U;
+    } else {
+	if (vlTOPp->TestAccel__DOT__vta_accel__DOT__ce_io_finish) {
+	    vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_0 = 2U;
+	} else {
+	    if (vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_159) {
+		vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_0 
+		    = vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_value;
+	    }
+	}
+    }
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_88 
 	= (0U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state));
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_89 
@@ -672,15 +657,15 @@ VL_INLINE_OPT void VTestAccel::_sequent__TOP__1(VTestAccel__Syms* __restrict vlS
 								    __Vtemp23[0U])))));
     VL_ADD_W(3, __Vtemp25, __Vtemp20, __Vtemp24);
     VL_EXTEND_WQ(65,64, __Vtemp26, vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__reg__024);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___GEN_1[0U] 
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___GEN_2[0U] 
 	= ((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_5)
 	    ? 0U : ((5U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state))
 		     ? __Vtemp25[0U] : __Vtemp26[0U]));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___GEN_1[1U] 
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___GEN_2[1U] 
 	= ((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_5)
 	    ? 0U : ((5U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state))
 		     ? __Vtemp25[1U] : __Vtemp26[1U]));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___GEN_1[2U] 
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___GEN_2[2U] 
 	= (1U & ((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_5)
 		  ? 0U : ((5U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state))
 			   ? __Vtemp25[2U] : __Vtemp26[2U])));
@@ -690,6 +675,13 @@ VL_INLINE_OPT void VTestAccel::_sequent__TOP__1(VTestAccel__Syms* __restrict vlS
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum_io_valid 
 	= ((6U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)) 
 	   & (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_99));
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce_io_finish 
+	= ((6U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)) 
+	   & ((6U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)) 
+	      & (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_99)));
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_159 
+	= ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_156) 
+	   & (0U == (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_addr)));
     VL_EXTEND_WQ(65,64, __Vtemp34, vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__reg__024);
     VL_EXTEND_WQ(319,64, __Vtemp36, vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__reg__024);
     VL_SHIFTL_WWI(319,319,8, __Vtemp37, __Vtemp36, 
@@ -701,18 +693,21 @@ VL_INLINE_OPT void VTestAccel::_sequent__TOP__1(VTestAccel__Syms* __restrict vlS
 								    __Vtemp37[0U])))));
     VL_ADD_W(3, __Vtemp40, __Vtemp34, __Vtemp39);
     VL_EXTEND_WQ(65,64, __Vtemp41, vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__reg__024);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_1[0U] 
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_2[0U] 
 	= ((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_4)
 	    ? 0U : ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum_io_valid)
 		     ? __Vtemp40[0U] : __Vtemp41[0U]));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_1[1U] 
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_2[1U] 
 	= ((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_4)
 	    ? 0U : ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum_io_valid)
 		     ? __Vtemp40[1U] : __Vtemp41[1U]));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_1[2U] 
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_2[2U] 
 	= (1U & ((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_4)
 		  ? 0U : ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum_io_valid)
 			   ? __Vtemp40[2U] : __Vtemp41[2U])));
+    // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/VTAHostDPI.v:67
+    vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_value 
+	= vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host__DOT_____05Freq_value;
 }
 
 VL_INLINE_OPT void VTestAccel::_sequent__TOP__2(VTestAccel__Syms* __restrict vlSymsp) {

@@ -170,8 +170,8 @@ class Compute(implicit config: AccelConfig) extends Module {
   }
 
   // done when read/write are equal to length
-  val ready = RegNext(last)
-  io.finish := ready // data has been added
+
+  io.finish := io.mem.wr.valid && last // data has been added
 }
 
 class Accumulator(dataBits: Int = 8) extends Module {
@@ -184,17 +184,20 @@ class Accumulator(dataBits: Int = 8) extends Module {
   })
 
   val reg = RegInit(0.U((dataBits+1).W))
+  val ready = RegInit(false.B)
   when (io.rst) {
     reg := 0.U
+    ready := false.B
   } .elsewhen (io.valid) {
     reg := reg +& io.in
+    ready := true.B
     printf("slice sum: %d \n", reg +& io.in)
     // printf("ready %d:\n", io.ready)
   } 
 
   // printf("leave: %d\n", RegNext(io.valid))
 
-  io.ready := io.valid
+  io.ready := ready
   io.sum := reg
   // printf("io.datavalid: %d \n", io.valid)
   // printf("io.accumin: %d \n", io.in)

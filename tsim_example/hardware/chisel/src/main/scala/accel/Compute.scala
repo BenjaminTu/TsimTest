@@ -159,7 +159,7 @@ class Compute(implicit config: AccelConfig) extends Module {
   overallAccum.io.in := sliceAccum.io.sum << shift(7,0) // limit to 8 bits 
 
   // write
-  io.mem.wr.valid := state === sWriteData
+  io.mem.wr.valid := overallAccum.io.ready
   io.mem.wr.bits := overallAccum.io.sum
 
   // count read/write

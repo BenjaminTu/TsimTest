@@ -223,9 +223,7 @@ VL_INLINE_OPT void VTestAccel::_sequent__TOP__1(VTestAccel__Syms* __restrict vlS
 										== (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state))
 										 ? vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr1
 										 : vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr2)
-										 : vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__waddr), 
-										(6U 
-										== (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)), vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__reg__024, __Vtask_TestAccel__DOT__sim_shell__DOT__mod_mem__DOT__VTAMemDPI__2__rd_valid, __Vtask_TestAccel__DOT__sim_shell__DOT__mod_mem__DOT__VTAMemDPI__2__rd_value, 
+										 : vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__waddr), (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__ready), vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__reg__024, __Vtask_TestAccel__DOT__sim_shell__DOT__mod_mem__DOT__VTAMemDPI__2__rd_valid, __Vtask_TestAccel__DOT__sim_shell__DOT__mod_mem__DOT__VTAMemDPI__2__rd_value, 
 										((2U 
 										== (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)) 
 										| (4U 
@@ -290,7 +288,7 @@ VL_INLINE_OPT void VTestAccel::_sequent__TOP__1(VTestAccel__Syms* __restrict vlS
     } else {
 	if ((6U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state))) {
 	    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__cnt 
-		= vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_159;
+		= vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_158;
 	}
     }
     // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:593
@@ -414,7 +412,7 @@ VL_INLINE_OPT void VTestAccel::_sequent__TOP__1(VTestAccel__Syms* __restrict vlS
     }
     vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_74 
 	= (1U & (~ (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__state)));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_159 
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_158 
 	= ((IData)(1U) + vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__cnt);
     // ALWAYS at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/VTAMemDPI.v:74
     vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_bits 

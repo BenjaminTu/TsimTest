@@ -189,7 +189,7 @@ void VTestAccel::_settle__TOP__4(VTestAccel__Syms* __restrict vlSymsp) {
 	= (VL_ULL(1) + vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr1);
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_118 
 	= (VL_ULL(1) + vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr2);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_159 
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_158 
 	= ((IData)(1U) + vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__cnt);
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_88 
 	= (0U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state));
@@ -439,7 +439,7 @@ void VTestAccel::_ctor_var_reset() {
     TestAccel__DOT__vta_accel__DOT__ce__DOT___T_115 = VL_RAND_RESET_Q(64);
     TestAccel__DOT__vta_accel__DOT__ce__DOT___T_118 = VL_RAND_RESET_Q(64);
     TestAccel__DOT__vta_accel__DOT__ce__DOT___T_121 = VL_RAND_RESET_I(1);
-    TestAccel__DOT__vta_accel__DOT__ce__DOT___T_159 = VL_RAND_RESET_I(32);
+    TestAccel__DOT__vta_accel__DOT__ce__DOT___T_158 = VL_RAND_RESET_I(32);
     TestAccel__DOT__vta_accel__DOT__ce__DOT__ready = VL_RAND_RESET_I(1);
     TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_8 = VL_RAND_RESET_I(32);
     TestAccel__DOT__vta_accel__DOT__ce__DOT__initvar = VL_RAND_RESET_I(32);

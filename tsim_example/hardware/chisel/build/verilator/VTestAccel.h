@@ -118,7 +118,7 @@ VL_MODULE(VTestAccel) {
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__cnt,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_4,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT___T_110,31,0);
-	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT___T_159,31,0);
+	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT___T_158,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_8,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__initvar,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT___RAND_1,31,0);

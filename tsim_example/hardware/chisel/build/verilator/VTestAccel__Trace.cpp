@@ -66,7 +66,7 @@ void VTestAccel::traceChgThis__2(VTestAccel__Syms* __restrict vlSymsp, Verilated
 				 ? vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr1
 				 : vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr2)
 			     : vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__waddr)),64);
-	vcdp->chgBit(c+8,((6U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state))));
+	vcdp->chgBit(c+8,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__ready));
 	vcdp->chgQuad(c+9,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__reg__024),64);
 	vcdp->chgBit(c+11,(((2U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)) 
 			    | (4U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)))));
@@ -104,21 +104,20 @@ void VTestAccel::traceChgThis__2(VTestAccel__Syms* __restrict vlSymsp, Verilated
 	vcdp->chgQuad(c+38,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__reg__024),64);
 	vcdp->chgBit(c+40,((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_4)));
 	vcdp->chgBit(c+41,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum_io_valid));
-	vcdp->chgBit(c+42,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__ready));
 	VL_EXTEND_WQ(319,64, __Vtemp85, vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__sliceAccum__DOT__reg__024);
 	VL_SHIFTL_WWI(319,319,8, __Vtemp86, __Vtemp85, 
 		      (0xffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_2));
-	vcdp->chgQuad(c+43,((VL_ULL(0x7fffffffffffffff) 
+	vcdp->chgQuad(c+42,((VL_ULL(0x7fffffffffffffff) 
 			     & (((QData)((IData)(__Vtemp86[1U])) 
 				 << 0x20U) | (QData)((IData)(
 							     __Vtemp86[0U]))))),63);
-	vcdp->chgBus(c+45,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state),3);
-	vcdp->chgQuad(c+46,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg1),64);
-	vcdp->chgQuad(c+48,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg2),64);
-	vcdp->chgBus(c+50,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__cnt),32);
-	vcdp->chgQuad(c+51,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr1),64);
-	vcdp->chgQuad(c+53,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr2),64);
-	vcdp->chgQuad(c+55,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__waddr),64);
+	vcdp->chgBus(c+44,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state),3);
+	vcdp->chgQuad(c+45,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg1),64);
+	vcdp->chgQuad(c+47,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg2),64);
+	vcdp->chgBus(c+49,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__cnt),32);
+	vcdp->chgQuad(c+50,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr1),64);
+	vcdp->chgQuad(c+52,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr2),64);
+	vcdp->chgQuad(c+54,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__waddr),64);
     }
 }
 
@@ -128,12 +127,12 @@ void VTestAccel::traceChgThis__3(VTestAccel__Syms* __restrict vlSymsp, Verilated
     if (0 && vcdp && c) {}  // Prevent unused
     // Body
     {
-	vcdp->chgBit(c+57,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_valid));
-	vcdp->chgBit(c+58,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_opcode));
-	vcdp->chgBus(c+59,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_addr),8);
-	vcdp->chgBus(c+60,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_value),32);
-	vcdp->chgBit(c+61,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_valid));
-	vcdp->chgQuad(c+62,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_bits),64);
+	vcdp->chgBit(c+56,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_valid));
+	vcdp->chgBit(c+57,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_opcode));
+	vcdp->chgBus(c+58,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_addr),8);
+	vcdp->chgBus(c+59,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_value),32);
+	vcdp->chgBit(c+60,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_valid));
+	vcdp->chgQuad(c+61,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_bits),64);
     }
 }
 
@@ -143,7 +142,7 @@ void VTestAccel::traceChgThis__4(VTestAccel__Syms* __restrict vlSymsp, Verilated
     if (0 && vcdp && c) {}  // Prevent unused
     // Body
     {
-	vcdp->chgBit(c+64,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_sim__DOT__wait_reg));
+	vcdp->chgBit(c+63,(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_sim__DOT__wait_reg));
     }
 }
 
@@ -153,9 +152,9 @@ void VTestAccel::traceChgThis__5(VTestAccel__Syms* __restrict vlSymsp, Verilated
     if (0 && vcdp && c) {}  // Prevent unused
     // Body
     {
-	vcdp->chgBit(c+65,(vlTOPp->clock));
-	vcdp->chgBit(c+66,(vlTOPp->reset));
-	vcdp->chgBit(c+67,(vlTOPp->sim_clock));
-	vcdp->chgBit(c+68,(vlTOPp->sim_wait));
+	vcdp->chgBit(c+64,(vlTOPp->clock));
+	vcdp->chgBit(c+65,(vlTOPp->reset));
+	vcdp->chgBit(c+66,(vlTOPp->sim_clock));
+	vcdp->chgBit(c+67,(vlTOPp->sim_wait));
     }
 }

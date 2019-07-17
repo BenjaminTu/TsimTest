@@ -7,10 +7,10 @@
 		revision="0.1.0-SNAPSHOT"
 		conf="test-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20190711160757"/>
+		date="20190716093054"/>
 	<dependencies>
 		<module organisation="edu.washington.cs" name="vta_2.11">
-			<revision name="0.1.0-SNAPSHOT" status="integration" pubdate="20190711160747" resolver="local" artresolver="local" downloaded="false" searched="true" default="false" conf="compile, default(compile)" position="27">
+			<revision name="0.1.0-SNAPSHOT" status="integration" pubdate="20190716093041" resolver="local" artresolver="local" downloaded="false" searched="true" default="false" conf="compile, default(compile)" position="27">
 				<metadata-artifact status="no" details="" size="1896" time="0" location="/Users/benjamintu/.ivy2/cache/edu.washington.cs/vta_2.11/ivy-0.1.0-SNAPSHOT.xml" searched="true" original-local-location="/Users/benjamintu/.ivy2/local/edu.washington.cs/vta_2.11/0.1.0-SNAPSHOT/ivys/ivy.xml" origin-is-local="true" origin-location="/Users/benjamintu/.ivy2/local/edu.washington.cs/vta_2.11/0.1.0-SNAPSHOT/ivys/ivy.xml"/>
 				<caller organisation="edu.washington.cs" name="accel_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>

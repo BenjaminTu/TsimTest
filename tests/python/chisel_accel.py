@@ -77,13 +77,10 @@ def compute(A, B, w_width, a_width):
     assert A.shape[1] == B.shape[1], "sliced shape not match"
     # reset hardware accumulator
     accum = 0
-    print(A.shape)
     for x in range(A.shape[0]):
         for y in range(B.shape[0]):
             # hardware implementation
             accum += np.uint64(A[x]).dot(np.uint64(B[y])) << np.uint64(x*w_width + y*a_width)
-            print(A[x])
-            print(B[y])
     # get value from accumulator
     return accum
 

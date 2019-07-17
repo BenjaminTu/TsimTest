@@ -409,109 +409,109 @@ void VTestAccel::traceInitThis__1(VTestAccel__Syms* __restrict vlSymsp, Verilate
 	vcdp->declQuad(c+54,"TestAccel vta_accel ce overallAccum_io_in",-1,62,0);
 	vcdp->declQuad(c+9,"TestAccel vta_accel ce overallAccum_io_sum",-1,63,0);
 	vcdp->declBus(c+56,"TestAccel vta_accel ce state",-1,2,0);
-	// Tracing: TestAccel vta_accel ce _RAND_0 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1311
+	// Tracing: TestAccel vta_accel ce _RAND_0 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1207
 	vcdp->declBus(c+57,"TestAccel vta_accel ce shift",-1,7,0);
 	vcdp->declBus(c+14,"TestAccel vta_accel ce cycles",-1,31,0);
-	// Tracing: TestAccel vta_accel ce _RAND_1 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1314
+	// Tracing: TestAccel vta_accel ce _RAND_1 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1210
 	vcdp->declBus(c+58,"TestAccel vta_accel ce reg1_0",-1,31,0);
-	// Tracing: TestAccel vta_accel ce _RAND_2 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1316
+	// Tracing: TestAccel vta_accel ce _RAND_2 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1212
 	vcdp->declBus(c+59,"TestAccel vta_accel ce reg1_1",-1,31,0);
-	// Tracing: TestAccel vta_accel ce _RAND_3 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1318
+	// Tracing: TestAccel vta_accel ce _RAND_3 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1214
 	vcdp->declBus(c+60,"TestAccel vta_accel ce reg1_2",-1,31,0);
-	// Tracing: TestAccel vta_accel ce _RAND_4 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1320
+	// Tracing: TestAccel vta_accel ce _RAND_4 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1216
 	vcdp->declBus(c+61,"TestAccel vta_accel ce reg1_3",-1,31,0);
-	// Tracing: TestAccel vta_accel ce _RAND_5 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1322
+	// Tracing: TestAccel vta_accel ce _RAND_5 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1218
 	vcdp->declBus(c+62,"TestAccel vta_accel ce reg1_4",-1,31,0);
-	// Tracing: TestAccel vta_accel ce _RAND_6 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1324
+	// Tracing: TestAccel vta_accel ce _RAND_6 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1220
 	vcdp->declBus(c+63,"TestAccel vta_accel ce reg1_5",-1,31,0);
-	// Tracing: TestAccel vta_accel ce _RAND_7 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1326
+	// Tracing: TestAccel vta_accel ce _RAND_7 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1222
 	vcdp->declBus(c+64,"TestAccel vta_accel ce reg1_6",-1,31,0);
-	// Tracing: TestAccel vta_accel ce _RAND_8 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1328
+	// Tracing: TestAccel vta_accel ce _RAND_8 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1224
 	vcdp->declBus(c+65,"TestAccel vta_accel ce reg1_7",-1,31,0);
-	// Tracing: TestAccel vta_accel ce _RAND_9 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1330
+	// Tracing: TestAccel vta_accel ce _RAND_9 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1226
 	vcdp->declBus(c+66,"TestAccel vta_accel ce reg2_0",-1,31,0);
-	// Tracing: TestAccel vta_accel ce _RAND_10 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1332
+	// Tracing: TestAccel vta_accel ce _RAND_10 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1228
 	vcdp->declBus(c+67,"TestAccel vta_accel ce reg2_1",-1,31,0);
-	// Tracing: TestAccel vta_accel ce _RAND_11 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1334
+	// Tracing: TestAccel vta_accel ce _RAND_11 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1230
 	vcdp->declBus(c+68,"TestAccel vta_accel ce reg2_2",-1,31,0);
-	// Tracing: TestAccel vta_accel ce _RAND_12 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1336
+	// Tracing: TestAccel vta_accel ce _RAND_12 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1232
 	vcdp->declBus(c+69,"TestAccel vta_accel ce reg2_3",-1,31,0);
-	// Tracing: TestAccel vta_accel ce _RAND_13 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1338
+	// Tracing: TestAccel vta_accel ce _RAND_13 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1234
 	vcdp->declBus(c+70,"TestAccel vta_accel ce reg2_4",-1,31,0);
-	// Tracing: TestAccel vta_accel ce _RAND_14 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1340
+	// Tracing: TestAccel vta_accel ce _RAND_14 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1236
 	vcdp->declBus(c+71,"TestAccel vta_accel ce reg2_5",-1,31,0);
-	// Tracing: TestAccel vta_accel ce _RAND_15 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1342
+	// Tracing: TestAccel vta_accel ce _RAND_15 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1238
 	vcdp->declBus(c+72,"TestAccel vta_accel ce reg2_6",-1,31,0);
-	// Tracing: TestAccel vta_accel ce _RAND_16 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1344
+	// Tracing: TestAccel vta_accel ce _RAND_16 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1240
 	vcdp->declBus(c+73,"TestAccel vta_accel ce reg2_7",-1,31,0);
-	// Tracing: TestAccel vta_accel ce _RAND_17 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1346
+	// Tracing: TestAccel vta_accel ce _RAND_17 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1242
 	vcdp->declBus(c+74,"TestAccel vta_accel ce cnt",-1,31,0);
-	// Tracing: TestAccel vta_accel ce _RAND_18 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1348
+	// Tracing: TestAccel vta_accel ce _RAND_18 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1244
 	vcdp->declQuad(c+75,"TestAccel vta_accel ce raddr1",-1,63,0);
-	// Tracing: TestAccel vta_accel ce _RAND_19 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1350
+	// Tracing: TestAccel vta_accel ce _RAND_19 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1246
 	vcdp->declQuad(c+77,"TestAccel vta_accel ce raddr2",-1,63,0);
-	// Tracing: TestAccel vta_accel ce _RAND_20 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1352
+	// Tracing: TestAccel vta_accel ce _RAND_20 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1248
 	vcdp->declQuad(c+79,"TestAccel vta_accel ce waddr",-1,63,0);
-	// Tracing: TestAccel vta_accel ce _RAND_21 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1354
-	// Tracing: TestAccel vta_accel ce _T_112 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1355
-	// Tracing: TestAccel vta_accel ce _GEN_0 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1356
-	// Tracing: TestAccel vta_accel ce _T_113 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1357
-	// Tracing: TestAccel vta_accel ce _T_114 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1358
-	// Tracing: TestAccel vta_accel ce _GEN_1 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1359
-	// Tracing: TestAccel vta_accel ce _T_115 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1360
-	// Tracing: TestAccel vta_accel ce _T_116 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1361
-	// Tracing: TestAccel vta_accel ce _GEN_2 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1362
-	// Tracing: TestAccel vta_accel ce _T_117 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1363
-	// Tracing: TestAccel vta_accel ce _T_118 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1364
-	// Tracing: TestAccel vta_accel ce _T_120 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1365
-	// Tracing: TestAccel vta_accel ce _T_121 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1366
-	// Tracing: TestAccel vta_accel ce _T_122 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1367
-	// Tracing: TestAccel vta_accel ce _T_123 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1368
-	// Tracing: TestAccel vta_accel ce _GEN_3 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1369
-	// Tracing: TestAccel vta_accel ce _GEN_4 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1370
-	// Tracing: TestAccel vta_accel ce _GEN_5 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1371
-	// Tracing: TestAccel vta_accel ce _GEN_6 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1372
-	// Tracing: TestAccel vta_accel ce _GEN_7 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1373
-	// Tracing: TestAccel vta_accel ce _GEN_8 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1374
-	// Tracing: TestAccel vta_accel ce _GEN_9 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1375
-	// Tracing: TestAccel vta_accel ce _GEN_10 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1376
-	// Tracing: TestAccel vta_accel ce _T_124 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1377
-	// Tracing: TestAccel vta_accel ce _T_130 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1378
-	// Tracing: TestAccel vta_accel ce _T_133 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1379
-	// Tracing: TestAccel vta_accel ce _T_134 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1380
-	// Tracing: TestAccel vta_accel ce _GEN_11 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1381
-	// Tracing: TestAccel vta_accel ce _T_138 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1382
-	// Tracing: TestAccel vta_accel ce _T_139 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1383
-	// Tracing: TestAccel vta_accel ce _T_141 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1384
-	// Tracing: TestAccel vta_accel ce _T_142 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1385
-	// Tracing: TestAccel vta_accel ce _GEN_12 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1386
-	// Tracing: TestAccel vta_accel ce _GEN_13 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1387
-	// Tracing: TestAccel vta_accel ce _T_143 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1388
-	// Tracing: TestAccel vta_accel ce _T_144 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1389
-	// Tracing: TestAccel vta_accel ce _T_145 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1390
-	// Tracing: TestAccel vta_accel ce _T_146 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1391
-	// Tracing: TestAccel vta_accel ce _T_154 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1392
-	// Tracing: TestAccel vta_accel ce _T_156 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1393
-	// Tracing: TestAccel vta_accel ce _T_157 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1394
-	// Tracing: TestAccel vta_accel ce _T_158 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1395
-	// Tracing: TestAccel vta_accel ce _T_162 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1396
-	// Tracing: TestAccel vta_accel ce _T_163 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1397
-	// Tracing: TestAccel vta_accel ce _T_168 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1398
-	// Tracing: TestAccel vta_accel ce _T_173 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1399
-	// Tracing: TestAccel vta_accel ce _T_178 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1400
-	// Tracing: TestAccel vta_accel ce _T_183 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1401
-	// Tracing: TestAccel vta_accel ce _T_188 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1402
-	// Tracing: TestAccel vta_accel ce _T_193 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1403
-	// Tracing: TestAccel vta_accel ce _T_198 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1404
-	// Tracing: TestAccel vta_accel ce _T_199 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1405
-	// Tracing: TestAccel vta_accel ce _GEN_36 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1406
+	// Tracing: TestAccel vta_accel ce _RAND_21 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1250
+	// Tracing: TestAccel vta_accel ce _T_112 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1251
+	// Tracing: TestAccel vta_accel ce _GEN_0 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1252
+	// Tracing: TestAccel vta_accel ce _T_113 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1253
+	// Tracing: TestAccel vta_accel ce _T_114 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1254
+	// Tracing: TestAccel vta_accel ce _GEN_1 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1255
+	// Tracing: TestAccel vta_accel ce _T_115 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1256
+	// Tracing: TestAccel vta_accel ce _T_116 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1257
+	// Tracing: TestAccel vta_accel ce _GEN_2 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1258
+	// Tracing: TestAccel vta_accel ce _T_117 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1259
+	// Tracing: TestAccel vta_accel ce _T_118 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1260
+	// Tracing: TestAccel vta_accel ce _T_120 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1261
+	// Tracing: TestAccel vta_accel ce _T_121 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1262
+	// Tracing: TestAccel vta_accel ce _T_122 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1263
+	// Tracing: TestAccel vta_accel ce _T_123 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1264
+	// Tracing: TestAccel vta_accel ce _GEN_3 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1265
+	// Tracing: TestAccel vta_accel ce _GEN_4 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1266
+	// Tracing: TestAccel vta_accel ce _GEN_5 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1267
+	// Tracing: TestAccel vta_accel ce _GEN_6 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1268
+	// Tracing: TestAccel vta_accel ce _GEN_7 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1269
+	// Tracing: TestAccel vta_accel ce _GEN_8 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1270
+	// Tracing: TestAccel vta_accel ce _GEN_9 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1271
+	// Tracing: TestAccel vta_accel ce _GEN_10 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1272
+	// Tracing: TestAccel vta_accel ce _T_124 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1273
+	// Tracing: TestAccel vta_accel ce _T_130 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1274
+	// Tracing: TestAccel vta_accel ce _T_133 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1275
+	// Tracing: TestAccel vta_accel ce _T_134 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1276
+	// Tracing: TestAccel vta_accel ce _GEN_11 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1277
+	// Tracing: TestAccel vta_accel ce _T_138 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1278
+	// Tracing: TestAccel vta_accel ce _T_139 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1279
+	// Tracing: TestAccel vta_accel ce _T_141 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1280
+	// Tracing: TestAccel vta_accel ce _T_142 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1281
+	// Tracing: TestAccel vta_accel ce _GEN_12 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1282
+	// Tracing: TestAccel vta_accel ce _GEN_13 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1283
+	// Tracing: TestAccel vta_accel ce _T_143 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1284
+	// Tracing: TestAccel vta_accel ce _T_144 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1285
+	// Tracing: TestAccel vta_accel ce _T_145 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1286
+	// Tracing: TestAccel vta_accel ce _T_146 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1287
+	// Tracing: TestAccel vta_accel ce _T_154 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1288
+	// Tracing: TestAccel vta_accel ce _T_156 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1289
+	// Tracing: TestAccel vta_accel ce _T_157 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1290
+	// Tracing: TestAccel vta_accel ce _T_158 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1291
+	// Tracing: TestAccel vta_accel ce _T_162 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1292
+	// Tracing: TestAccel vta_accel ce _T_163 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1293
+	// Tracing: TestAccel vta_accel ce _T_168 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1294
+	// Tracing: TestAccel vta_accel ce _T_173 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1295
+	// Tracing: TestAccel vta_accel ce _T_178 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1296
+	// Tracing: TestAccel vta_accel ce _T_183 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1297
+	// Tracing: TestAccel vta_accel ce _T_188 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1298
+	// Tracing: TestAccel vta_accel ce _T_193 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1299
+	// Tracing: TestAccel vta_accel ce _T_198 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1300
+	// Tracing: TestAccel vta_accel ce _T_199 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1301
+	// Tracing: TestAccel vta_accel ce _GEN_36 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1302
 	vcdp->declArray(c+81,"TestAccel vta_accel ce shiftReg",-1,277,0);
-	// Tracing: TestAccel vta_accel ce _RAND_22 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1408
+	// Tracing: TestAccel vta_accel ce _RAND_22 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1304
 	vcdp->declBit(c+53,"TestAccel vta_accel ce validReg",-1);
-	// Tracing: TestAccel vta_accel ce _RAND_23 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1410
-	// Tracing: TestAccel vta_accel ce _T_250 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1411
-	// Tracing: TestAccel vta_accel ce _T_251 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1412
-	// Tracing: TestAccel vta_accel ce _GEN_34 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1413
+	// Tracing: TestAccel vta_accel ce _RAND_23 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1306
+	// Tracing: TestAccel vta_accel ce _T_250 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1307
+	// Tracing: TestAccel vta_accel ce _T_251 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1308
+	// Tracing: TestAccel vta_accel ce _GEN_34 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1309
 	vcdp->declBus(c+124,"TestAccel vta_accel ce initvar",-1,31,0);
 	vcdp->declBit(c+115,"TestAccel vta_accel ce dot clock",-1);
 	vcdp->declBit(c+116,"TestAccel vta_accel ce dot reset",-1);
@@ -582,73 +582,39 @@ void VTestAccel::traceInitThis__1(VTestAccel__Syms* __restrict vlSymsp, Verilate
 	// Tracing: TestAccel vta_accel ce dot _GEN_4 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:592
 	// Tracing: TestAccel vta_accel ce dot _T_220 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:593
 	// Tracing: TestAccel vta_accel ce dot _T_222 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:594
-	// Tracing: TestAccel vta_accel ce dot _T_223 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:595
-	// Tracing: TestAccel vta_accel ce dot _T_224 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:596
-	// Tracing: TestAccel vta_accel ce dot _GEN_39 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:597
-	// Tracing: TestAccel vta_accel ce dot _T_225 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:598
-	// Tracing: TestAccel vta_accel ce dot _T_233 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:599
-	// Tracing: TestAccel vta_accel ce dot _GEN_40 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:600
-	// Tracing: TestAccel vta_accel ce dot _T_234 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:601
-	// Tracing: TestAccel vta_accel ce dot _T_242 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:602
-	// Tracing: TestAccel vta_accel ce dot _GEN_41 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:603
-	// Tracing: TestAccel vta_accel ce dot _T_243 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:604
-	// Tracing: TestAccel vta_accel ce dot _T_251 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:605
-	// Tracing: TestAccel vta_accel ce dot _GEN_42 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:606
-	// Tracing: TestAccel vta_accel ce dot _T_252 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:607
-	// Tracing: TestAccel vta_accel ce dot _T_260 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:608
-	// Tracing: TestAccel vta_accel ce dot _GEN_43 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:609
-	// Tracing: TestAccel vta_accel ce dot _T_261 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:610
-	// Tracing: TestAccel vta_accel ce dot _T_269 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:611
-	// Tracing: TestAccel vta_accel ce dot _GEN_44 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:612
-	// Tracing: TestAccel vta_accel ce dot _T_270 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:613
-	// Tracing: TestAccel vta_accel ce dot _T_278 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:614
-	// Tracing: TestAccel vta_accel ce dot _GEN_45 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:615
-	// Tracing: TestAccel vta_accel ce dot _T_279 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:616
-	// Tracing: TestAccel vta_accel ce dot _T_288 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:617
-	// Tracing: TestAccel vta_accel ce dot _T_289 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:618
-	// Tracing: TestAccel vta_accel ce dot _GEN_5 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:619
-	// Tracing: TestAccel vta_accel ce dot _GEN_6 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:620
-	// Tracing: TestAccel vta_accel ce dot _GEN_7 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:621
-	// Tracing: TestAccel vta_accel ce dot _GEN_8 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:622
-	// Tracing: TestAccel vta_accel ce dot _GEN_9 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:623
-	// Tracing: TestAccel vta_accel ce dot _GEN_10 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:624
-	// Tracing: TestAccel vta_accel ce dot _GEN_11 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:625
-	// Tracing: TestAccel vta_accel ce dot _GEN_12 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:626
-	// Tracing: TestAccel vta_accel ce dot _GEN_13 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:627
-	// Tracing: TestAccel vta_accel ce dot _GEN_14 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:628
-	// Tracing: TestAccel vta_accel ce dot _GEN_15 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:629
-	// Tracing: TestAccel vta_accel ce dot _GEN_16 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:630
-	// Tracing: TestAccel vta_accel ce dot _GEN_17 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:631
-	// Tracing: TestAccel vta_accel ce dot _GEN_18 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:632
-	// Tracing: TestAccel vta_accel ce dot _GEN_19 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:633
-	// Tracing: TestAccel vta_accel ce dot _GEN_20 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:634
-	// Tracing: TestAccel vta_accel ce dot _GEN_21 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:635
-	// Tracing: TestAccel vta_accel ce dot _GEN_22 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:636
-	// Tracing: TestAccel vta_accel ce dot _GEN_23 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:637
-	// Tracing: TestAccel vta_accel ce dot _GEN_24 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:638
-	// Tracing: TestAccel vta_accel ce dot _GEN_25 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:639
-	// Tracing: TestAccel vta_accel ce dot _GEN_26 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:640
-	// Tracing: TestAccel vta_accel ce dot _GEN_27 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:641
-	// Tracing: TestAccel vta_accel ce dot _GEN_28 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:642
-	// Tracing: TestAccel vta_accel ce dot _GEN_29 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:643
-	// Tracing: TestAccel vta_accel ce dot _GEN_30 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:644
-	// Tracing: TestAccel vta_accel ce dot _GEN_31 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:645
-	// Tracing: TestAccel vta_accel ce dot _GEN_32 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:646
-	// Tracing: TestAccel vta_accel ce dot _GEN_33 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:647
-	// Tracing: TestAccel vta_accel ce dot _GEN_34 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:648
-	// Tracing: TestAccel vta_accel ce dot _GEN_35 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:649
-	// Tracing: TestAccel vta_accel ce dot _GEN_36 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:650
-	// Tracing: TestAccel vta_accel ce dot _GEN_37 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:651
-	// Tracing: TestAccel vta_accel ce dot _GEN_38 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:652
-	// Tracing: TestAccel vta_accel ce dot _GEN_46 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:653
-	// Tracing: TestAccel vta_accel ce dot _GEN_47 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:654
-	// Tracing: TestAccel vta_accel ce dot _GEN_48 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:655
-	// Tracing: TestAccel vta_accel ce dot _GEN_49 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:656
-	// Tracing: TestAccel vta_accel ce dot _GEN_51 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:657
-	// Tracing: TestAccel vta_accel ce dot _GEN_52 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:658
-	// Tracing: TestAccel vta_accel ce dot _GEN_53 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:659
-	// Tracing: TestAccel vta_accel ce dot _GEN_54 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:660
-	// Tracing: TestAccel vta_accel ce dot _GEN_55 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:661
+	// Tracing: TestAccel vta_accel ce dot _T_224 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:595
+	// Tracing: TestAccel vta_accel ce dot _T_225 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:596
+	// Tracing: TestAccel vta_accel ce dot _GEN_5 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:597
+	// Tracing: TestAccel vta_accel ce dot _GEN_6 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:598
+	// Tracing: TestAccel vta_accel ce dot _T_226 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:599
+	// Tracing: TestAccel vta_accel ce dot _T_227 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:600
+	// Tracing: TestAccel vta_accel ce dot _GEN_7 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:601
+	// Tracing: TestAccel vta_accel ce dot _T_228 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:602
+	// Tracing: TestAccel vta_accel ce dot _T_236 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:603
+	// Tracing: TestAccel vta_accel ce dot _GEN_8 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:604
+	// Tracing: TestAccel vta_accel ce dot _T_237 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:605
+	// Tracing: TestAccel vta_accel ce dot _T_245 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:606
+	// Tracing: TestAccel vta_accel ce dot _GEN_9 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:607
+	// Tracing: TestAccel vta_accel ce dot _T_246 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:608
+	// Tracing: TestAccel vta_accel ce dot _T_254 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:609
+	// Tracing: TestAccel vta_accel ce dot _GEN_10 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:610
+	// Tracing: TestAccel vta_accel ce dot _T_255 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:611
+	// Tracing: TestAccel vta_accel ce dot _T_263 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:612
+	// Tracing: TestAccel vta_accel ce dot _GEN_11 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:613
+	// Tracing: TestAccel vta_accel ce dot _T_264 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:614
+	// Tracing: TestAccel vta_accel ce dot _T_272 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:615
+	// Tracing: TestAccel vta_accel ce dot _GEN_12 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:616
+	// Tracing: TestAccel vta_accel ce dot _T_273 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:617
+	// Tracing: TestAccel vta_accel ce dot _T_281 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:618
+	// Tracing: TestAccel vta_accel ce dot _GEN_13 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:619
+	// Tracing: TestAccel vta_accel ce dot _T_282 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:620
+	// Tracing: TestAccel vta_accel ce dot _GEN_14 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:621
+	// Tracing: TestAccel vta_accel ce dot _GEN_15 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:622
+	// Tracing: TestAccel vta_accel ce dot _GEN_16 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:623
+	// Tracing: TestAccel vta_accel ce dot _GEN_17 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:624
+	// Tracing: TestAccel vta_accel ce dot _GEN_19 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:625
+	// Tracing: TestAccel vta_accel ce dot _GEN_20 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:626
+	// Tracing: TestAccel vta_accel ce dot _GEN_21 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:627
 	vcdp->declBus(c+125,"TestAccel vta_accel ce dot initvar",-1,31,0);
 	vcdp->declBit(c+115,"TestAccel vta_accel ce overallAccum clock",-1);
 	vcdp->declBit(c+116,"TestAccel vta_accel ce overallAccum reset",-1);
@@ -658,16 +624,16 @@ void VTestAccel::traceInitThis__1(VTestAccel__Syms* __restrict vlSymsp, Verilate
 	vcdp->declQuad(c+54,"TestAccel vta_accel ce overallAccum io_in",-1,62,0);
 	vcdp->declQuad(c+9,"TestAccel vta_accel ce overallAccum io_sum",-1,63,0);
 	vcdp->declQuad(c+9,"TestAccel vta_accel ce overallAccum reg$",-1,63,0);
-	// Tracing: TestAccel vta_accel ce overallAccum _RAND_0 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1187
+	// Tracing: TestAccel vta_accel ce overallAccum _RAND_0 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1083
 	vcdp->declBit(c+8,"TestAccel vta_accel ce overallAccum ready",-1);
-	// Tracing: TestAccel vta_accel ce overallAccum _RAND_1 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1189
-	// Tracing: TestAccel vta_accel ce overallAccum _GEN_2 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1190
-	// Tracing: TestAccel vta_accel ce overallAccum _T_19 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1191
-	// Tracing: TestAccel vta_accel ce overallAccum _T_23 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1192
-	// Tracing: TestAccel vta_accel ce overallAccum _GEN_0 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1193
-	// Tracing: TestAccel vta_accel ce overallAccum _GEN_1 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1194
-	// Tracing: TestAccel vta_accel ce overallAccum _GEN_4 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1195
-	// Tracing: TestAccel vta_accel ce overallAccum _GEN_5 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1196
+	// Tracing: TestAccel vta_accel ce overallAccum _RAND_1 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1085
+	// Tracing: TestAccel vta_accel ce overallAccum _GEN_2 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1086
+	// Tracing: TestAccel vta_accel ce overallAccum _T_19 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1087
+	// Tracing: TestAccel vta_accel ce overallAccum _T_23 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1088
+	// Tracing: TestAccel vta_accel ce overallAccum _GEN_0 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1089
+	// Tracing: TestAccel vta_accel ce overallAccum _GEN_1 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1090
+	// Tracing: TestAccel vta_accel ce overallAccum _GEN_4 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1091
+	// Tracing: TestAccel vta_accel ce overallAccum _GEN_5 // Ignored: Inlined leading underscore at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1092
 	vcdp->declBus(c+126,"TestAccel vta_accel ce overallAccum initvar",-1,31,0);
     }
 }

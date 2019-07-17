@@ -106,7 +106,7 @@ void VTestAccel::_initial__TOP__4(VTestAccel__Syms* __restrict vlSymsp) {
 	= VL_RANDOM_I(32);
     vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__rdata 
 	= vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___RAND_13;
-    // INITIAL at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1223
+    // INITIAL at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1119
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___RAND_0 
 	= (((QData)((IData)(VL_RANDOM_I(32))) << 0x20U) 
 	   | (QData)((IData)(VL_RANDOM_I(32))));
@@ -116,7 +116,80 @@ void VTestAccel::_initial__TOP__4(VTestAccel__Syms* __restrict vlSymsp) {
 	= VL_RANDOM_I(32);
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__ready 
 	= (1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___RAND_1);
-    // INITIAL at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1552
+    // INITIAL at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:692
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_0 
+	= VL_RANDOM_I(32);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__state 
+	= (3U & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_0);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_1 
+	= VL_RANDOM_I(32);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_0 
+	= (0xffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_1);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_2 
+	= VL_RANDOM_I(32);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_1 
+	= (0xffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_2);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_3 
+	= VL_RANDOM_I(32);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_2 
+	= (0xffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_3);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_4 
+	= VL_RANDOM_I(32);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_3 
+	= (0xffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_4);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_5 
+	= VL_RANDOM_I(32);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_4 
+	= (0xffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_5);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_6 
+	= VL_RANDOM_I(32);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_5 
+	= (0xffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_6);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_7 
+	= VL_RANDOM_I(32);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_6 
+	= (0xffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_7);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_8 
+	= VL_RANDOM_I(32);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_7 
+	= (0xffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_8);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_9 
+	= VL_RANDOM_I(32);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_0 
+	= (0x7fffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_9);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_10 
+	= VL_RANDOM_I(32);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_1 
+	= (0x7fffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_10);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_11 
+	= VL_RANDOM_I(32);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_2 
+	= (0x7fffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_11);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_12 
+	= VL_RANDOM_I(32);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_3 
+	= (0x7fffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_12);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_13 
+	= VL_RANDOM_I(32);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_4 
+	= (0x7fffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_13);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_14 
+	= VL_RANDOM_I(32);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_5 
+	= (0x7fffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_14);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_15 
+	= VL_RANDOM_I(32);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_6 
+	= (0x7fffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_15);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_16 
+	= VL_RANDOM_I(32);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_7 
+	= (0x7fffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_16);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_17 
+	= VL_RANDOM_I(32);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__cnt 
+	= (7U & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_17);
+    // INITIAL at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:1448
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_0 
 	= VL_RANDOM_I(32);
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state 
@@ -248,79 +321,6 @@ void VTestAccel::_initial__TOP__4(VTestAccel__Syms* __restrict vlSymsp) {
 	= VL_RANDOM_I(32);
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__validReg 
 	= (1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_23);
-    // INITIAL at /Users/benjamintu/Desktop/research/tvm/vta/apps/tsim_example/hardware/chisel/build/chisel/TestAccel.v:760
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_0 
-	= VL_RANDOM_I(32);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__state 
-	= (3U & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_0);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_1 
-	= VL_RANDOM_I(32);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_0 
-	= (0xffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_1);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_2 
-	= VL_RANDOM_I(32);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_1 
-	= (0xffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_2);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_3 
-	= VL_RANDOM_I(32);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_2 
-	= (0xffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_3);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_4 
-	= VL_RANDOM_I(32);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_3 
-	= (0xffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_4);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_5 
-	= VL_RANDOM_I(32);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_4 
-	= (0xffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_5);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_6 
-	= VL_RANDOM_I(32);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_5 
-	= (0xffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_6);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_7 
-	= VL_RANDOM_I(32);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_6 
-	= (0xffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_7);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_8 
-	= VL_RANDOM_I(32);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_7 
-	= (0xffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_8);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_9 
-	= VL_RANDOM_I(32);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_0 
-	= (0x7fffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_9);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_10 
-	= VL_RANDOM_I(32);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_1 
-	= (0x7fffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_10);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_11 
-	= VL_RANDOM_I(32);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_2 
-	= (0x7fffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_11);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_12 
-	= VL_RANDOM_I(32);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_3 
-	= (0x7fffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_12);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_13 
-	= VL_RANDOM_I(32);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_4 
-	= (0x7fffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_13);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_14 
-	= VL_RANDOM_I(32);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_5 
-	= (0x7fffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_14);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_15 
-	= VL_RANDOM_I(32);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_6 
-	= (0x7fffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_15);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_16 
-	= VL_RANDOM_I(32);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_7 
-	= (0x7fffffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_16);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_17 
-	= VL_RANDOM_I(32);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__cnt 
-	= (7U & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_17);
 }
 
 void VTestAccel::_settle__TOP__5(VTestAccel__Syms* __restrict vlSymsp) {
@@ -338,36 +338,40 @@ void VTestAccel::_settle__TOP__5(VTestAccel__Syms* __restrict vlSymsp) {
     vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_80 
 	= ((~ (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__state)) 
 	   & (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_valid));
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_225 
+	= (7U & ((IData)(1U) + (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__cnt)));
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_206 
+	= (0U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__state));
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_210 
+	= (1U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__state));
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_216 
+	= (2U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__state));
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_134 
 	= ((IData)(1U) + vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__cycles);
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_139 
 	= (VL_ULL(8) + vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr1);
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_142 
 	= (VL_ULL(8) + vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr2);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_223 
-	= (0xffffU & ((0xffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg1_0) 
-		      * (0xffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg2_0)));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_224 
-	= (0xffffU & ((0xffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg1_1) 
-		      * (0xffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg2_1)));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_233 
-	= (0xffffU & ((0xffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg1_2) 
-		      * (0xffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg2_2)));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_242 
-	= (0xffffU & ((0xffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg1_3) 
-		      * (0xffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg2_3)));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_251 
-	= (0xffffU & ((0xffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg1_4) 
-		      * (0xffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg2_4)));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_260 
-	= (0xffffU & ((0xffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg1_5) 
-		      * (0xffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg2_5)));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_269 
-	= (0xffffU & ((0xffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg1_6) 
-		      * (0xffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg2_6)));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_278 
-	= (0xffffU & ((0xffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg1_7) 
-		      * (0xffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg2_7)));
+    VL_EXTEND_WQ(65,64, __Vtemp26, vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__reg__024);
+    VL_EXTEND_WQ(65,63, __Vtemp27, (VL_ULL(0x7fffffffffffffff) 
+				    & (((QData)((IData)(
+							vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__shiftReg[1U])) 
+					<< 0x20U) | (QData)((IData)(
+								    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__shiftReg[0U])))));
+    VL_ADD_W(3, __Vtemp28, __Vtemp26, __Vtemp27);
+    VL_EXTEND_WQ(65,64, __Vtemp29, vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__reg__024);
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_1[0U] 
+	= ((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_4)
+	    ? 0U : ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__validReg)
+		     ? __Vtemp28[0U] : __Vtemp29[0U]));
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_1[1U] 
+	= ((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_4)
+	    ? 0U : ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__validReg)
+		     ? __Vtemp28[1U] : __Vtemp29[1U]));
+    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_1[2U] 
+	= (1U & ((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_4)
+		  ? 0U : ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__validReg)
+			   ? __Vtemp28[2U] : __Vtemp29[2U])));
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_251 
 	= ((IData)(1U) + vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__cnt);
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_123 
@@ -397,83 +401,6 @@ void VTestAccel::_settle__TOP__5(VTestAccel__Syms* __restrict vlSymsp) {
     vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_199 
 	= ((4U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)) 
 	   & (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_mem_dpi_rd_valid));
-    VL_EXTEND_WQ(65,64, __Vtemp26, vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__reg__024);
-    VL_EXTEND_WQ(65,63, __Vtemp27, (VL_ULL(0x7fffffffffffffff) 
-				    & (((QData)((IData)(
-							vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__shiftReg[1U])) 
-					<< 0x20U) | (QData)((IData)(
-								    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__shiftReg[0U])))));
-    VL_ADD_W(3, __Vtemp28, __Vtemp26, __Vtemp27);
-    VL_EXTEND_WQ(65,64, __Vtemp29, vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__reg__024);
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_1[0U] 
-	= ((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_4)
-	    ? 0U : ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__validReg)
-		     ? __Vtemp28[0U] : __Vtemp29[0U]));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_1[1U] 
-	= ((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_4)
-	    ? 0U : ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__validReg)
-		     ? __Vtemp28[1U] : __Vtemp29[1U]));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_1[2U] 
-	= (1U & ((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_4)
-		  ? 0U : ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__validReg)
-			   ? __Vtemp28[2U] : __Vtemp29[2U])));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_289 
-	= (7U & ((IData)(1U) + (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__cnt)));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_206 
-	= (0U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__state));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_210 
-	= (1U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__state));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_216 
-	= (2U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__state));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___GEN_26 
-	= (0xffffffU & ((0U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__state))
-			 ? vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_1
-			 : ((1U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__state))
-			     ? (vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_0 
-				+ (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_1))
-			     : vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_1)));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___GEN_28 
-	= (0xffffffU & ((0U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__state))
-			 ? vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_2
-			 : ((1U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__state))
-			     ? (vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_1 
-				+ (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_2))
-			     : vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_2)));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___GEN_30 
-	= (0xffffffU & ((0U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__state))
-			 ? vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_3
-			 : ((1U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__state))
-			     ? (vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_2 
-				+ (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_3))
-			     : vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_3)));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___GEN_32 
-	= (0xffffffU & ((0U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__state))
-			 ? vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_4
-			 : ((1U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__state))
-			     ? (vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_3 
-				+ (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_4))
-			     : vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_4)));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___GEN_34 
-	= (0xffffffU & ((0U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__state))
-			 ? vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_5
-			 : ((1U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__state))
-			     ? (vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_4 
-				+ (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_5))
-			     : vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_5)));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___GEN_36 
-	= (0xffffffU & ((0U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__state))
-			 ? vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_6
-			 : ((1U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__state))
-			     ? (vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_5 
-				+ (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_6))
-			     : vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_6)));
-    vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___GEN_38 
-	= (0xffffffU & ((0U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__state))
-			 ? vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_7
-			 : ((1U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__state))
-			     ? (vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_6 
-				+ (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_7))
-			     : vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_7)));
     vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_235 
 	= ((IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT___T_80) 
 	   & (~ (IData)(vlTOPp->TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_opcode)));
@@ -726,22 +653,7 @@ void VTestAccel::_ctor_var_reset() {
     TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_206 = VL_RAND_RESET_I(1);
     TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_210 = VL_RAND_RESET_I(1);
     TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_216 = VL_RAND_RESET_I(1);
-    TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_223 = VL_RAND_RESET_I(16);
-    TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_224 = VL_RAND_RESET_I(16);
-    TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_233 = VL_RAND_RESET_I(16);
-    TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_242 = VL_RAND_RESET_I(16);
-    TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_251 = VL_RAND_RESET_I(16);
-    TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_260 = VL_RAND_RESET_I(16);
-    TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_269 = VL_RAND_RESET_I(16);
-    TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_278 = VL_RAND_RESET_I(16);
-    TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_289 = VL_RAND_RESET_I(3);
-    TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___GEN_26 = VL_RAND_RESET_I(24);
-    TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___GEN_28 = VL_RAND_RESET_I(24);
-    TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___GEN_30 = VL_RAND_RESET_I(24);
-    TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___GEN_32 = VL_RAND_RESET_I(24);
-    TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___GEN_34 = VL_RAND_RESET_I(24);
-    TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___GEN_36 = VL_RAND_RESET_I(24);
-    TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___GEN_38 = VL_RAND_RESET_I(24);
+    TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_225 = VL_RAND_RESET_I(3);
     TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__initvar = VL_RAND_RESET_I(32);
     TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__reg__024 = VL_RAND_RESET_Q(64);
     TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___RAND_0 = VL_RAND_RESET_Q(64);

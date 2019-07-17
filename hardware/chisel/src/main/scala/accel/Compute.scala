@@ -213,19 +213,21 @@ class Dot(dataBits: Int = 8, vectorLength: Int = 1) extends Module {
 
   when (state === sIdle) {
     cnt := 0.U 
-  } .elsewhen (state === sCalculate) {
-    accum(0) := product(0)
-    product(0) := io.arrA(0) * io.arrB(0)
-    for (i <- 1 until vectorLength) {
-      product(i) := io.arrA(i) * io.arrB(i)
-      accum(i) := accum(i-1) +& product(i)
-      // printf("\np(%d): %d, \n", i.U,  product(i))
-      printf("cnt: %d\n", cnt)
-      printf("\na(%d): %d, \n\n", i.U, accum(i))
-    }   
+  } .elsewhen (state === sCalculate) {   
     cnt := cnt + 1.U 
     // printf("\ncnt: %d, valid: %d\n", cnt, io.valid)
   }
+
+  accum(0) := product(0)
+  product(0) := io.arrA(0) * io.arrB(0)
+  for (i <- 1 until vectorLength) {
+    product(i) := io.arrA(i) * io.arrB(i)
+    accum(i) := accum(i-1) +& product(i)
+    // printf("\np(%d): %d, \n", i.U,  product(i))
+    printf("cnt: %d\n", cnt)
+    printf("\na(%d): %d, \n\n", i.U, accum(i))
+  }
+    
   //printf("\n\n")
   io.res := accum(vectorLength - 1)
   io.valid := state === sDone

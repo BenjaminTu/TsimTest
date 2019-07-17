@@ -592,73 +592,39 @@ module Dot( // @[:@283.2]
   wire [1:0] _GEN_4; // @[Conditional.scala 40:58:@311.4]
   wire  _T_220; // @[Compute.scala 214:15:@344.4]
   wire  _T_222; // @[Compute.scala 216:22:@349.6]
-  wire [15:0] _T_223; // @[Compute.scala 218:30:@352.8]
-  wire [15:0] _T_224; // @[Compute.scala 220:32:@354.8]
-  wire [22:0] _GEN_39; // @[Compute.scala 221:30:@356.8]
-  wire [23:0] _T_225; // @[Compute.scala 221:30:@356.8]
-  wire [15:0] _T_233; // @[Compute.scala 220:32:@368.8]
-  wire [22:0] _GEN_40; // @[Compute.scala 221:30:@370.8]
-  wire [23:0] _T_234; // @[Compute.scala 221:30:@370.8]
-  wire [15:0] _T_242; // @[Compute.scala 220:32:@382.8]
-  wire [22:0] _GEN_41; // @[Compute.scala 221:30:@384.8]
-  wire [23:0] _T_243; // @[Compute.scala 221:30:@384.8]
-  wire [15:0] _T_251; // @[Compute.scala 220:32:@396.8]
-  wire [22:0] _GEN_42; // @[Compute.scala 221:30:@398.8]
-  wire [23:0] _T_252; // @[Compute.scala 221:30:@398.8]
-  wire [15:0] _T_260; // @[Compute.scala 220:32:@410.8]
-  wire [22:0] _GEN_43; // @[Compute.scala 221:30:@412.8]
-  wire [23:0] _T_261; // @[Compute.scala 221:30:@412.8]
-  wire [15:0] _T_269; // @[Compute.scala 220:32:@424.8]
-  wire [22:0] _GEN_44; // @[Compute.scala 221:30:@426.8]
-  wire [23:0] _T_270; // @[Compute.scala 221:30:@426.8]
-  wire [15:0] _T_278; // @[Compute.scala 220:32:@438.8]
-  wire [22:0] _GEN_45; // @[Compute.scala 221:30:@440.8]
-  wire [23:0] _T_279; // @[Compute.scala 221:30:@440.8]
-  wire [3:0] _T_288; // @[Compute.scala 226:16:@452.8]
-  wire [2:0] _T_289; // @[Compute.scala 226:16:@453.8]
-  wire [22:0] _GEN_5; // @[Compute.scala 216:38:@350.6]
-  wire [15:0] _GEN_6; // @[Compute.scala 216:38:@350.6]
-  wire [15:0] _GEN_7; // @[Compute.scala 216:38:@350.6]
-  wire [23:0] _GEN_8; // @[Compute.scala 216:38:@350.6]
-  wire [15:0] _GEN_9; // @[Compute.scala 216:38:@350.6]
-  wire [23:0] _GEN_10; // @[Compute.scala 216:38:@350.6]
-  wire [15:0] _GEN_11; // @[Compute.scala 216:38:@350.6]
-  wire [23:0] _GEN_12; // @[Compute.scala 216:38:@350.6]
-  wire [15:0] _GEN_13; // @[Compute.scala 216:38:@350.6]
-  wire [23:0] _GEN_14; // @[Compute.scala 216:38:@350.6]
-  wire [15:0] _GEN_15; // @[Compute.scala 216:38:@350.6]
-  wire [23:0] _GEN_16; // @[Compute.scala 216:38:@350.6]
-  wire [15:0] _GEN_17; // @[Compute.scala 216:38:@350.6]
-  wire [23:0] _GEN_18; // @[Compute.scala 216:38:@350.6]
-  wire [15:0] _GEN_19; // @[Compute.scala 216:38:@350.6]
-  wire [23:0] _GEN_20; // @[Compute.scala 216:38:@350.6]
-  wire [2:0] _GEN_21; // @[Compute.scala 216:38:@350.6]
-  wire [2:0] _GEN_22; // @[Compute.scala 214:26:@345.4]
-  wire [22:0] _GEN_23; // @[Compute.scala 214:26:@345.4]
-  wire [15:0] _GEN_24; // @[Compute.scala 214:26:@345.4]
-  wire [15:0] _GEN_25; // @[Compute.scala 214:26:@345.4]
-  wire [23:0] _GEN_26; // @[Compute.scala 214:26:@345.4]
-  wire [15:0] _GEN_27; // @[Compute.scala 214:26:@345.4]
-  wire [23:0] _GEN_28; // @[Compute.scala 214:26:@345.4]
-  wire [15:0] _GEN_29; // @[Compute.scala 214:26:@345.4]
-  wire [23:0] _GEN_30; // @[Compute.scala 214:26:@345.4]
-  wire [15:0] _GEN_31; // @[Compute.scala 214:26:@345.4]
-  wire [23:0] _GEN_32; // @[Compute.scala 214:26:@345.4]
-  wire [15:0] _GEN_33; // @[Compute.scala 214:26:@345.4]
-  wire [23:0] _GEN_34; // @[Compute.scala 214:26:@345.4]
-  wire [15:0] _GEN_35; // @[Compute.scala 214:26:@345.4]
-  wire [23:0] _GEN_36; // @[Compute.scala 214:26:@345.4]
-  wire [15:0] _GEN_37; // @[Compute.scala 214:26:@345.4]
-  wire [23:0] _GEN_38; // @[Compute.scala 214:26:@345.4]
-  wire  _GEN_46; // @[Compute.scala 198:15:@317.10]
-  wire  _GEN_47; // @[Compute.scala 204:15:@330.12]
-  wire  _GEN_48; // @[Compute.scala 204:15:@330.12]
-  wire  _GEN_49; // @[Compute.scala 204:15:@330.12]
-  wire  _GEN_51; // @[Compute.scala 209:13:@341.12]
-  wire  _GEN_52; // @[Compute.scala 209:13:@341.12]
-  wire  _GEN_53; // @[Compute.scala 209:13:@341.12]
-  wire  _GEN_54; // @[Compute.scala 223:13:@361.10]
-  wire  _GEN_55; // @[Compute.scala 223:13:@361.10]
+  wire [3:0] _T_224; // @[Compute.scala 217:16:@351.8]
+  wire [2:0] _T_225; // @[Compute.scala 217:16:@352.8]
+  wire [2:0] _GEN_5; // @[Compute.scala 216:38:@350.6]
+  wire [2:0] _GEN_6; // @[Compute.scala 214:26:@345.4]
+  wire [15:0] _T_226; // @[Compute.scala 222:28:@356.4]
+  wire [15:0] _T_227; // @[Compute.scala 224:30:@358.4]
+  wire [22:0] _GEN_7; // @[Compute.scala 225:28:@360.4]
+  wire [23:0] _T_228; // @[Compute.scala 225:28:@360.4]
+  wire [15:0] _T_236; // @[Compute.scala 224:30:@372.4]
+  wire [22:0] _GEN_8; // @[Compute.scala 225:28:@374.4]
+  wire [23:0] _T_237; // @[Compute.scala 225:28:@374.4]
+  wire [15:0] _T_245; // @[Compute.scala 224:30:@386.4]
+  wire [22:0] _GEN_9; // @[Compute.scala 225:28:@388.4]
+  wire [23:0] _T_246; // @[Compute.scala 225:28:@388.4]
+  wire [15:0] _T_254; // @[Compute.scala 224:30:@400.4]
+  wire [22:0] _GEN_10; // @[Compute.scala 225:28:@402.4]
+  wire [23:0] _T_255; // @[Compute.scala 225:28:@402.4]
+  wire [15:0] _T_263; // @[Compute.scala 224:30:@414.4]
+  wire [22:0] _GEN_11; // @[Compute.scala 225:28:@416.4]
+  wire [23:0] _T_264; // @[Compute.scala 225:28:@416.4]
+  wire [15:0] _T_272; // @[Compute.scala 224:30:@428.4]
+  wire [22:0] _GEN_12; // @[Compute.scala 225:28:@430.4]
+  wire [23:0] _T_273; // @[Compute.scala 225:28:@430.4]
+  wire [15:0] _T_281; // @[Compute.scala 224:30:@442.4]
+  wire [22:0] _GEN_13; // @[Compute.scala 225:28:@444.4]
+  wire [23:0] _T_282; // @[Compute.scala 225:28:@444.4]
+  wire  _GEN_14; // @[Compute.scala 198:15:@317.10]
+  wire  _GEN_15; // @[Compute.scala 204:15:@330.12]
+  wire  _GEN_16; // @[Compute.scala 204:15:@330.12]
+  wire  _GEN_17; // @[Compute.scala 204:15:@330.12]
+  wire  _GEN_19; // @[Compute.scala 209:13:@341.12]
+  wire  _GEN_20; // @[Compute.scala 209:13:@341.12]
+  wire  _GEN_21; // @[Compute.scala 209:13:@341.12]
   assign _T_206 = 2'h0 == state; // @[Conditional.scala 37:30:@310.4]
   assign _T_209 = reset == 1'h0; // @[Compute.scala 198:15:@315.8]
   assign _GEN_0 = io_start ? 2'h1 : state; // @[Compute.scala 196:23:@312.6]
@@ -671,75 +637,41 @@ module Dot( // @[:@283.2]
   assign _GEN_4 = _T_206 ? _GEN_0 : _GEN_3; // @[Conditional.scala 40:58:@311.4]
   assign _T_220 = state == 2'h0; // @[Compute.scala 214:15:@344.4]
   assign _T_222 = state == 2'h1; // @[Compute.scala 216:22:@349.6]
-  assign _T_223 = io_arrA_0 * io_arrB_0; // @[Compute.scala 218:30:@352.8]
-  assign _T_224 = io_arrA_1 * io_arrB_1; // @[Compute.scala 220:32:@354.8]
-  assign _GEN_39 = {{7'd0}, product_1}; // @[Compute.scala 221:30:@356.8]
-  assign _T_225 = accum_0 + _GEN_39; // @[Compute.scala 221:30:@356.8]
-  assign _T_233 = io_arrA_2 * io_arrB_2; // @[Compute.scala 220:32:@368.8]
-  assign _GEN_40 = {{7'd0}, product_2}; // @[Compute.scala 221:30:@370.8]
-  assign _T_234 = accum_1 + _GEN_40; // @[Compute.scala 221:30:@370.8]
-  assign _T_242 = io_arrA_3 * io_arrB_3; // @[Compute.scala 220:32:@382.8]
-  assign _GEN_41 = {{7'd0}, product_3}; // @[Compute.scala 221:30:@384.8]
-  assign _T_243 = accum_2 + _GEN_41; // @[Compute.scala 221:30:@384.8]
-  assign _T_251 = io_arrA_4 * io_arrB_4; // @[Compute.scala 220:32:@396.8]
-  assign _GEN_42 = {{7'd0}, product_4}; // @[Compute.scala 221:30:@398.8]
-  assign _T_252 = accum_3 + _GEN_42; // @[Compute.scala 221:30:@398.8]
-  assign _T_260 = io_arrA_5 * io_arrB_5; // @[Compute.scala 220:32:@410.8]
-  assign _GEN_43 = {{7'd0}, product_5}; // @[Compute.scala 221:30:@412.8]
-  assign _T_261 = accum_4 + _GEN_43; // @[Compute.scala 221:30:@412.8]
-  assign _T_269 = io_arrA_6 * io_arrB_6; // @[Compute.scala 220:32:@424.8]
-  assign _GEN_44 = {{7'd0}, product_6}; // @[Compute.scala 221:30:@426.8]
-  assign _T_270 = accum_5 + _GEN_44; // @[Compute.scala 221:30:@426.8]
-  assign _T_278 = io_arrA_7 * io_arrB_7; // @[Compute.scala 220:32:@438.8]
-  assign _GEN_45 = {{7'd0}, product_7}; // @[Compute.scala 221:30:@440.8]
-  assign _T_279 = accum_6 + _GEN_45; // @[Compute.scala 221:30:@440.8]
-  assign _T_288 = cnt + 3'h1; // @[Compute.scala 226:16:@452.8]
-  assign _T_289 = cnt + 3'h1; // @[Compute.scala 226:16:@453.8]
-  assign _GEN_5 = _T_222 ? {{7'd0}, product_0} : accum_0; // @[Compute.scala 216:38:@350.6]
-  assign _GEN_6 = _T_222 ? _T_223 : product_0; // @[Compute.scala 216:38:@350.6]
-  assign _GEN_7 = _T_222 ? _T_224 : product_1; // @[Compute.scala 216:38:@350.6]
-  assign _GEN_8 = _T_222 ? _T_225 : {{1'd0}, accum_1}; // @[Compute.scala 216:38:@350.6]
-  assign _GEN_9 = _T_222 ? _T_233 : product_2; // @[Compute.scala 216:38:@350.6]
-  assign _GEN_10 = _T_222 ? _T_234 : {{1'd0}, accum_2}; // @[Compute.scala 216:38:@350.6]
-  assign _GEN_11 = _T_222 ? _T_242 : product_3; // @[Compute.scala 216:38:@350.6]
-  assign _GEN_12 = _T_222 ? _T_243 : {{1'd0}, accum_3}; // @[Compute.scala 216:38:@350.6]
-  assign _GEN_13 = _T_222 ? _T_251 : product_4; // @[Compute.scala 216:38:@350.6]
-  assign _GEN_14 = _T_222 ? _T_252 : {{1'd0}, accum_4}; // @[Compute.scala 216:38:@350.6]
-  assign _GEN_15 = _T_222 ? _T_260 : product_5; // @[Compute.scala 216:38:@350.6]
-  assign _GEN_16 = _T_222 ? _T_261 : {{1'd0}, accum_5}; // @[Compute.scala 216:38:@350.6]
-  assign _GEN_17 = _T_222 ? _T_269 : product_6; // @[Compute.scala 216:38:@350.6]
-  assign _GEN_18 = _T_222 ? _T_270 : {{1'd0}, accum_6}; // @[Compute.scala 216:38:@350.6]
-  assign _GEN_19 = _T_222 ? _T_278 : product_7; // @[Compute.scala 216:38:@350.6]
-  assign _GEN_20 = _T_222 ? _T_279 : {{1'd0}, accum_7}; // @[Compute.scala 216:38:@350.6]
-  assign _GEN_21 = _T_222 ? _T_289 : cnt; // @[Compute.scala 216:38:@350.6]
-  assign _GEN_22 = _T_220 ? 3'h0 : _GEN_21; // @[Compute.scala 214:26:@345.4]
-  assign _GEN_23 = _T_220 ? accum_0 : _GEN_5; // @[Compute.scala 214:26:@345.4]
-  assign _GEN_24 = _T_220 ? product_0 : _GEN_6; // @[Compute.scala 214:26:@345.4]
-  assign _GEN_25 = _T_220 ? product_1 : _GEN_7; // @[Compute.scala 214:26:@345.4]
-  assign _GEN_26 = _T_220 ? {{1'd0}, accum_1} : _GEN_8; // @[Compute.scala 214:26:@345.4]
-  assign _GEN_27 = _T_220 ? product_2 : _GEN_9; // @[Compute.scala 214:26:@345.4]
-  assign _GEN_28 = _T_220 ? {{1'd0}, accum_2} : _GEN_10; // @[Compute.scala 214:26:@345.4]
-  assign _GEN_29 = _T_220 ? product_3 : _GEN_11; // @[Compute.scala 214:26:@345.4]
-  assign _GEN_30 = _T_220 ? {{1'd0}, accum_3} : _GEN_12; // @[Compute.scala 214:26:@345.4]
-  assign _GEN_31 = _T_220 ? product_4 : _GEN_13; // @[Compute.scala 214:26:@345.4]
-  assign _GEN_32 = _T_220 ? {{1'd0}, accum_4} : _GEN_14; // @[Compute.scala 214:26:@345.4]
-  assign _GEN_33 = _T_220 ? product_5 : _GEN_15; // @[Compute.scala 214:26:@345.4]
-  assign _GEN_34 = _T_220 ? {{1'd0}, accum_5} : _GEN_16; // @[Compute.scala 214:26:@345.4]
-  assign _GEN_35 = _T_220 ? product_6 : _GEN_17; // @[Compute.scala 214:26:@345.4]
-  assign _GEN_36 = _T_220 ? {{1'd0}, accum_6} : _GEN_18; // @[Compute.scala 214:26:@345.4]
-  assign _GEN_37 = _T_220 ? product_7 : _GEN_19; // @[Compute.scala 214:26:@345.4]
-  assign _GEN_38 = _T_220 ? {{1'd0}, accum_7} : _GEN_20; // @[Compute.scala 214:26:@345.4]
-  assign io_valid = state == 2'h2; // @[Compute.scala 231:12:@458.4]
-  assign io_res = accum_7; // @[Compute.scala 230:10:@456.4]
-  assign _GEN_46 = _T_206 & io_start; // @[Compute.scala 198:15:@317.10]
-  assign _GEN_47 = _T_206 == 1'h0; // @[Compute.scala 204:15:@330.12]
-  assign _GEN_48 = _GEN_47 & _T_210; // @[Compute.scala 204:15:@330.12]
-  assign _GEN_49 = _GEN_48 & _T_212; // @[Compute.scala 204:15:@330.12]
-  assign _GEN_51 = _T_210 == 1'h0; // @[Compute.scala 209:13:@341.12]
-  assign _GEN_52 = _GEN_47 & _GEN_51; // @[Compute.scala 209:13:@341.12]
-  assign _GEN_53 = _GEN_52 & _T_216; // @[Compute.scala 209:13:@341.12]
-  assign _GEN_54 = _T_220 == 1'h0; // @[Compute.scala 223:13:@361.10]
-  assign _GEN_55 = _GEN_54 & _T_222; // @[Compute.scala 223:13:@361.10]
+  assign _T_224 = cnt + 3'h1; // @[Compute.scala 217:16:@351.8]
+  assign _T_225 = cnt + 3'h1; // @[Compute.scala 217:16:@352.8]
+  assign _GEN_5 = _T_222 ? _T_225 : cnt; // @[Compute.scala 216:38:@350.6]
+  assign _GEN_6 = _T_220 ? 3'h0 : _GEN_5; // @[Compute.scala 214:26:@345.4]
+  assign _T_226 = io_arrA_0 * io_arrB_0; // @[Compute.scala 222:28:@356.4]
+  assign _T_227 = io_arrA_1 * io_arrB_1; // @[Compute.scala 224:30:@358.4]
+  assign _GEN_7 = {{7'd0}, product_1}; // @[Compute.scala 225:28:@360.4]
+  assign _T_228 = accum_0 + _GEN_7; // @[Compute.scala 225:28:@360.4]
+  assign _T_236 = io_arrA_2 * io_arrB_2; // @[Compute.scala 224:30:@372.4]
+  assign _GEN_8 = {{7'd0}, product_2}; // @[Compute.scala 225:28:@374.4]
+  assign _T_237 = accum_1 + _GEN_8; // @[Compute.scala 225:28:@374.4]
+  assign _T_245 = io_arrA_3 * io_arrB_3; // @[Compute.scala 224:30:@386.4]
+  assign _GEN_9 = {{7'd0}, product_3}; // @[Compute.scala 225:28:@388.4]
+  assign _T_246 = accum_2 + _GEN_9; // @[Compute.scala 225:28:@388.4]
+  assign _T_254 = io_arrA_4 * io_arrB_4; // @[Compute.scala 224:30:@400.4]
+  assign _GEN_10 = {{7'd0}, product_4}; // @[Compute.scala 225:28:@402.4]
+  assign _T_255 = accum_3 + _GEN_10; // @[Compute.scala 225:28:@402.4]
+  assign _T_263 = io_arrA_5 * io_arrB_5; // @[Compute.scala 224:30:@414.4]
+  assign _GEN_11 = {{7'd0}, product_5}; // @[Compute.scala 225:28:@416.4]
+  assign _T_264 = accum_4 + _GEN_11; // @[Compute.scala 225:28:@416.4]
+  assign _T_272 = io_arrA_6 * io_arrB_6; // @[Compute.scala 224:30:@428.4]
+  assign _GEN_12 = {{7'd0}, product_6}; // @[Compute.scala 225:28:@430.4]
+  assign _T_273 = accum_5 + _GEN_12; // @[Compute.scala 225:28:@430.4]
+  assign _T_281 = io_arrA_7 * io_arrB_7; // @[Compute.scala 224:30:@442.4]
+  assign _GEN_13 = {{7'd0}, product_7}; // @[Compute.scala 225:28:@444.4]
+  assign _T_282 = accum_6 + _GEN_13; // @[Compute.scala 225:28:@444.4]
+  assign io_valid = state == 2'h2; // @[Compute.scala 233:12:@458.4]
+  assign io_res = accum_7; // @[Compute.scala 232:10:@456.4]
+  assign _GEN_14 = _T_206 & io_start; // @[Compute.scala 198:15:@317.10]
+  assign _GEN_15 = _T_206 == 1'h0; // @[Compute.scala 204:15:@330.12]
+  assign _GEN_16 = _GEN_15 & _T_210; // @[Compute.scala 204:15:@330.12]
+  assign _GEN_17 = _GEN_16 & _T_212; // @[Compute.scala 204:15:@330.12]
+  assign _GEN_19 = _T_210 == 1'h0; // @[Compute.scala 209:13:@341.12]
+  assign _GEN_20 = _GEN_15 & _GEN_19; // @[Compute.scala 209:13:@341.12]
+  assign _GEN_21 = _GEN_20 & _T_216; // @[Compute.scala 209:13:@341.12]
 `ifdef RANDOMIZE_GARBAGE_ASSIGN
 `define RANDOMIZE
 `endif
@@ -861,118 +793,82 @@ module Dot( // @[:@283.2]
     if (reset) begin
       product_0 <= 16'h0;
     end else begin
-      if (!(_T_220)) begin
-        if (_T_222) begin
-          product_0 <= _T_223;
-        end
-      end
+      product_0 <= _T_226;
     end
     if (reset) begin
       product_1 <= 16'h0;
     end else begin
-      if (!(_T_220)) begin
-        if (_T_222) begin
-          product_1 <= _T_224;
-        end
-      end
+      product_1 <= _T_227;
     end
     if (reset) begin
       product_2 <= 16'h0;
     end else begin
-      if (!(_T_220)) begin
-        if (_T_222) begin
-          product_2 <= _T_233;
-        end
-      end
+      product_2 <= _T_236;
     end
     if (reset) begin
       product_3 <= 16'h0;
     end else begin
-      if (!(_T_220)) begin
-        if (_T_222) begin
-          product_3 <= _T_242;
-        end
-      end
+      product_3 <= _T_245;
     end
     if (reset) begin
       product_4 <= 16'h0;
     end else begin
-      if (!(_T_220)) begin
-        if (_T_222) begin
-          product_4 <= _T_251;
-        end
-      end
+      product_4 <= _T_254;
     end
     if (reset) begin
       product_5 <= 16'h0;
     end else begin
-      if (!(_T_220)) begin
-        if (_T_222) begin
-          product_5 <= _T_260;
-        end
-      end
+      product_5 <= _T_263;
     end
     if (reset) begin
       product_6 <= 16'h0;
     end else begin
-      if (!(_T_220)) begin
-        if (_T_222) begin
-          product_6 <= _T_269;
-        end
-      end
+      product_6 <= _T_272;
     end
     if (reset) begin
       product_7 <= 16'h0;
     end else begin
-      if (!(_T_220)) begin
-        if (_T_222) begin
-          product_7 <= _T_278;
-        end
-      end
+      product_7 <= _T_281;
     end
     if (reset) begin
       accum_0 <= 23'h0;
     end else begin
-      if (!(_T_220)) begin
-        if (_T_222) begin
-          accum_0 <= {{7'd0}, product_0};
-        end
-      end
+      accum_0 <= {{7'd0}, product_0};
     end
     if (reset) begin
       accum_1 <= 23'h0;
     end else begin
-      accum_1 <= _GEN_26[22:0];
+      accum_1 <= _T_228[22:0];
     end
     if (reset) begin
       accum_2 <= 23'h0;
     end else begin
-      accum_2 <= _GEN_28[22:0];
+      accum_2 <= _T_237[22:0];
     end
     if (reset) begin
       accum_3 <= 23'h0;
     end else begin
-      accum_3 <= _GEN_30[22:0];
+      accum_3 <= _T_246[22:0];
     end
     if (reset) begin
       accum_4 <= 23'h0;
     end else begin
-      accum_4 <= _GEN_32[22:0];
+      accum_4 <= _T_255[22:0];
     end
     if (reset) begin
       accum_5 <= 23'h0;
     end else begin
-      accum_5 <= _GEN_34[22:0];
+      accum_5 <= _T_264[22:0];
     end
     if (reset) begin
       accum_6 <= 23'h0;
     end else begin
-      accum_6 <= _GEN_36[22:0];
+      accum_6 <= _T_273[22:0];
     end
     if (reset) begin
       accum_7 <= 23'h0;
     end else begin
-      accum_7 <= _GEN_38[22:0];
+      accum_7 <= _T_282[22:0];
     end
     if (reset) begin
       cnt <= 3'h0;
@@ -981,7 +877,7 @@ module Dot( // @[:@283.2]
         cnt <= 3'h0;
       end else begin
         if (_T_222) begin
-          cnt <= _T_289;
+          cnt <= _T_225;
         end
       end
     end
@@ -989,7 +885,7 @@ module Dot( // @[:@283.2]
     `ifdef PRINTF_COND
       if (`PRINTF_COND) begin
     `endif
-        if (_GEN_46 & _T_209) begin
+        if (_GEN_14 & _T_209) begin
           $fwrite(32'h80000002,"switching to sCalculate\n"); // @[Compute.scala 198:15:@317.10]
         end
     `ifdef PRINTF_COND
@@ -1000,7 +896,7 @@ module Dot( // @[:@283.2]
     `ifdef PRINTF_COND
       if (`PRINTF_COND) begin
     `endif
-        if (_GEN_49 & _T_209) begin
+        if (_GEN_17 & _T_209) begin
           $fwrite(32'h80000002,"switching to sDone\n"); // @[Compute.scala 204:15:@330.12]
         end
     `ifdef PRINTF_COND
@@ -1011,7 +907,7 @@ module Dot( // @[:@283.2]
     `ifdef PRINTF_COND
       if (`PRINTF_COND) begin
     `endif
-        if (_GEN_53 & _T_209) begin
+        if (_GEN_21 & _T_209) begin
           $fwrite(32'h80000002,"switching to sIdle\n"); // @[Compute.scala 209:13:@341.12]
         end
     `ifdef PRINTF_COND
@@ -1022,8 +918,8 @@ module Dot( // @[:@283.2]
     `ifdef PRINTF_COND
       if (`PRINTF_COND) begin
     `endif
-        if (_GEN_55 & _T_209) begin
-          $fwrite(32'h80000002,"cnt: %d\n",cnt); // @[Compute.scala 223:13:@361.10]
+        if (_T_209) begin
+          $fwrite(32'h80000002,"cnt: %d\n",cnt); // @[Compute.scala 227:11:@365.6]
         end
     `ifdef PRINTF_COND
       end
@@ -1033,8 +929,8 @@ module Dot( // @[:@283.2]
     `ifdef PRINTF_COND
       if (`PRINTF_COND) begin
     `endif
-        if (_GEN_55 & _T_209) begin
-          $fwrite(32'h80000002,"\na(%d): %d, \n\n",1'h1,accum_1); // @[Compute.scala 224:13:@366.10]
+        if (_T_209) begin
+          $fwrite(32'h80000002,"\na(%d): %d, \n\n",1'h1,accum_1); // @[Compute.scala 228:11:@370.6]
         end
     `ifdef PRINTF_COND
       end
@@ -1044,8 +940,8 @@ module Dot( // @[:@283.2]
     `ifdef PRINTF_COND
       if (`PRINTF_COND) begin
     `endif
-        if (_GEN_55 & _T_209) begin
-          $fwrite(32'h80000002,"cnt: %d\n",cnt); // @[Compute.scala 223:13:@375.10]
+        if (_T_209) begin
+          $fwrite(32'h80000002,"cnt: %d\n",cnt); // @[Compute.scala 227:11:@379.6]
         end
     `ifdef PRINTF_COND
       end
@@ -1055,8 +951,8 @@ module Dot( // @[:@283.2]
     `ifdef PRINTF_COND
       if (`PRINTF_COND) begin
     `endif
-        if (_GEN_55 & _T_209) begin
-          $fwrite(32'h80000002,"\na(%d): %d, \n\n",2'h2,accum_2); // @[Compute.scala 224:13:@380.10]
+        if (_T_209) begin
+          $fwrite(32'h80000002,"\na(%d): %d, \n\n",2'h2,accum_2); // @[Compute.scala 228:11:@384.6]
         end
     `ifdef PRINTF_COND
       end
@@ -1066,8 +962,8 @@ module Dot( // @[:@283.2]
     `ifdef PRINTF_COND
       if (`PRINTF_COND) begin
     `endif
-        if (_GEN_55 & _T_209) begin
-          $fwrite(32'h80000002,"cnt: %d\n",cnt); // @[Compute.scala 223:13:@389.10]
+        if (_T_209) begin
+          $fwrite(32'h80000002,"cnt: %d\n",cnt); // @[Compute.scala 227:11:@393.6]
         end
     `ifdef PRINTF_COND
       end
@@ -1077,8 +973,8 @@ module Dot( // @[:@283.2]
     `ifdef PRINTF_COND
       if (`PRINTF_COND) begin
     `endif
-        if (_GEN_55 & _T_209) begin
-          $fwrite(32'h80000002,"\na(%d): %d, \n\n",2'h3,accum_3); // @[Compute.scala 224:13:@394.10]
+        if (_T_209) begin
+          $fwrite(32'h80000002,"\na(%d): %d, \n\n",2'h3,accum_3); // @[Compute.scala 228:11:@398.6]
         end
     `ifdef PRINTF_COND
       end
@@ -1088,8 +984,8 @@ module Dot( // @[:@283.2]
     `ifdef PRINTF_COND
       if (`PRINTF_COND) begin
     `endif
-        if (_GEN_55 & _T_209) begin
-          $fwrite(32'h80000002,"cnt: %d\n",cnt); // @[Compute.scala 223:13:@403.10]
+        if (_T_209) begin
+          $fwrite(32'h80000002,"cnt: %d\n",cnt); // @[Compute.scala 227:11:@407.6]
         end
     `ifdef PRINTF_COND
       end
@@ -1099,8 +995,8 @@ module Dot( // @[:@283.2]
     `ifdef PRINTF_COND
       if (`PRINTF_COND) begin
     `endif
-        if (_GEN_55 & _T_209) begin
-          $fwrite(32'h80000002,"\na(%d): %d, \n\n",3'h4,accum_4); // @[Compute.scala 224:13:@408.10]
+        if (_T_209) begin
+          $fwrite(32'h80000002,"\na(%d): %d, \n\n",3'h4,accum_4); // @[Compute.scala 228:11:@412.6]
         end
     `ifdef PRINTF_COND
       end
@@ -1110,8 +1006,8 @@ module Dot( // @[:@283.2]
     `ifdef PRINTF_COND
       if (`PRINTF_COND) begin
     `endif
-        if (_GEN_55 & _T_209) begin
-          $fwrite(32'h80000002,"cnt: %d\n",cnt); // @[Compute.scala 223:13:@417.10]
+        if (_T_209) begin
+          $fwrite(32'h80000002,"cnt: %d\n",cnt); // @[Compute.scala 227:11:@421.6]
         end
     `ifdef PRINTF_COND
       end
@@ -1121,8 +1017,8 @@ module Dot( // @[:@283.2]
     `ifdef PRINTF_COND
       if (`PRINTF_COND) begin
     `endif
-        if (_GEN_55 & _T_209) begin
-          $fwrite(32'h80000002,"\na(%d): %d, \n\n",3'h5,accum_5); // @[Compute.scala 224:13:@422.10]
+        if (_T_209) begin
+          $fwrite(32'h80000002,"\na(%d): %d, \n\n",3'h5,accum_5); // @[Compute.scala 228:11:@426.6]
         end
     `ifdef PRINTF_COND
       end
@@ -1132,8 +1028,8 @@ module Dot( // @[:@283.2]
     `ifdef PRINTF_COND
       if (`PRINTF_COND) begin
     `endif
-        if (_GEN_55 & _T_209) begin
-          $fwrite(32'h80000002,"cnt: %d\n",cnt); // @[Compute.scala 223:13:@431.10]
+        if (_T_209) begin
+          $fwrite(32'h80000002,"cnt: %d\n",cnt); // @[Compute.scala 227:11:@435.6]
         end
     `ifdef PRINTF_COND
       end
@@ -1143,8 +1039,8 @@ module Dot( // @[:@283.2]
     `ifdef PRINTF_COND
       if (`PRINTF_COND) begin
     `endif
-        if (_GEN_55 & _T_209) begin
-          $fwrite(32'h80000002,"\na(%d): %d, \n\n",3'h6,accum_6); // @[Compute.scala 224:13:@436.10]
+        if (_T_209) begin
+          $fwrite(32'h80000002,"\na(%d): %d, \n\n",3'h6,accum_6); // @[Compute.scala 228:11:@440.6]
         end
     `ifdef PRINTF_COND
       end
@@ -1154,8 +1050,8 @@ module Dot( // @[:@283.2]
     `ifdef PRINTF_COND
       if (`PRINTF_COND) begin
     `endif
-        if (_GEN_55 & _T_209) begin
-          $fwrite(32'h80000002,"cnt: %d\n",cnt); // @[Compute.scala 223:13:@445.10]
+        if (_T_209) begin
+          $fwrite(32'h80000002,"cnt: %d\n",cnt); // @[Compute.scala 227:11:@449.6]
         end
     `ifdef PRINTF_COND
       end
@@ -1165,8 +1061,8 @@ module Dot( // @[:@283.2]
     `ifdef PRINTF_COND
       if (`PRINTF_COND) begin
     `endif
-        if (_GEN_55 & _T_209) begin
-          $fwrite(32'h80000002,"\na(%d): %d, \n\n",3'h7,accum_7); // @[Compute.scala 224:13:@450.10]
+        if (_T_209) begin
+          $fwrite(32'h80000002,"\na(%d): %d, \n\n",3'h7,accum_7); // @[Compute.scala 228:11:@454.6]
         end
     `ifdef PRINTF_COND
       end
@@ -1183,26 +1079,26 @@ module Accumulator( // @[:@460.2]
   input  [62:0] io_in, // @[:@463.4]
   output [63:0] io_sum // @[:@463.4]
 );
-  reg [63:0] reg$; // @[Compute.scala 243:20:@465.4]
+  reg [63:0] reg$; // @[Compute.scala 245:20:@465.4]
   reg [63:0] _RAND_0;
-  reg  ready; // @[Compute.scala 244:22:@466.4]
+  reg  ready; // @[Compute.scala 246:22:@466.4]
   reg [31:0] _RAND_1;
-  wire [63:0] _GEN_2; // @[Compute.scala 248:16:@473.8]
-  wire [64:0] _T_19; // @[Compute.scala 248:16:@473.8]
-  wire  _T_23; // @[Compute.scala 249:11:@477.8]
-  wire [64:0] _GEN_0; // @[Compute.scala 247:26:@472.6]
-  wire [64:0] _GEN_1; // @[Compute.scala 245:17:@468.4]
-  wire  _GEN_4; // @[Compute.scala 249:11:@479.10]
-  wire  _GEN_5; // @[Compute.scala 249:11:@479.10]
-  assign _GEN_2 = {{1'd0}, io_in}; // @[Compute.scala 248:16:@473.8]
-  assign _T_19 = reg$ + _GEN_2; // @[Compute.scala 248:16:@473.8]
-  assign _T_23 = reset == 1'h0; // @[Compute.scala 249:11:@477.8]
-  assign _GEN_0 = io_valid ? _T_19 : {{1'd0}, reg$}; // @[Compute.scala 247:26:@472.6]
-  assign _GEN_1 = io_rst ? 65'h0 : _GEN_0; // @[Compute.scala 245:17:@468.4]
-  assign io_ready = ready; // @[Compute.scala 255:12:@482.4]
-  assign io_sum = reg$; // @[Compute.scala 256:10:@483.4]
-  assign _GEN_4 = io_rst == 1'h0; // @[Compute.scala 249:11:@479.10]
-  assign _GEN_5 = _GEN_4 & io_valid; // @[Compute.scala 249:11:@479.10]
+  wire [63:0] _GEN_2; // @[Compute.scala 250:16:@473.8]
+  wire [64:0] _T_19; // @[Compute.scala 250:16:@473.8]
+  wire  _T_23; // @[Compute.scala 251:11:@477.8]
+  wire [64:0] _GEN_0; // @[Compute.scala 249:26:@472.6]
+  wire [64:0] _GEN_1; // @[Compute.scala 247:17:@468.4]
+  wire  _GEN_4; // @[Compute.scala 251:11:@479.10]
+  wire  _GEN_5; // @[Compute.scala 251:11:@479.10]
+  assign _GEN_2 = {{1'd0}, io_in}; // @[Compute.scala 250:16:@473.8]
+  assign _T_19 = reg$ + _GEN_2; // @[Compute.scala 250:16:@473.8]
+  assign _T_23 = reset == 1'h0; // @[Compute.scala 251:11:@477.8]
+  assign _GEN_0 = io_valid ? _T_19 : {{1'd0}, reg$}; // @[Compute.scala 249:26:@472.6]
+  assign _GEN_1 = io_rst ? 65'h0 : _GEN_0; // @[Compute.scala 247:17:@468.4]
+  assign io_ready = ready; // @[Compute.scala 257:12:@482.4]
+  assign io_sum = reg$; // @[Compute.scala 258:10:@483.4]
+  assign _GEN_4 = io_rst == 1'h0; // @[Compute.scala 251:11:@479.10]
+  assign _GEN_5 = _GEN_4 & io_valid; // @[Compute.scala 251:11:@479.10]
 `ifdef RANDOMIZE_GARBAGE_ASSIGN
 `define RANDOMIZE
 `endif
@@ -1249,7 +1145,7 @@ module Accumulator( // @[:@460.2]
       if (`PRINTF_COND) begin
     `endif
         if (_GEN_5 & _T_23) begin
-          $fwrite(32'h80000002,"slice sum: %d \n",_T_19); // @[Compute.scala 249:11:@479.10]
+          $fwrite(32'h80000002,"slice sum: %d \n",_T_19); // @[Compute.scala 251:11:@479.10]
         end
     `ifdef PRINTF_COND
       end

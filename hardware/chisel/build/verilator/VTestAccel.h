@@ -85,7 +85,7 @@ VL_MODULE(VTestAccel) {
 	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_206,0,0);
 	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_210,0,0);
 	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_216,0,0);
-	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_289,2,0);
+	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_225,2,0);
 	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__ready,0,0);
 	VL_SIG16(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_0,15,0);
 	VL_SIG16(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_1,15,0);
@@ -95,18 +95,10 @@ VL_MODULE(VTestAccel) {
 	VL_SIG16(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_5,15,0);
 	VL_SIG16(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_6,15,0);
 	VL_SIG16(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_7,15,0);
-	VL_SIG16(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_223,15,0);
-	VL_SIG16(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_224,15,0);
-    };
-    struct {
-	VL_SIG16(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_233,15,0);
-	VL_SIG16(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_242,15,0);
-	VL_SIG16(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_251,15,0);
-	VL_SIG16(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_260,15,0);
-	VL_SIG16(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_269,15,0);
-	VL_SIG16(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_278,15,0);
 	VL_SIG(TestAccel__DOT__sim_shell__DOT__mod_host_dpi_req_value,31,0);
 	VL_SIG(TestAccel__DOT__sim_shell__DOT__mod_host__DOT_____05Freq_value,31,0);
+    };
+    struct {
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__rf__DOT___RAND_0,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_0,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__rf__DOT___RAND_1,31,0);
@@ -163,8 +155,6 @@ VL_MODULE(VTestAccel) {
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__reg2_3,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_13,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__reg2_4,31,0);
-    };
-    struct {
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_14,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__reg2_5,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_15,31,0);
@@ -173,6 +163,8 @@ VL_MODULE(VTestAccel) {
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__reg2_7,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_17,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__cnt,31,0);
+    };
+    struct {
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_18,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT___T_134,31,0);
 	VL_SIGW(TestAccel__DOT__vta_accel__DOT__ce__DOT__shiftReg,277,0,9);
@@ -206,13 +198,6 @@ VL_MODULE(VTestAccel) {
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_7,22,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_16,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_17,31,0);
-	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___GEN_26,23,0);
-	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___GEN_28,23,0);
-	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___GEN_30,23,0);
-	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___GEN_32,23,0);
-	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___GEN_34,23,0);
-	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___GEN_36,23,0);
-	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___GEN_38,23,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__initvar,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___RAND_1,31,0);
 	VL_SIGW(TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT___GEN_1,64,0,3);

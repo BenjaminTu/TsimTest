@@ -140,22 +140,6 @@ TVM_REGISTER_GLOBAL("tvm.vta.driver")
     DLTensor* B = args[1];
     DLTensor* C = args[3];
     Device dev_;
-    printf("\nA:\n");
-    for (int i = 0; i < A->shape[0]; i++) {
-      printf("%llx, ", (static_cast<uint64_t*>(A->data))[i]);
-    }
-    printf("\nB:\n");
-    for (int i = 0; i < B->shape[0]; i++) {
-      printf("%llx, ", (static_cast<uint64_t*>(B->data))[i]);
-    }
-    printf("\nC:\n");
-    for (int i = 0; i < C->shape[0]; i++) {
-      printf("%llu, \n ", (static_cast<uint64_t*>(C->data))[i]);
-    }
-    printf("\n shiftVal: %d\n", static_cast<int>(args[2]));
-    printf("\n");
-
-
     uint32_t cycles = dev_.Run(A->shape[0], A->data, B->data, static_cast<int>(args[2]), C->data, static_cast<int>(args[4]));
     *rv = static_cast<int>(cycles);
   });

@@ -6,7 +6,7 @@
 #ifndef _VTestAccel__Syms_H_
 #define _VTestAccel__Syms_H_
 
-#include "verilated_heavy.h"
+#include "verilated.h"
 
 // INCLUDE MODULE CLASSES
 #include "VTestAccel.h"

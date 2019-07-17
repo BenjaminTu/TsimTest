@@ -8,7 +8,7 @@
 #ifndef _VTestAccel_H_
 #define _VTestAccel_H_
 
-#include "verilated_heavy.h"
+#include "verilated.h"
 #include "VTestAccel__Dpi.h"
 
 class VTestAccel__Syms;
@@ -78,14 +78,14 @@ VL_MODULE(VTestAccel) {
 	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT___T_123,0,0);
 	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT___T_145,0,0);
 	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT___T_157,0,0);
-	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT___T_199,0,0);
+	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT___T_167,0,0);
 	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT__validReg,0,0);
 	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__state,1,0);
 	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__cnt,2,0);
 	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_206,0,0);
+	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_207,0,0);
 	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_210,0,0);
-	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_216,0,0);
-	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_225,2,0);
+	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___T_216,2,0);
 	VL_SIG8(TestAccel__DOT__vta_accel__DOT__ce__DOT__overallAccum__DOT__ready,0,0);
 	VL_SIG16(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_0,15,0);
 	VL_SIG16(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_1,15,0);
@@ -170,7 +170,7 @@ VL_MODULE(VTestAccel) {
 	VL_SIGW(TestAccel__DOT__vta_accel__DOT__ce__DOT__shiftReg,277,0,9);
 	VL_SIGW(TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_22,287,0,9);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT___RAND_23,31,0);
-	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT___T_251,31,0);
+	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT___T_188,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__initvar,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_0,31,0);
 	VL_SIG(TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT___RAND_1,31,0);

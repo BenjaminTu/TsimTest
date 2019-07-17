@@ -51,18 +51,13 @@ class Compute(implicit config: AccelConfig) extends Module {
   val rstAccum = io.vals(2)
   val startDot = io.vals(3)
   val cycles = RegInit(0.U(config.regBits.W))
+  // 8 * 8 bit vectors
   val reg1 = Reg(Vec(8, UInt(config.regBits.W)))
   val reg2 = Reg(Vec(8, UInt(config.regBits.W)))
   val cnt = Reg(UInt(config.regBits.W))
   val raddr1 = Reg(UInt(config.ptrBits.W))
   val raddr2 = Reg(UInt(config.ptrBits.W))
   val waddr = Reg(UInt(config.ptrBits.W))
-
-  // printf("shift: %d, \n", shift)
-  // printf("length: %d, \n", length)
-  // printf("rstAccum: %d, \n", rstAccum)
-  // printf("startDot: %d, \n", startDot)
-  // printf("\n\n\n\n\n\n")
 
   switch (state) {
     is (sIdle) {
@@ -133,23 +128,20 @@ class Compute(implicit config: AccelConfig) extends Module {
   when (state === sReadAData && io.mem.rd.valid) {
     for(i <- 0 until 8) {
       reg1(i) := io.mem.rd.bits(i*8+7, i*8)
-      printf("slice inputs1: %d \n", io.mem.rd.bits(i*8+7, i*8))
     }
   }
 
   when (state === sReadBData && io.mem.rd.valid) {
     for(i <- 0 until 8) {
       reg2(i) := io.mem.rd.bits(i*8+7, i*8)
-      printf("slice inputs2: %d\n", io.mem.rd.bits(i*8+7, i*8))
     }
   }
 
   io.mem.rd.ready := state === sReadAData | state === sReadBData
 
-  // TODO: databits? 
   val dot = Module(new Dot(8, 8))
   val overallAccum = Module(new Accumulator(63))
-  val shiftReg = RegNext(dot.io.res << shift)
+  val shiftReg = RegNext(dot.io.res(22, 0) << shift)
   val validReg = RegNext(dot.io.valid)
 
   dot.io.start := last
@@ -170,8 +162,6 @@ class Compute(implicit config: AccelConfig) extends Module {
     cnt := cnt + 1.U
   }
 
-  // done when read/write are equal to length
-  //val ready = RegNext(overallAccum.io.ready)
   io.finish := overallAccum.io.ready // data has been added
 }
 
@@ -195,18 +185,15 @@ class Dot(dataBits: Int = 8, vectorLength: Int = 1) extends Module {
     is (sIdle) {
       when (io.start) {
         state := sCalculate
-        printf("switching to sCalculate\n")
       }
     }
     is (sCalculate) {
       when (cnt === (vectorLength - 1).U) {
         state := sDone
-        printf("switching to sDone\n")
       }
     }
     is (sDone) {
       state := sIdle
-      printf("switching to sIdle\n")
     }
 
   }
@@ -215,7 +202,6 @@ class Dot(dataBits: Int = 8, vectorLength: Int = 1) extends Module {
     cnt := 0.U 
   } .elsewhen (state === sCalculate) {   
     cnt := cnt + 1.U 
-    // printf("\ncnt: %d, valid: %d\n", cnt, io.valid)
   }
 
   accum(0) := product(0)
@@ -223,12 +209,8 @@ class Dot(dataBits: Int = 8, vectorLength: Int = 1) extends Module {
   for (i <- 1 until vectorLength) {
     product(i) := io.arrA(i) * io.arrB(i)
     accum(i) := accum(i-1) +& product(i)
-    // printf("\np(%d): %d, \n", i.U,  product(i))
-    printf("cnt: %d\n", cnt)
-    printf("\na(%d): %d, \n\n", i.U, accum(i))
   }
-    
-  //printf("\n\n")
+
   io.res := accum(vectorLength - 1)
   io.valid := state === sDone
 }
@@ -248,16 +230,8 @@ class Accumulator(dataBits: Int = 8) extends Module {
     reg := 0.U
   } .elsewhen (io.valid) {
     reg := reg +& io.in
-    printf("slice sum: %d \n", reg +& io.in)
-    // printf("ready %d:\n", io.ready)
   } 
-
-  // printf("leave: %d\n", RegNext(io.valid))
-
   io.ready := ready
   io.sum := reg
-  // printf("io.datavalid: %d \n", io.valid)
-  // printf("io.accumin: %d \n", io.in)
-  // printf("io.sum: %d \n", io.sum)
 }
 

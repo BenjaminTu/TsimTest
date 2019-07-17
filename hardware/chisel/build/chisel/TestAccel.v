@@ -544,124 +544,202 @@ module Dot( // @[:@283.2]
   output        io_valid, // @[:@286.4]
   output [22:0] io_res // @[:@286.4]
 );
-  reg [15:0] product_0; // @[Compute.scala 188:24:@297.4]
+  reg [1:0] state; // @[Compute.scala 188:22:@288.4]
   reg [31:0] _RAND_0;
-  reg [15:0] product_1; // @[Compute.scala 188:24:@297.4]
+  reg [15:0] product_0; // @[Compute.scala 190:24:@298.4]
   reg [31:0] _RAND_1;
-  reg [15:0] product_2; // @[Compute.scala 188:24:@297.4]
+  reg [15:0] product_1; // @[Compute.scala 190:24:@298.4]
   reg [31:0] _RAND_2;
-  reg [15:0] product_3; // @[Compute.scala 188:24:@297.4]
+  reg [15:0] product_2; // @[Compute.scala 190:24:@298.4]
   reg [31:0] _RAND_3;
-  reg [15:0] product_4; // @[Compute.scala 188:24:@297.4]
+  reg [15:0] product_3; // @[Compute.scala 190:24:@298.4]
   reg [31:0] _RAND_4;
-  reg [15:0] product_5; // @[Compute.scala 188:24:@297.4]
+  reg [15:0] product_4; // @[Compute.scala 190:24:@298.4]
   reg [31:0] _RAND_5;
-  reg [15:0] product_6; // @[Compute.scala 188:24:@297.4]
+  reg [15:0] product_5; // @[Compute.scala 190:24:@298.4]
   reg [31:0] _RAND_6;
-  reg [15:0] product_7; // @[Compute.scala 188:24:@297.4]
+  reg [15:0] product_6; // @[Compute.scala 190:24:@298.4]
   reg [31:0] _RAND_7;
-  reg [22:0] accum_0; // @[Compute.scala 189:22:@307.4]
+  reg [15:0] product_7; // @[Compute.scala 190:24:@298.4]
   reg [31:0] _RAND_8;
-  reg [22:0] accum_1; // @[Compute.scala 189:22:@307.4]
+  reg [22:0] accum_0; // @[Compute.scala 191:22:@308.4]
   reg [31:0] _RAND_9;
-  reg [22:0] accum_2; // @[Compute.scala 189:22:@307.4]
+  reg [22:0] accum_1; // @[Compute.scala 191:22:@308.4]
   reg [31:0] _RAND_10;
-  reg [22:0] accum_3; // @[Compute.scala 189:22:@307.4]
+  reg [22:0] accum_2; // @[Compute.scala 191:22:@308.4]
   reg [31:0] _RAND_11;
-  reg [22:0] accum_4; // @[Compute.scala 189:22:@307.4]
+  reg [22:0] accum_3; // @[Compute.scala 191:22:@308.4]
   reg [31:0] _RAND_12;
-  reg [22:0] accum_5; // @[Compute.scala 189:22:@307.4]
+  reg [22:0] accum_4; // @[Compute.scala 191:22:@308.4]
   reg [31:0] _RAND_13;
-  reg [22:0] accum_6; // @[Compute.scala 189:22:@307.4]
+  reg [22:0] accum_5; // @[Compute.scala 191:22:@308.4]
   reg [31:0] _RAND_14;
-  reg [22:0] accum_7; // @[Compute.scala 189:22:@307.4]
+  reg [22:0] accum_6; // @[Compute.scala 191:22:@308.4]
   reg [31:0] _RAND_15;
-  reg [3:0] cnt; // @[Compute.scala 190:20:@308.4]
+  reg [22:0] accum_7; // @[Compute.scala 191:22:@308.4]
   reg [31:0] _RAND_16;
-  wire [15:0] _T_206; // @[Compute.scala 195:30:@314.6]
-  wire [15:0] _T_207; // @[Compute.scala 197:32:@316.6]
-  wire [22:0] _GEN_17; // @[Compute.scala 198:30:@318.6]
-  wire [23:0] _T_208; // @[Compute.scala 198:30:@318.6]
-  wire [15:0] _T_209; // @[Compute.scala 197:32:@320.6]
-  wire [22:0] _GEN_18; // @[Compute.scala 198:30:@322.6]
-  wire [23:0] _T_210; // @[Compute.scala 198:30:@322.6]
-  wire [15:0] _T_211; // @[Compute.scala 197:32:@324.6]
-  wire [22:0] _GEN_19; // @[Compute.scala 198:30:@326.6]
-  wire [23:0] _T_212; // @[Compute.scala 198:30:@326.6]
-  wire [15:0] _T_213; // @[Compute.scala 197:32:@328.6]
-  wire [22:0] _GEN_20; // @[Compute.scala 198:30:@330.6]
-  wire [23:0] _T_214; // @[Compute.scala 198:30:@330.6]
-  wire [15:0] _T_215; // @[Compute.scala 197:32:@332.6]
-  wire [22:0] _GEN_21; // @[Compute.scala 198:30:@334.6]
-  wire [23:0] _T_216; // @[Compute.scala 198:30:@334.6]
-  wire [15:0] _T_217; // @[Compute.scala 197:32:@336.6]
-  wire [22:0] _GEN_22; // @[Compute.scala 198:30:@338.6]
-  wire [23:0] _T_218; // @[Compute.scala 198:30:@338.6]
-  wire [15:0] _T_219; // @[Compute.scala 197:32:@340.6]
-  wire [22:0] _GEN_23; // @[Compute.scala 198:30:@342.6]
-  wire [23:0] _T_220; // @[Compute.scala 198:30:@342.6]
-  wire [4:0] _T_222; // @[Compute.scala 202:16:@344.6]
-  wire [3:0] _T_223; // @[Compute.scala 202:16:@345.6]
-  wire [3:0] _GEN_0; // @[Compute.scala 191:19:@309.4]
-  wire [22:0] _GEN_1; // @[Compute.scala 191:19:@309.4]
-  wire [15:0] _GEN_2; // @[Compute.scala 191:19:@309.4]
-  wire [15:0] _GEN_3; // @[Compute.scala 191:19:@309.4]
-  wire [23:0] _GEN_4; // @[Compute.scala 191:19:@309.4]
-  wire [15:0] _GEN_5; // @[Compute.scala 191:19:@309.4]
-  wire [23:0] _GEN_6; // @[Compute.scala 191:19:@309.4]
-  wire [15:0] _GEN_7; // @[Compute.scala 191:19:@309.4]
-  wire [23:0] _GEN_8; // @[Compute.scala 191:19:@309.4]
-  wire [15:0] _GEN_9; // @[Compute.scala 191:19:@309.4]
-  wire [23:0] _GEN_10; // @[Compute.scala 191:19:@309.4]
-  wire [15:0] _GEN_11; // @[Compute.scala 191:19:@309.4]
-  wire [23:0] _GEN_12; // @[Compute.scala 191:19:@309.4]
-  wire [15:0] _GEN_13; // @[Compute.scala 191:19:@309.4]
-  wire [23:0] _GEN_14; // @[Compute.scala 191:19:@309.4]
-  wire [15:0] _GEN_15; // @[Compute.scala 191:19:@309.4]
-  wire [23:0] _GEN_16; // @[Compute.scala 191:19:@309.4]
-  assign _T_206 = io_arrA_0 * io_arrB_0; // @[Compute.scala 195:30:@314.6]
-  assign _T_207 = io_arrA_1 * io_arrB_1; // @[Compute.scala 197:32:@316.6]
-  assign _GEN_17 = {{7'd0}, product_1}; // @[Compute.scala 198:30:@318.6]
-  assign _T_208 = accum_0 + _GEN_17; // @[Compute.scala 198:30:@318.6]
-  assign _T_209 = io_arrA_2 * io_arrB_2; // @[Compute.scala 197:32:@320.6]
-  assign _GEN_18 = {{7'd0}, product_2}; // @[Compute.scala 198:30:@322.6]
-  assign _T_210 = accum_1 + _GEN_18; // @[Compute.scala 198:30:@322.6]
-  assign _T_211 = io_arrA_3 * io_arrB_3; // @[Compute.scala 197:32:@324.6]
-  assign _GEN_19 = {{7'd0}, product_3}; // @[Compute.scala 198:30:@326.6]
-  assign _T_212 = accum_2 + _GEN_19; // @[Compute.scala 198:30:@326.6]
-  assign _T_213 = io_arrA_4 * io_arrB_4; // @[Compute.scala 197:32:@328.6]
-  assign _GEN_20 = {{7'd0}, product_4}; // @[Compute.scala 198:30:@330.6]
-  assign _T_214 = accum_3 + _GEN_20; // @[Compute.scala 198:30:@330.6]
-  assign _T_215 = io_arrA_5 * io_arrB_5; // @[Compute.scala 197:32:@332.6]
-  assign _GEN_21 = {{7'd0}, product_5}; // @[Compute.scala 198:30:@334.6]
-  assign _T_216 = accum_4 + _GEN_21; // @[Compute.scala 198:30:@334.6]
-  assign _T_217 = io_arrA_6 * io_arrB_6; // @[Compute.scala 197:32:@336.6]
-  assign _GEN_22 = {{7'd0}, product_6}; // @[Compute.scala 198:30:@338.6]
-  assign _T_218 = accum_5 + _GEN_22; // @[Compute.scala 198:30:@338.6]
-  assign _T_219 = io_arrA_7 * io_arrB_7; // @[Compute.scala 197:32:@340.6]
-  assign _GEN_23 = {{7'd0}, product_7}; // @[Compute.scala 198:30:@342.6]
-  assign _T_220 = accum_6 + _GEN_23; // @[Compute.scala 198:30:@342.6]
-  assign _T_222 = cnt + 4'h1; // @[Compute.scala 202:16:@344.6]
-  assign _T_223 = cnt + 4'h1; // @[Compute.scala 202:16:@345.6]
-  assign _GEN_0 = io_start ? 4'h0 : _T_223; // @[Compute.scala 191:19:@309.4]
-  assign _GEN_1 = io_start ? accum_0 : {{7'd0}, product_0}; // @[Compute.scala 191:19:@309.4]
-  assign _GEN_2 = io_start ? product_0 : _T_206; // @[Compute.scala 191:19:@309.4]
-  assign _GEN_3 = io_start ? product_1 : _T_207; // @[Compute.scala 191:19:@309.4]
-  assign _GEN_4 = io_start ? {{1'd0}, accum_1} : _T_208; // @[Compute.scala 191:19:@309.4]
-  assign _GEN_5 = io_start ? product_2 : _T_209; // @[Compute.scala 191:19:@309.4]
-  assign _GEN_6 = io_start ? {{1'd0}, accum_2} : _T_210; // @[Compute.scala 191:19:@309.4]
-  assign _GEN_7 = io_start ? product_3 : _T_211; // @[Compute.scala 191:19:@309.4]
-  assign _GEN_8 = io_start ? {{1'd0}, accum_3} : _T_212; // @[Compute.scala 191:19:@309.4]
-  assign _GEN_9 = io_start ? product_4 : _T_213; // @[Compute.scala 191:19:@309.4]
-  assign _GEN_10 = io_start ? {{1'd0}, accum_4} : _T_214; // @[Compute.scala 191:19:@309.4]
-  assign _GEN_11 = io_start ? product_5 : _T_215; // @[Compute.scala 191:19:@309.4]
-  assign _GEN_12 = io_start ? {{1'd0}, accum_5} : _T_216; // @[Compute.scala 191:19:@309.4]
-  assign _GEN_13 = io_start ? product_6 : _T_217; // @[Compute.scala 191:19:@309.4]
-  assign _GEN_14 = io_start ? {{1'd0}, accum_6} : _T_218; // @[Compute.scala 191:19:@309.4]
-  assign _GEN_15 = io_start ? product_7 : _T_219; // @[Compute.scala 191:19:@309.4]
-  assign _GEN_16 = io_start ? {{1'd0}, accum_7} : _T_220; // @[Compute.scala 191:19:@309.4]
-  assign io_valid = cnt == 4'h8; // @[Compute.scala 207:12:@350.4]
-  assign io_res = accum_7; // @[Compute.scala 206:10:@348.4]
+  reg [2:0] cnt; // @[Compute.scala 192:20:@309.4]
+  reg [31:0] _RAND_17;
+  wire  _T_206; // @[Conditional.scala 37:30:@310.4]
+  wire  _T_209; // @[Compute.scala 198:15:@315.8]
+  wire [1:0] _GEN_0; // @[Compute.scala 196:23:@312.6]
+  wire  _T_210; // @[Conditional.scala 37:30:@322.6]
+  wire  _T_212; // @[Compute.scala 202:17:@324.8]
+  wire [1:0] _GEN_1; // @[Compute.scala 202:43:@325.8]
+  wire  _T_216; // @[Conditional.scala 37:30:@335.8]
+  wire [1:0] _GEN_2; // @[Conditional.scala 39:67:@336.8]
+  wire [1:0] _GEN_3; // @[Conditional.scala 39:67:@323.6]
+  wire [1:0] _GEN_4; // @[Conditional.scala 40:58:@311.4]
+  wire  _T_220; // @[Compute.scala 214:15:@344.4]
+  wire  _T_222; // @[Compute.scala 216:22:@349.6]
+  wire [15:0] _T_223; // @[Compute.scala 218:30:@352.8]
+  wire [15:0] _T_224; // @[Compute.scala 220:32:@354.8]
+  wire [22:0] _GEN_39; // @[Compute.scala 221:30:@356.8]
+  wire [23:0] _T_225; // @[Compute.scala 221:30:@356.8]
+  wire [15:0] _T_233; // @[Compute.scala 220:32:@368.8]
+  wire [22:0] _GEN_40; // @[Compute.scala 221:30:@370.8]
+  wire [23:0] _T_234; // @[Compute.scala 221:30:@370.8]
+  wire [15:0] _T_242; // @[Compute.scala 220:32:@382.8]
+  wire [22:0] _GEN_41; // @[Compute.scala 221:30:@384.8]
+  wire [23:0] _T_243; // @[Compute.scala 221:30:@384.8]
+  wire [15:0] _T_251; // @[Compute.scala 220:32:@396.8]
+  wire [22:0] _GEN_42; // @[Compute.scala 221:30:@398.8]
+  wire [23:0] _T_252; // @[Compute.scala 221:30:@398.8]
+  wire [15:0] _T_260; // @[Compute.scala 220:32:@410.8]
+  wire [22:0] _GEN_43; // @[Compute.scala 221:30:@412.8]
+  wire [23:0] _T_261; // @[Compute.scala 221:30:@412.8]
+  wire [15:0] _T_269; // @[Compute.scala 220:32:@424.8]
+  wire [22:0] _GEN_44; // @[Compute.scala 221:30:@426.8]
+  wire [23:0] _T_270; // @[Compute.scala 221:30:@426.8]
+  wire [15:0] _T_278; // @[Compute.scala 220:32:@438.8]
+  wire [22:0] _GEN_45; // @[Compute.scala 221:30:@440.8]
+  wire [23:0] _T_279; // @[Compute.scala 221:30:@440.8]
+  wire [3:0] _T_288; // @[Compute.scala 226:16:@452.8]
+  wire [2:0] _T_289; // @[Compute.scala 226:16:@453.8]
+  wire [22:0] _GEN_5; // @[Compute.scala 216:38:@350.6]
+  wire [15:0] _GEN_6; // @[Compute.scala 216:38:@350.6]
+  wire [15:0] _GEN_7; // @[Compute.scala 216:38:@350.6]
+  wire [23:0] _GEN_8; // @[Compute.scala 216:38:@350.6]
+  wire [15:0] _GEN_9; // @[Compute.scala 216:38:@350.6]
+  wire [23:0] _GEN_10; // @[Compute.scala 216:38:@350.6]
+  wire [15:0] _GEN_11; // @[Compute.scala 216:38:@350.6]
+  wire [23:0] _GEN_12; // @[Compute.scala 216:38:@350.6]
+  wire [15:0] _GEN_13; // @[Compute.scala 216:38:@350.6]
+  wire [23:0] _GEN_14; // @[Compute.scala 216:38:@350.6]
+  wire [15:0] _GEN_15; // @[Compute.scala 216:38:@350.6]
+  wire [23:0] _GEN_16; // @[Compute.scala 216:38:@350.6]
+  wire [15:0] _GEN_17; // @[Compute.scala 216:38:@350.6]
+  wire [23:0] _GEN_18; // @[Compute.scala 216:38:@350.6]
+  wire [15:0] _GEN_19; // @[Compute.scala 216:38:@350.6]
+  wire [23:0] _GEN_20; // @[Compute.scala 216:38:@350.6]
+  wire [2:0] _GEN_21; // @[Compute.scala 216:38:@350.6]
+  wire [2:0] _GEN_22; // @[Compute.scala 214:26:@345.4]
+  wire [22:0] _GEN_23; // @[Compute.scala 214:26:@345.4]
+  wire [15:0] _GEN_24; // @[Compute.scala 214:26:@345.4]
+  wire [15:0] _GEN_25; // @[Compute.scala 214:26:@345.4]
+  wire [23:0] _GEN_26; // @[Compute.scala 214:26:@345.4]
+  wire [15:0] _GEN_27; // @[Compute.scala 214:26:@345.4]
+  wire [23:0] _GEN_28; // @[Compute.scala 214:26:@345.4]
+  wire [15:0] _GEN_29; // @[Compute.scala 214:26:@345.4]
+  wire [23:0] _GEN_30; // @[Compute.scala 214:26:@345.4]
+  wire [15:0] _GEN_31; // @[Compute.scala 214:26:@345.4]
+  wire [23:0] _GEN_32; // @[Compute.scala 214:26:@345.4]
+  wire [15:0] _GEN_33; // @[Compute.scala 214:26:@345.4]
+  wire [23:0] _GEN_34; // @[Compute.scala 214:26:@345.4]
+  wire [15:0] _GEN_35; // @[Compute.scala 214:26:@345.4]
+  wire [23:0] _GEN_36; // @[Compute.scala 214:26:@345.4]
+  wire [15:0] _GEN_37; // @[Compute.scala 214:26:@345.4]
+  wire [23:0] _GEN_38; // @[Compute.scala 214:26:@345.4]
+  wire  _GEN_46; // @[Compute.scala 198:15:@317.10]
+  wire  _GEN_47; // @[Compute.scala 204:15:@330.12]
+  wire  _GEN_48; // @[Compute.scala 204:15:@330.12]
+  wire  _GEN_49; // @[Compute.scala 204:15:@330.12]
+  wire  _GEN_51; // @[Compute.scala 209:13:@341.12]
+  wire  _GEN_52; // @[Compute.scala 209:13:@341.12]
+  wire  _GEN_53; // @[Compute.scala 209:13:@341.12]
+  wire  _GEN_54; // @[Compute.scala 223:13:@361.10]
+  wire  _GEN_55; // @[Compute.scala 223:13:@361.10]
+  assign _T_206 = 2'h0 == state; // @[Conditional.scala 37:30:@310.4]
+  assign _T_209 = reset == 1'h0; // @[Compute.scala 198:15:@315.8]
+  assign _GEN_0 = io_start ? 2'h1 : state; // @[Compute.scala 196:23:@312.6]
+  assign _T_210 = 2'h1 == state; // @[Conditional.scala 37:30:@322.6]
+  assign _T_212 = cnt == 3'h7; // @[Compute.scala 202:17:@324.8]
+  assign _GEN_1 = _T_212 ? 2'h2 : state; // @[Compute.scala 202:43:@325.8]
+  assign _T_216 = 2'h2 == state; // @[Conditional.scala 37:30:@335.8]
+  assign _GEN_2 = _T_216 ? 2'h0 : state; // @[Conditional.scala 39:67:@336.8]
+  assign _GEN_3 = _T_210 ? _GEN_1 : _GEN_2; // @[Conditional.scala 39:67:@323.6]
+  assign _GEN_4 = _T_206 ? _GEN_0 : _GEN_3; // @[Conditional.scala 40:58:@311.4]
+  assign _T_220 = state == 2'h0; // @[Compute.scala 214:15:@344.4]
+  assign _T_222 = state == 2'h1; // @[Compute.scala 216:22:@349.6]
+  assign _T_223 = io_arrA_0 * io_arrB_0; // @[Compute.scala 218:30:@352.8]
+  assign _T_224 = io_arrA_1 * io_arrB_1; // @[Compute.scala 220:32:@354.8]
+  assign _GEN_39 = {{7'd0}, product_1}; // @[Compute.scala 221:30:@356.8]
+  assign _T_225 = accum_0 + _GEN_39; // @[Compute.scala 221:30:@356.8]
+  assign _T_233 = io_arrA_2 * io_arrB_2; // @[Compute.scala 220:32:@368.8]
+  assign _GEN_40 = {{7'd0}, product_2}; // @[Compute.scala 221:30:@370.8]
+  assign _T_234 = accum_1 + _GEN_40; // @[Compute.scala 221:30:@370.8]
+  assign _T_242 = io_arrA_3 * io_arrB_3; // @[Compute.scala 220:32:@382.8]
+  assign _GEN_41 = {{7'd0}, product_3}; // @[Compute.scala 221:30:@384.8]
+  assign _T_243 = accum_2 + _GEN_41; // @[Compute.scala 221:30:@384.8]
+  assign _T_251 = io_arrA_4 * io_arrB_4; // @[Compute.scala 220:32:@396.8]
+  assign _GEN_42 = {{7'd0}, product_4}; // @[Compute.scala 221:30:@398.8]
+  assign _T_252 = accum_3 + _GEN_42; // @[Compute.scala 221:30:@398.8]
+  assign _T_260 = io_arrA_5 * io_arrB_5; // @[Compute.scala 220:32:@410.8]
+  assign _GEN_43 = {{7'd0}, product_5}; // @[Compute.scala 221:30:@412.8]
+  assign _T_261 = accum_4 + _GEN_43; // @[Compute.scala 221:30:@412.8]
+  assign _T_269 = io_arrA_6 * io_arrB_6; // @[Compute.scala 220:32:@424.8]
+  assign _GEN_44 = {{7'd0}, product_6}; // @[Compute.scala 221:30:@426.8]
+  assign _T_270 = accum_5 + _GEN_44; // @[Compute.scala 221:30:@426.8]
+  assign _T_278 = io_arrA_7 * io_arrB_7; // @[Compute.scala 220:32:@438.8]
+  assign _GEN_45 = {{7'd0}, product_7}; // @[Compute.scala 221:30:@440.8]
+  assign _T_279 = accum_6 + _GEN_45; // @[Compute.scala 221:30:@440.8]
+  assign _T_288 = cnt + 3'h1; // @[Compute.scala 226:16:@452.8]
+  assign _T_289 = cnt + 3'h1; // @[Compute.scala 226:16:@453.8]
+  assign _GEN_5 = _T_222 ? {{7'd0}, product_0} : accum_0; // @[Compute.scala 216:38:@350.6]
+  assign _GEN_6 = _T_222 ? _T_223 : product_0; // @[Compute.scala 216:38:@350.6]
+  assign _GEN_7 = _T_222 ? _T_224 : product_1; // @[Compute.scala 216:38:@350.6]
+  assign _GEN_8 = _T_222 ? _T_225 : {{1'd0}, accum_1}; // @[Compute.scala 216:38:@350.6]
+  assign _GEN_9 = _T_222 ? _T_233 : product_2; // @[Compute.scala 216:38:@350.6]
+  assign _GEN_10 = _T_222 ? _T_234 : {{1'd0}, accum_2}; // @[Compute.scala 216:38:@350.6]
+  assign _GEN_11 = _T_222 ? _T_242 : product_3; // @[Compute.scala 216:38:@350.6]
+  assign _GEN_12 = _T_222 ? _T_243 : {{1'd0}, accum_3}; // @[Compute.scala 216:38:@350.6]
+  assign _GEN_13 = _T_222 ? _T_251 : product_4; // @[Compute.scala 216:38:@350.6]
+  assign _GEN_14 = _T_222 ? _T_252 : {{1'd0}, accum_4}; // @[Compute.scala 216:38:@350.6]
+  assign _GEN_15 = _T_222 ? _T_260 : product_5; // @[Compute.scala 216:38:@350.6]
+  assign _GEN_16 = _T_222 ? _T_261 : {{1'd0}, accum_5}; // @[Compute.scala 216:38:@350.6]
+  assign _GEN_17 = _T_222 ? _T_269 : product_6; // @[Compute.scala 216:38:@350.6]
+  assign _GEN_18 = _T_222 ? _T_270 : {{1'd0}, accum_6}; // @[Compute.scala 216:38:@350.6]
+  assign _GEN_19 = _T_222 ? _T_278 : product_7; // @[Compute.scala 216:38:@350.6]
+  assign _GEN_20 = _T_222 ? _T_279 : {{1'd0}, accum_7}; // @[Compute.scala 216:38:@350.6]
+  assign _GEN_21 = _T_222 ? _T_289 : cnt; // @[Compute.scala 216:38:@350.6]
+  assign _GEN_22 = _T_220 ? 3'h0 : _GEN_21; // @[Compute.scala 214:26:@345.4]
+  assign _GEN_23 = _T_220 ? accum_0 : _GEN_5; // @[Compute.scala 214:26:@345.4]
+  assign _GEN_24 = _T_220 ? product_0 : _GEN_6; // @[Compute.scala 214:26:@345.4]
+  assign _GEN_25 = _T_220 ? product_1 : _GEN_7; // @[Compute.scala 214:26:@345.4]
+  assign _GEN_26 = _T_220 ? {{1'd0}, accum_1} : _GEN_8; // @[Compute.scala 214:26:@345.4]
+  assign _GEN_27 = _T_220 ? product_2 : _GEN_9; // @[Compute.scala 214:26:@345.4]
+  assign _GEN_28 = _T_220 ? {{1'd0}, accum_2} : _GEN_10; // @[Compute.scala 214:26:@345.4]
+  assign _GEN_29 = _T_220 ? product_3 : _GEN_11; // @[Compute.scala 214:26:@345.4]
+  assign _GEN_30 = _T_220 ? {{1'd0}, accum_3} : _GEN_12; // @[Compute.scala 214:26:@345.4]
+  assign _GEN_31 = _T_220 ? product_4 : _GEN_13; // @[Compute.scala 214:26:@345.4]
+  assign _GEN_32 = _T_220 ? {{1'd0}, accum_4} : _GEN_14; // @[Compute.scala 214:26:@345.4]
+  assign _GEN_33 = _T_220 ? product_5 : _GEN_15; // @[Compute.scala 214:26:@345.4]
+  assign _GEN_34 = _T_220 ? {{1'd0}, accum_5} : _GEN_16; // @[Compute.scala 214:26:@345.4]
+  assign _GEN_35 = _T_220 ? product_6 : _GEN_17; // @[Compute.scala 214:26:@345.4]
+  assign _GEN_36 = _T_220 ? {{1'd0}, accum_6} : _GEN_18; // @[Compute.scala 214:26:@345.4]
+  assign _GEN_37 = _T_220 ? product_7 : _GEN_19; // @[Compute.scala 214:26:@345.4]
+  assign _GEN_38 = _T_220 ? {{1'd0}, accum_7} : _GEN_20; // @[Compute.scala 214:26:@345.4]
+  assign io_valid = state == 2'h2; // @[Compute.scala 231:12:@458.4]
+  assign io_res = accum_7; // @[Compute.scala 230:10:@456.4]
+  assign _GEN_46 = _T_206 & io_start; // @[Compute.scala 198:15:@317.10]
+  assign _GEN_47 = _T_206 == 1'h0; // @[Compute.scala 204:15:@330.12]
+  assign _GEN_48 = _GEN_47 & _T_210; // @[Compute.scala 204:15:@330.12]
+  assign _GEN_49 = _GEN_48 & _T_212; // @[Compute.scala 204:15:@330.12]
+  assign _GEN_51 = _T_210 == 1'h0; // @[Compute.scala 209:13:@341.12]
+  assign _GEN_52 = _GEN_47 & _GEN_51; // @[Compute.scala 209:13:@341.12]
+  assign _GEN_53 = _GEN_52 & _T_216; // @[Compute.scala 209:13:@341.12]
+  assign _GEN_54 = _T_220 == 1'h0; // @[Compute.scala 223:13:@361.10]
+  assign _GEN_55 = _GEN_54 & _T_222; // @[Compute.scala 223:13:@361.10]
 `ifdef RANDOMIZE_GARBAGE_ASSIGN
 `define RANDOMIZE
 `endif
@@ -688,213 +766,443 @@ module Dot( // @[:@283.2]
     `endif
   `ifdef RANDOMIZE_REG_INIT
   _RAND_0 = {1{`RANDOM}};
-  product_0 = _RAND_0[15:0];
+  state = _RAND_0[1:0];
   `endif // RANDOMIZE_REG_INIT
   `ifdef RANDOMIZE_REG_INIT
   _RAND_1 = {1{`RANDOM}};
-  product_1 = _RAND_1[15:0];
+  product_0 = _RAND_1[15:0];
   `endif // RANDOMIZE_REG_INIT
   `ifdef RANDOMIZE_REG_INIT
   _RAND_2 = {1{`RANDOM}};
-  product_2 = _RAND_2[15:0];
+  product_1 = _RAND_2[15:0];
   `endif // RANDOMIZE_REG_INIT
   `ifdef RANDOMIZE_REG_INIT
   _RAND_3 = {1{`RANDOM}};
-  product_3 = _RAND_3[15:0];
+  product_2 = _RAND_3[15:0];
   `endif // RANDOMIZE_REG_INIT
   `ifdef RANDOMIZE_REG_INIT
   _RAND_4 = {1{`RANDOM}};
-  product_4 = _RAND_4[15:0];
+  product_3 = _RAND_4[15:0];
   `endif // RANDOMIZE_REG_INIT
   `ifdef RANDOMIZE_REG_INIT
   _RAND_5 = {1{`RANDOM}};
-  product_5 = _RAND_5[15:0];
+  product_4 = _RAND_5[15:0];
   `endif // RANDOMIZE_REG_INIT
   `ifdef RANDOMIZE_REG_INIT
   _RAND_6 = {1{`RANDOM}};
-  product_6 = _RAND_6[15:0];
+  product_5 = _RAND_6[15:0];
   `endif // RANDOMIZE_REG_INIT
   `ifdef RANDOMIZE_REG_INIT
   _RAND_7 = {1{`RANDOM}};
-  product_7 = _RAND_7[15:0];
+  product_6 = _RAND_7[15:0];
   `endif // RANDOMIZE_REG_INIT
   `ifdef RANDOMIZE_REG_INIT
   _RAND_8 = {1{`RANDOM}};
-  accum_0 = _RAND_8[22:0];
+  product_7 = _RAND_8[15:0];
   `endif // RANDOMIZE_REG_INIT
   `ifdef RANDOMIZE_REG_INIT
   _RAND_9 = {1{`RANDOM}};
-  accum_1 = _RAND_9[22:0];
+  accum_0 = _RAND_9[22:0];
   `endif // RANDOMIZE_REG_INIT
   `ifdef RANDOMIZE_REG_INIT
   _RAND_10 = {1{`RANDOM}};
-  accum_2 = _RAND_10[22:0];
+  accum_1 = _RAND_10[22:0];
   `endif // RANDOMIZE_REG_INIT
   `ifdef RANDOMIZE_REG_INIT
   _RAND_11 = {1{`RANDOM}};
-  accum_3 = _RAND_11[22:0];
+  accum_2 = _RAND_11[22:0];
   `endif // RANDOMIZE_REG_INIT
   `ifdef RANDOMIZE_REG_INIT
   _RAND_12 = {1{`RANDOM}};
-  accum_4 = _RAND_12[22:0];
+  accum_3 = _RAND_12[22:0];
   `endif // RANDOMIZE_REG_INIT
   `ifdef RANDOMIZE_REG_INIT
   _RAND_13 = {1{`RANDOM}};
-  accum_5 = _RAND_13[22:0];
+  accum_4 = _RAND_13[22:0];
   `endif // RANDOMIZE_REG_INIT
   `ifdef RANDOMIZE_REG_INIT
   _RAND_14 = {1{`RANDOM}};
-  accum_6 = _RAND_14[22:0];
+  accum_5 = _RAND_14[22:0];
   `endif // RANDOMIZE_REG_INIT
   `ifdef RANDOMIZE_REG_INIT
   _RAND_15 = {1{`RANDOM}};
-  accum_7 = _RAND_15[22:0];
+  accum_6 = _RAND_15[22:0];
   `endif // RANDOMIZE_REG_INIT
   `ifdef RANDOMIZE_REG_INIT
   _RAND_16 = {1{`RANDOM}};
-  cnt = _RAND_16[3:0];
+  accum_7 = _RAND_16[22:0];
+  `endif // RANDOMIZE_REG_INIT
+  `ifdef RANDOMIZE_REG_INIT
+  _RAND_17 = {1{`RANDOM}};
+  cnt = _RAND_17[2:0];
   `endif // RANDOMIZE_REG_INIT
   end
 `endif // RANDOMIZE
   always @(posedge clock) begin
     if (reset) begin
+      state <= 2'h0;
+    end else begin
+      if (_T_206) begin
+        if (io_start) begin
+          state <= 2'h1;
+        end
+      end else begin
+        if (_T_210) begin
+          if (_T_212) begin
+            state <= 2'h2;
+          end
+        end else begin
+          if (_T_216) begin
+            state <= 2'h0;
+          end
+        end
+      end
+    end
+    if (reset) begin
       product_0 <= 16'h0;
     end else begin
-      if (!(io_start)) begin
-        product_0 <= _T_206;
+      if (!(_T_220)) begin
+        if (_T_222) begin
+          product_0 <= _T_223;
+        end
       end
     end
     if (reset) begin
       product_1 <= 16'h0;
     end else begin
-      if (!(io_start)) begin
-        product_1 <= _T_207;
+      if (!(_T_220)) begin
+        if (_T_222) begin
+          product_1 <= _T_224;
+        end
       end
     end
     if (reset) begin
       product_2 <= 16'h0;
     end else begin
-      if (!(io_start)) begin
-        product_2 <= _T_209;
+      if (!(_T_220)) begin
+        if (_T_222) begin
+          product_2 <= _T_233;
+        end
       end
     end
     if (reset) begin
       product_3 <= 16'h0;
     end else begin
-      if (!(io_start)) begin
-        product_3 <= _T_211;
+      if (!(_T_220)) begin
+        if (_T_222) begin
+          product_3 <= _T_242;
+        end
       end
     end
     if (reset) begin
       product_4 <= 16'h0;
     end else begin
-      if (!(io_start)) begin
-        product_4 <= _T_213;
+      if (!(_T_220)) begin
+        if (_T_222) begin
+          product_4 <= _T_251;
+        end
       end
     end
     if (reset) begin
       product_5 <= 16'h0;
     end else begin
-      if (!(io_start)) begin
-        product_5 <= _T_215;
+      if (!(_T_220)) begin
+        if (_T_222) begin
+          product_5 <= _T_260;
+        end
       end
     end
     if (reset) begin
       product_6 <= 16'h0;
     end else begin
-      if (!(io_start)) begin
-        product_6 <= _T_217;
+      if (!(_T_220)) begin
+        if (_T_222) begin
+          product_6 <= _T_269;
+        end
       end
     end
     if (reset) begin
       product_7 <= 16'h0;
     end else begin
-      if (!(io_start)) begin
-        product_7 <= _T_219;
+      if (!(_T_220)) begin
+        if (_T_222) begin
+          product_7 <= _T_278;
+        end
       end
     end
     if (reset) begin
       accum_0 <= 23'h0;
     end else begin
-      if (!(io_start)) begin
-        accum_0 <= {{7'd0}, product_0};
+      if (!(_T_220)) begin
+        if (_T_222) begin
+          accum_0 <= {{7'd0}, product_0};
+        end
       end
     end
     if (reset) begin
       accum_1 <= 23'h0;
     end else begin
-      accum_1 <= _GEN_4[22:0];
+      accum_1 <= _GEN_26[22:0];
     end
     if (reset) begin
       accum_2 <= 23'h0;
     end else begin
-      accum_2 <= _GEN_6[22:0];
+      accum_2 <= _GEN_28[22:0];
     end
     if (reset) begin
       accum_3 <= 23'h0;
     end else begin
-      accum_3 <= _GEN_8[22:0];
+      accum_3 <= _GEN_30[22:0];
     end
     if (reset) begin
       accum_4 <= 23'h0;
     end else begin
-      accum_4 <= _GEN_10[22:0];
+      accum_4 <= _GEN_32[22:0];
     end
     if (reset) begin
       accum_5 <= 23'h0;
     end else begin
-      accum_5 <= _GEN_12[22:0];
+      accum_5 <= _GEN_34[22:0];
     end
     if (reset) begin
       accum_6 <= 23'h0;
     end else begin
-      accum_6 <= _GEN_14[22:0];
+      accum_6 <= _GEN_36[22:0];
     end
     if (reset) begin
       accum_7 <= 23'h0;
     end else begin
-      accum_7 <= _GEN_16[22:0];
+      accum_7 <= _GEN_38[22:0];
     end
     if (reset) begin
-      cnt <= 4'h0;
+      cnt <= 3'h0;
     end else begin
-      if (io_start) begin
-        cnt <= 4'h0;
+      if (_T_220) begin
+        cnt <= 3'h0;
       end else begin
-        cnt <= _T_223;
+        if (_T_222) begin
+          cnt <= _T_289;
+        end
       end
     end
+    `ifndef SYNTHESIS
+    `ifdef PRINTF_COND
+      if (`PRINTF_COND) begin
+    `endif
+        if (_GEN_46 & _T_209) begin
+          $fwrite(32'h80000002,"switching to sCalculate\n"); // @[Compute.scala 198:15:@317.10]
+        end
+    `ifdef PRINTF_COND
+      end
+    `endif
+    `endif // SYNTHESIS
+    `ifndef SYNTHESIS
+    `ifdef PRINTF_COND
+      if (`PRINTF_COND) begin
+    `endif
+        if (_GEN_49 & _T_209) begin
+          $fwrite(32'h80000002,"switching to sDone\n"); // @[Compute.scala 204:15:@330.12]
+        end
+    `ifdef PRINTF_COND
+      end
+    `endif
+    `endif // SYNTHESIS
+    `ifndef SYNTHESIS
+    `ifdef PRINTF_COND
+      if (`PRINTF_COND) begin
+    `endif
+        if (_GEN_53 & _T_209) begin
+          $fwrite(32'h80000002,"switching to sIdle\n"); // @[Compute.scala 209:13:@341.12]
+        end
+    `ifdef PRINTF_COND
+      end
+    `endif
+    `endif // SYNTHESIS
+    `ifndef SYNTHESIS
+    `ifdef PRINTF_COND
+      if (`PRINTF_COND) begin
+    `endif
+        if (_GEN_55 & _T_209) begin
+          $fwrite(32'h80000002,"cnt: %d\n",cnt); // @[Compute.scala 223:13:@361.10]
+        end
+    `ifdef PRINTF_COND
+      end
+    `endif
+    `endif // SYNTHESIS
+    `ifndef SYNTHESIS
+    `ifdef PRINTF_COND
+      if (`PRINTF_COND) begin
+    `endif
+        if (_GEN_55 & _T_209) begin
+          $fwrite(32'h80000002,"\na(%d): %d, \n\n",1'h1,accum_1); // @[Compute.scala 224:13:@366.10]
+        end
+    `ifdef PRINTF_COND
+      end
+    `endif
+    `endif // SYNTHESIS
+    `ifndef SYNTHESIS
+    `ifdef PRINTF_COND
+      if (`PRINTF_COND) begin
+    `endif
+        if (_GEN_55 & _T_209) begin
+          $fwrite(32'h80000002,"cnt: %d\n",cnt); // @[Compute.scala 223:13:@375.10]
+        end
+    `ifdef PRINTF_COND
+      end
+    `endif
+    `endif // SYNTHESIS
+    `ifndef SYNTHESIS
+    `ifdef PRINTF_COND
+      if (`PRINTF_COND) begin
+    `endif
+        if (_GEN_55 & _T_209) begin
+          $fwrite(32'h80000002,"\na(%d): %d, \n\n",2'h2,accum_2); // @[Compute.scala 224:13:@380.10]
+        end
+    `ifdef PRINTF_COND
+      end
+    `endif
+    `endif // SYNTHESIS
+    `ifndef SYNTHESIS
+    `ifdef PRINTF_COND
+      if (`PRINTF_COND) begin
+    `endif
+        if (_GEN_55 & _T_209) begin
+          $fwrite(32'h80000002,"cnt: %d\n",cnt); // @[Compute.scala 223:13:@389.10]
+        end
+    `ifdef PRINTF_COND
+      end
+    `endif
+    `endif // SYNTHESIS
+    `ifndef SYNTHESIS
+    `ifdef PRINTF_COND
+      if (`PRINTF_COND) begin
+    `endif
+        if (_GEN_55 & _T_209) begin
+          $fwrite(32'h80000002,"\na(%d): %d, \n\n",2'h3,accum_3); // @[Compute.scala 224:13:@394.10]
+        end
+    `ifdef PRINTF_COND
+      end
+    `endif
+    `endif // SYNTHESIS
+    `ifndef SYNTHESIS
+    `ifdef PRINTF_COND
+      if (`PRINTF_COND) begin
+    `endif
+        if (_GEN_55 & _T_209) begin
+          $fwrite(32'h80000002,"cnt: %d\n",cnt); // @[Compute.scala 223:13:@403.10]
+        end
+    `ifdef PRINTF_COND
+      end
+    `endif
+    `endif // SYNTHESIS
+    `ifndef SYNTHESIS
+    `ifdef PRINTF_COND
+      if (`PRINTF_COND) begin
+    `endif
+        if (_GEN_55 & _T_209) begin
+          $fwrite(32'h80000002,"\na(%d): %d, \n\n",3'h4,accum_4); // @[Compute.scala 224:13:@408.10]
+        end
+    `ifdef PRINTF_COND
+      end
+    `endif
+    `endif // SYNTHESIS
+    `ifndef SYNTHESIS
+    `ifdef PRINTF_COND
+      if (`PRINTF_COND) begin
+    `endif
+        if (_GEN_55 & _T_209) begin
+          $fwrite(32'h80000002,"cnt: %d\n",cnt); // @[Compute.scala 223:13:@417.10]
+        end
+    `ifdef PRINTF_COND
+      end
+    `endif
+    `endif // SYNTHESIS
+    `ifndef SYNTHESIS
+    `ifdef PRINTF_COND
+      if (`PRINTF_COND) begin
+    `endif
+        if (_GEN_55 & _T_209) begin
+          $fwrite(32'h80000002,"\na(%d): %d, \n\n",3'h5,accum_5); // @[Compute.scala 224:13:@422.10]
+        end
+    `ifdef PRINTF_COND
+      end
+    `endif
+    `endif // SYNTHESIS
+    `ifndef SYNTHESIS
+    `ifdef PRINTF_COND
+      if (`PRINTF_COND) begin
+    `endif
+        if (_GEN_55 & _T_209) begin
+          $fwrite(32'h80000002,"cnt: %d\n",cnt); // @[Compute.scala 223:13:@431.10]
+        end
+    `ifdef PRINTF_COND
+      end
+    `endif
+    `endif // SYNTHESIS
+    `ifndef SYNTHESIS
+    `ifdef PRINTF_COND
+      if (`PRINTF_COND) begin
+    `endif
+        if (_GEN_55 & _T_209) begin
+          $fwrite(32'h80000002,"\na(%d): %d, \n\n",3'h6,accum_6); // @[Compute.scala 224:13:@436.10]
+        end
+    `ifdef PRINTF_COND
+      end
+    `endif
+    `endif // SYNTHESIS
+    `ifndef SYNTHESIS
+    `ifdef PRINTF_COND
+      if (`PRINTF_COND) begin
+    `endif
+        if (_GEN_55 & _T_209) begin
+          $fwrite(32'h80000002,"cnt: %d\n",cnt); // @[Compute.scala 223:13:@445.10]
+        end
+    `ifdef PRINTF_COND
+      end
+    `endif
+    `endif // SYNTHESIS
+    `ifndef SYNTHESIS
+    `ifdef PRINTF_COND
+      if (`PRINTF_COND) begin
+    `endif
+        if (_GEN_55 & _T_209) begin
+          $fwrite(32'h80000002,"\na(%d): %d, \n\n",3'h7,accum_7); // @[Compute.scala 224:13:@450.10]
+        end
+    `ifdef PRINTF_COND
+      end
+    `endif
+    `endif // SYNTHESIS
   end
 endmodule
-module Accumulator( // @[:@352.2]
-  input         clock, // @[:@353.4]
-  input         reset, // @[:@354.4]
-  input         io_rst, // @[:@355.4]
-  input         io_valid, // @[:@355.4]
-  output        io_ready, // @[:@355.4]
-  input  [62:0] io_in, // @[:@355.4]
-  output [63:0] io_sum // @[:@355.4]
+module Accumulator( // @[:@460.2]
+  input         clock, // @[:@461.4]
+  input         reset, // @[:@462.4]
+  input         io_rst, // @[:@463.4]
+  input         io_valid, // @[:@463.4]
+  output        io_ready, // @[:@463.4]
+  input  [62:0] io_in, // @[:@463.4]
+  output [63:0] io_sum // @[:@463.4]
 );
-  reg [63:0] reg$; // @[Compute.scala 219:20:@357.4]
+  reg [63:0] reg$; // @[Compute.scala 243:20:@465.4]
   reg [63:0] _RAND_0;
-  reg  ready; // @[Compute.scala 220:22:@358.4]
+  reg  ready; // @[Compute.scala 244:22:@466.4]
   reg [31:0] _RAND_1;
-  wire [63:0] _GEN_2; // @[Compute.scala 224:16:@365.8]
-  wire [64:0] _T_19; // @[Compute.scala 224:16:@365.8]
-  wire  _T_23; // @[Compute.scala 225:11:@369.8]
-  wire [64:0] _GEN_0; // @[Compute.scala 223:26:@364.6]
-  wire [64:0] _GEN_1; // @[Compute.scala 221:17:@360.4]
-  wire  _GEN_4; // @[Compute.scala 225:11:@371.10]
-  wire  _GEN_5; // @[Compute.scala 225:11:@371.10]
-  assign _GEN_2 = {{1'd0}, io_in}; // @[Compute.scala 224:16:@365.8]
-  assign _T_19 = reg$ + _GEN_2; // @[Compute.scala 224:16:@365.8]
-  assign _T_23 = reset == 1'h0; // @[Compute.scala 225:11:@369.8]
-  assign _GEN_0 = io_valid ? _T_19 : {{1'd0}, reg$}; // @[Compute.scala 223:26:@364.6]
-  assign _GEN_1 = io_rst ? 65'h0 : _GEN_0; // @[Compute.scala 221:17:@360.4]
-  assign io_ready = ready; // @[Compute.scala 231:12:@374.4]
-  assign io_sum = reg$; // @[Compute.scala 232:10:@375.4]
-  assign _GEN_4 = io_rst == 1'h0; // @[Compute.scala 225:11:@371.10]
-  assign _GEN_5 = _GEN_4 & io_valid; // @[Compute.scala 225:11:@371.10]
+  wire [63:0] _GEN_2; // @[Compute.scala 248:16:@473.8]
+  wire [64:0] _T_19; // @[Compute.scala 248:16:@473.8]
+  wire  _T_23; // @[Compute.scala 249:11:@477.8]
+  wire [64:0] _GEN_0; // @[Compute.scala 247:26:@472.6]
+  wire [64:0] _GEN_1; // @[Compute.scala 245:17:@468.4]
+  wire  _GEN_4; // @[Compute.scala 249:11:@479.10]
+  wire  _GEN_5; // @[Compute.scala 249:11:@479.10]
+  assign _GEN_2 = {{1'd0}, io_in}; // @[Compute.scala 248:16:@473.8]
+  assign _T_19 = reg$ + _GEN_2; // @[Compute.scala 248:16:@473.8]
+  assign _T_23 = reset == 1'h0; // @[Compute.scala 249:11:@477.8]
+  assign _GEN_0 = io_valid ? _T_19 : {{1'd0}, reg$}; // @[Compute.scala 247:26:@472.6]
+  assign _GEN_1 = io_rst ? 65'h0 : _GEN_0; // @[Compute.scala 245:17:@468.4]
+  assign io_ready = ready; // @[Compute.scala 255:12:@482.4]
+  assign io_sum = reg$; // @[Compute.scala 256:10:@483.4]
+  assign _GEN_4 = io_rst == 1'h0; // @[Compute.scala 249:11:@479.10]
+  assign _GEN_5 = _GEN_4 & io_valid; // @[Compute.scala 249:11:@479.10]
 `ifdef RANDOMIZE_GARBAGE_ASSIGN
 `define RANDOMIZE
 `endif
@@ -941,7 +1249,7 @@ module Accumulator( // @[:@352.2]
       if (`PRINTF_COND) begin
     `endif
         if (_GEN_5 & _T_23) begin
-          $fwrite(32'h80000002,"slice sum: %d \n",_T_19); // @[Compute.scala 225:11:@371.10]
+          $fwrite(32'h80000002,"slice sum: %d \n",_T_19); // @[Compute.scala 249:11:@479.10]
         end
     `ifdef PRINTF_COND
       end
@@ -949,162 +1257,161 @@ module Accumulator( // @[:@352.2]
     `endif // SYNTHESIS
   end
 endmodule
-module Compute( // @[:@377.2]
-  input         clock, // @[:@378.4]
-  input         reset, // @[:@379.4]
-  input         io_launch, // @[:@380.4]
-  output        io_finish, // @[:@380.4]
-  output        io_ecnt_0_valid, // @[:@380.4]
-  output [31:0] io_ecnt_0_bits, // @[:@380.4]
-  input  [31:0] io_vals_0, // @[:@380.4]
-  input  [31:0] io_vals_1, // @[:@380.4]
-  input  [31:0] io_vals_2, // @[:@380.4]
-  input  [63:0] io_ptrs_0, // @[:@380.4]
-  input  [63:0] io_ptrs_1, // @[:@380.4]
-  input  [63:0] io_ptrs_2, // @[:@380.4]
-  output        io_mem_req_valid, // @[:@380.4]
-  output        io_mem_req_opcode, // @[:@380.4]
-  output [63:0] io_mem_req_addr, // @[:@380.4]
-  output        io_mem_wr_valid, // @[:@380.4]
-  output [63:0] io_mem_wr_bits, // @[:@380.4]
-  output        io_mem_rd_ready, // @[:@380.4]
-  input         io_mem_rd_valid, // @[:@380.4]
-  input  [63:0] io_mem_rd_bits // @[:@380.4]
+module Compute( // @[:@485.2]
+  input         clock, // @[:@486.4]
+  input         reset, // @[:@487.4]
+  input         io_launch, // @[:@488.4]
+  output        io_finish, // @[:@488.4]
+  output        io_ecnt_0_valid, // @[:@488.4]
+  output [31:0] io_ecnt_0_bits, // @[:@488.4]
+  input  [31:0] io_vals_0, // @[:@488.4]
+  input  [31:0] io_vals_1, // @[:@488.4]
+  input  [31:0] io_vals_2, // @[:@488.4]
+  input  [63:0] io_ptrs_0, // @[:@488.4]
+  input  [63:0] io_ptrs_1, // @[:@488.4]
+  input  [63:0] io_ptrs_2, // @[:@488.4]
+  output        io_mem_req_valid, // @[:@488.4]
+  output        io_mem_req_opcode, // @[:@488.4]
+  output [63:0] io_mem_req_addr, // @[:@488.4]
+  output        io_mem_wr_valid, // @[:@488.4]
+  output [63:0] io_mem_wr_bits, // @[:@488.4]
+  output        io_mem_rd_ready, // @[:@488.4]
+  input         io_mem_rd_valid, // @[:@488.4]
+  input  [63:0] io_mem_rd_bits // @[:@488.4]
 );
-  wire  dot_clock; // @[Compute.scala 150:19:@629.4]
-  wire  dot_reset; // @[Compute.scala 150:19:@629.4]
-  wire  dot_io_start; // @[Compute.scala 150:19:@629.4]
-  wire [7:0] dot_io_arrA_0; // @[Compute.scala 150:19:@629.4]
-  wire [7:0] dot_io_arrA_1; // @[Compute.scala 150:19:@629.4]
-  wire [7:0] dot_io_arrA_2; // @[Compute.scala 150:19:@629.4]
-  wire [7:0] dot_io_arrA_3; // @[Compute.scala 150:19:@629.4]
-  wire [7:0] dot_io_arrA_4; // @[Compute.scala 150:19:@629.4]
-  wire [7:0] dot_io_arrA_5; // @[Compute.scala 150:19:@629.4]
-  wire [7:0] dot_io_arrA_6; // @[Compute.scala 150:19:@629.4]
-  wire [7:0] dot_io_arrA_7; // @[Compute.scala 150:19:@629.4]
-  wire [7:0] dot_io_arrB_0; // @[Compute.scala 150:19:@629.4]
-  wire [7:0] dot_io_arrB_1; // @[Compute.scala 150:19:@629.4]
-  wire [7:0] dot_io_arrB_2; // @[Compute.scala 150:19:@629.4]
-  wire [7:0] dot_io_arrB_3; // @[Compute.scala 150:19:@629.4]
-  wire [7:0] dot_io_arrB_4; // @[Compute.scala 150:19:@629.4]
-  wire [7:0] dot_io_arrB_5; // @[Compute.scala 150:19:@629.4]
-  wire [7:0] dot_io_arrB_6; // @[Compute.scala 150:19:@629.4]
-  wire [7:0] dot_io_arrB_7; // @[Compute.scala 150:19:@629.4]
-  wire  dot_io_valid; // @[Compute.scala 150:19:@629.4]
-  wire [22:0] dot_io_res; // @[Compute.scala 150:19:@629.4]
-  wire  overallAccum_clock; // @[Compute.scala 151:28:@632.4]
-  wire  overallAccum_reset; // @[Compute.scala 151:28:@632.4]
-  wire  overallAccum_io_rst; // @[Compute.scala 151:28:@632.4]
-  wire  overallAccum_io_valid; // @[Compute.scala 151:28:@632.4]
-  wire  overallAccum_io_ready; // @[Compute.scala 151:28:@632.4]
-  wire [62:0] overallAccum_io_in; // @[Compute.scala 151:28:@632.4]
-  wire [63:0] overallAccum_io_sum; // @[Compute.scala 151:28:@632.4]
-  reg [2:0] state; // @[Compute.scala 48:22:@382.4]
+  wire  dot_clock; // @[Compute.scala 150:19:@738.4]
+  wire  dot_reset; // @[Compute.scala 150:19:@738.4]
+  wire  dot_io_start; // @[Compute.scala 150:19:@738.4]
+  wire [7:0] dot_io_arrA_0; // @[Compute.scala 150:19:@738.4]
+  wire [7:0] dot_io_arrA_1; // @[Compute.scala 150:19:@738.4]
+  wire [7:0] dot_io_arrA_2; // @[Compute.scala 150:19:@738.4]
+  wire [7:0] dot_io_arrA_3; // @[Compute.scala 150:19:@738.4]
+  wire [7:0] dot_io_arrA_4; // @[Compute.scala 150:19:@738.4]
+  wire [7:0] dot_io_arrA_5; // @[Compute.scala 150:19:@738.4]
+  wire [7:0] dot_io_arrA_6; // @[Compute.scala 150:19:@738.4]
+  wire [7:0] dot_io_arrA_7; // @[Compute.scala 150:19:@738.4]
+  wire [7:0] dot_io_arrB_0; // @[Compute.scala 150:19:@738.4]
+  wire [7:0] dot_io_arrB_1; // @[Compute.scala 150:19:@738.4]
+  wire [7:0] dot_io_arrB_2; // @[Compute.scala 150:19:@738.4]
+  wire [7:0] dot_io_arrB_3; // @[Compute.scala 150:19:@738.4]
+  wire [7:0] dot_io_arrB_4; // @[Compute.scala 150:19:@738.4]
+  wire [7:0] dot_io_arrB_5; // @[Compute.scala 150:19:@738.4]
+  wire [7:0] dot_io_arrB_6; // @[Compute.scala 150:19:@738.4]
+  wire [7:0] dot_io_arrB_7; // @[Compute.scala 150:19:@738.4]
+  wire  dot_io_valid; // @[Compute.scala 150:19:@738.4]
+  wire [22:0] dot_io_res; // @[Compute.scala 150:19:@738.4]
+  wire  overallAccum_clock; // @[Compute.scala 151:28:@741.4]
+  wire  overallAccum_reset; // @[Compute.scala 151:28:@741.4]
+  wire  overallAccum_io_rst; // @[Compute.scala 151:28:@741.4]
+  wire  overallAccum_io_valid; // @[Compute.scala 151:28:@741.4]
+  wire  overallAccum_io_ready; // @[Compute.scala 151:28:@741.4]
+  wire [62:0] overallAccum_io_in; // @[Compute.scala 151:28:@741.4]
+  wire [63:0] overallAccum_io_sum; // @[Compute.scala 151:28:@741.4]
+  reg [2:0] state; // @[Compute.scala 48:22:@490.4]
   reg [31:0] _RAND_0;
-  wire [7:0] shift; // @[Compute.scala 49:25:@383.4]
-  reg [31:0] cycles; // @[Compute.scala 53:23:@384.4]
+  wire [7:0] shift; // @[Compute.scala 49:25:@491.4]
+  reg [31:0] cycles; // @[Compute.scala 53:23:@492.4]
   reg [31:0] _RAND_1;
-  reg [31:0] reg1_0; // @[Compute.scala 54:17:@385.4]
+  reg [31:0] reg1_0; // @[Compute.scala 54:17:@493.4]
   reg [31:0] _RAND_2;
-  reg [31:0] reg1_1; // @[Compute.scala 54:17:@385.4]
+  reg [31:0] reg1_1; // @[Compute.scala 54:17:@493.4]
   reg [31:0] _RAND_3;
-  reg [31:0] reg1_2; // @[Compute.scala 54:17:@385.4]
+  reg [31:0] reg1_2; // @[Compute.scala 54:17:@493.4]
   reg [31:0] _RAND_4;
-  reg [31:0] reg1_3; // @[Compute.scala 54:17:@385.4]
+  reg [31:0] reg1_3; // @[Compute.scala 54:17:@493.4]
   reg [31:0] _RAND_5;
-  reg [31:0] reg1_4; // @[Compute.scala 54:17:@385.4]
+  reg [31:0] reg1_4; // @[Compute.scala 54:17:@493.4]
   reg [31:0] _RAND_6;
-  reg [31:0] reg1_5; // @[Compute.scala 54:17:@385.4]
+  reg [31:0] reg1_5; // @[Compute.scala 54:17:@493.4]
   reg [31:0] _RAND_7;
-  reg [31:0] reg1_6; // @[Compute.scala 54:17:@385.4]
+  reg [31:0] reg1_6; // @[Compute.scala 54:17:@493.4]
   reg [31:0] _RAND_8;
-  reg [31:0] reg1_7; // @[Compute.scala 54:17:@385.4]
+  reg [31:0] reg1_7; // @[Compute.scala 54:17:@493.4]
   reg [31:0] _RAND_9;
-  reg [31:0] reg2_0; // @[Compute.scala 55:17:@386.4]
+  reg [31:0] reg2_0; // @[Compute.scala 55:17:@494.4]
   reg [31:0] _RAND_10;
-  reg [31:0] reg2_1; // @[Compute.scala 55:17:@386.4]
+  reg [31:0] reg2_1; // @[Compute.scala 55:17:@494.4]
   reg [31:0] _RAND_11;
-  reg [31:0] reg2_2; // @[Compute.scala 55:17:@386.4]
+  reg [31:0] reg2_2; // @[Compute.scala 55:17:@494.4]
   reg [31:0] _RAND_12;
-  reg [31:0] reg2_3; // @[Compute.scala 55:17:@386.4]
+  reg [31:0] reg2_3; // @[Compute.scala 55:17:@494.4]
   reg [31:0] _RAND_13;
-  reg [31:0] reg2_4; // @[Compute.scala 55:17:@386.4]
+  reg [31:0] reg2_4; // @[Compute.scala 55:17:@494.4]
   reg [31:0] _RAND_14;
-  reg [31:0] reg2_5; // @[Compute.scala 55:17:@386.4]
+  reg [31:0] reg2_5; // @[Compute.scala 55:17:@494.4]
   reg [31:0] _RAND_15;
-  reg [31:0] reg2_6; // @[Compute.scala 55:17:@386.4]
+  reg [31:0] reg2_6; // @[Compute.scala 55:17:@494.4]
   reg [31:0] _RAND_16;
-  reg [31:0] reg2_7; // @[Compute.scala 55:17:@386.4]
+  reg [31:0] reg2_7; // @[Compute.scala 55:17:@494.4]
   reg [31:0] _RAND_17;
-  reg [31:0] cnt; // @[Compute.scala 56:16:@387.4]
+  reg [31:0] cnt; // @[Compute.scala 56:16:@495.4]
   reg [31:0] _RAND_18;
-  reg [63:0] raddr1; // @[Compute.scala 57:19:@388.4]
+  reg [63:0] raddr1; // @[Compute.scala 57:19:@496.4]
   reg [63:0] _RAND_19;
-  reg [63:0] raddr2; // @[Compute.scala 58:19:@389.4]
+  reg [63:0] raddr2; // @[Compute.scala 58:19:@497.4]
   reg [63:0] _RAND_20;
-  reg [63:0] waddr; // @[Compute.scala 59:18:@390.4]
+  reg [63:0] waddr; // @[Compute.scala 59:18:@498.4]
   reg [63:0] _RAND_21;
-  wire  _T_112; // @[Conditional.scala 37:30:@391.4]
-  wire [2:0] _GEN_0; // @[Compute.scala 69:24:@393.6]
-  wire  _T_113; // @[Conditional.scala 37:30:@398.6]
-  wire  _T_114; // @[Conditional.scala 37:30:@403.8]
-  wire [2:0] _GEN_1; // @[Compute.scala 78:30:@405.10]
-  wire  _T_115; // @[Conditional.scala 37:30:@410.10]
-  wire  _T_116; // @[Conditional.scala 37:30:@415.12]
-  wire [2:0] _GEN_2; // @[Compute.scala 86:30:@417.14]
-  wire  _T_117; // @[Conditional.scala 37:30:@422.14]
-  wire  _T_118; // @[Conditional.scala 37:30:@427.16]
-  wire [32:0] _T_120; // @[Compute.scala 95:29:@429.18]
-  wire [32:0] _T_121; // @[Compute.scala 95:29:@430.18]
-  wire [31:0] _T_122; // @[Compute.scala 95:29:@431.18]
-  wire  _T_123; // @[Compute.scala 95:17:@432.18]
-  wire [2:0] _GEN_3; // @[Compute.scala 95:37:@433.18]
-  wire [2:0] _GEN_4; // @[Conditional.scala 39:67:@428.16]
-  wire [2:0] _GEN_5; // @[Conditional.scala 39:67:@423.14]
-  wire [2:0] _GEN_6; // @[Conditional.scala 39:67:@416.12]
-  wire [2:0] _GEN_7; // @[Conditional.scala 39:67:@411.10]
-  wire [2:0] _GEN_8; // @[Conditional.scala 39:67:@404.8]
-  wire [2:0] _GEN_9; // @[Conditional.scala 39:67:@399.6]
-  wire [2:0] _GEN_10; // @[Conditional.scala 40:58:@392.4]
-  wire  _T_124; // @[Compute.scala 103:20:@440.4]
-  wire  last; // @[Compute.scala 103:35:@445.4]
-  wire  _T_130; // @[Compute.scala 106:15:@446.4]
-  wire [32:0] _T_133; // @[Compute.scala 109:22:@451.6]
-  wire [31:0] _T_134; // @[Compute.scala 109:22:@452.6]
-  wire [31:0] _GEN_11; // @[Compute.scala 106:26:@447.4]
-  wire [64:0] _T_138; // @[Compute.scala 121:22:@466.8]
-  wire [63:0] _T_139; // @[Compute.scala 121:22:@467.8]
-  wire [64:0] _T_141; // @[Compute.scala 122:22:@469.8]
-  wire [63:0] _T_142; // @[Compute.scala 122:22:@470.8]
-  wire [63:0] _GEN_12; // @[Compute.scala 120:38:@465.6]
-  wire [63:0] _GEN_13; // @[Compute.scala 120:38:@465.6]
-  wire  _T_143; // @[Compute.scala 127:29:@473.4]
-  wire  _T_144; // @[Compute.scala 127:51:@474.4]
-  wire  _T_145; // @[Compute.scala 127:43:@475.4]
-  wire  _T_146; // @[Compute.scala 127:73:@476.4]
-  wire [63:0] _T_154; // @[Compute.scala 130:72:@486.4]
-  wire  _T_156; // @[Compute.scala 133:15:@489.4]
-  wire  _T_157; // @[Compute.scala 133:30:@490.4]
-  wire [7:0] _T_158; // @[Compute.scala 135:32:@492.6]
-  wire  _T_162; // @[Compute.scala 136:13:@496.6]
-  wire [7:0] _T_163; // @[Compute.scala 135:32:@500.6]
-  wire [7:0] _T_168; // @[Compute.scala 135:32:@508.6]
-  wire [7:0] _T_173; // @[Compute.scala 135:32:@516.6]
-  wire [7:0] _T_178; // @[Compute.scala 135:32:@524.6]
-  wire [7:0] _T_183; // @[Compute.scala 135:32:@532.6]
-  wire [7:0] _T_188; // @[Compute.scala 135:32:@540.6]
-  wire [7:0] _T_193; // @[Compute.scala 135:32:@548.6]
-  wire  _T_198; // @[Compute.scala 140:15:@557.4]
-  wire  _T_199; // @[Compute.scala 140:30:@558.4]
-  wire [277:0] _GEN_35; // @[Compute.scala 152:37:@635.4]
-  reg [277:0] shiftReg; // @[Compute.scala 152:25:@636.4]
+  wire  _T_112; // @[Conditional.scala 37:30:@499.4]
+  wire [2:0] _GEN_0; // @[Compute.scala 69:24:@501.6]
+  wire  _T_113; // @[Conditional.scala 37:30:@506.6]
+  wire  _T_114; // @[Conditional.scala 37:30:@511.8]
+  wire [2:0] _GEN_1; // @[Compute.scala 78:30:@513.10]
+  wire  _T_115; // @[Conditional.scala 37:30:@518.10]
+  wire  _T_116; // @[Conditional.scala 37:30:@523.12]
+  wire [2:0] _GEN_2; // @[Compute.scala 86:30:@525.14]
+  wire  _T_117; // @[Conditional.scala 37:30:@530.14]
+  wire  _T_118; // @[Conditional.scala 37:30:@535.16]
+  wire [32:0] _T_120; // @[Compute.scala 95:29:@537.18]
+  wire [32:0] _T_121; // @[Compute.scala 95:29:@538.18]
+  wire [31:0] _T_122; // @[Compute.scala 95:29:@539.18]
+  wire  _T_123; // @[Compute.scala 95:17:@540.18]
+  wire [2:0] _GEN_3; // @[Compute.scala 95:37:@541.18]
+  wire [2:0] _GEN_4; // @[Conditional.scala 39:67:@536.16]
+  wire [2:0] _GEN_5; // @[Conditional.scala 39:67:@531.14]
+  wire [2:0] _GEN_6; // @[Conditional.scala 39:67:@524.12]
+  wire [2:0] _GEN_7; // @[Conditional.scala 39:67:@519.10]
+  wire [2:0] _GEN_8; // @[Conditional.scala 39:67:@512.8]
+  wire [2:0] _GEN_9; // @[Conditional.scala 39:67:@507.6]
+  wire [2:0] _GEN_10; // @[Conditional.scala 40:58:@500.4]
+  wire  _T_124; // @[Compute.scala 103:20:@548.4]
+  wire  _T_130; // @[Compute.scala 106:15:@554.4]
+  wire [32:0] _T_133; // @[Compute.scala 109:22:@559.6]
+  wire [31:0] _T_134; // @[Compute.scala 109:22:@560.6]
+  wire [31:0] _GEN_11; // @[Compute.scala 106:26:@555.4]
+  wire [64:0] _T_138; // @[Compute.scala 121:22:@574.8]
+  wire [63:0] _T_139; // @[Compute.scala 121:22:@575.8]
+  wire [64:0] _T_141; // @[Compute.scala 122:22:@577.8]
+  wire [63:0] _T_142; // @[Compute.scala 122:22:@578.8]
+  wire [63:0] _GEN_12; // @[Compute.scala 120:38:@573.6]
+  wire [63:0] _GEN_13; // @[Compute.scala 120:38:@573.6]
+  wire  _T_143; // @[Compute.scala 127:29:@582.4]
+  wire  _T_144; // @[Compute.scala 127:51:@583.4]
+  wire  _T_145; // @[Compute.scala 127:43:@584.4]
+  wire  _T_146; // @[Compute.scala 127:73:@585.4]
+  wire [63:0] _T_154; // @[Compute.scala 130:72:@595.4]
+  wire  _T_156; // @[Compute.scala 133:15:@598.4]
+  wire  _T_157; // @[Compute.scala 133:30:@599.4]
+  wire [7:0] _T_158; // @[Compute.scala 135:32:@601.6]
+  wire  _T_162; // @[Compute.scala 136:13:@605.6]
+  wire [7:0] _T_163; // @[Compute.scala 135:32:@609.6]
+  wire [7:0] _T_168; // @[Compute.scala 135:32:@617.6]
+  wire [7:0] _T_173; // @[Compute.scala 135:32:@625.6]
+  wire [7:0] _T_178; // @[Compute.scala 135:32:@633.6]
+  wire [7:0] _T_183; // @[Compute.scala 135:32:@641.6]
+  wire [7:0] _T_188; // @[Compute.scala 135:32:@649.6]
+  wire [7:0] _T_193; // @[Compute.scala 135:32:@657.6]
+  wire  _T_198; // @[Compute.scala 140:15:@666.4]
+  wire  _T_199; // @[Compute.scala 140:30:@667.4]
+  wire [277:0] _GEN_36; // @[Compute.scala 152:37:@744.4]
+  reg [277:0] shiftReg; // @[Compute.scala 152:25:@745.4]
   reg [287:0] _RAND_22;
-  reg  validReg; // @[Compute.scala 153:25:@638.4]
+  reg  validReg; // @[Compute.scala 153:25:@747.4]
   reg [31:0] _RAND_23;
-  wire [32:0] _T_252; // @[Compute.scala 170:16:@671.8]
-  wire [31:0] _T_253; // @[Compute.scala 170:16:@672.8]
-  wire [31:0] _GEN_33; // @[Compute.scala 169:38:@670.6]
-  Dot dot ( // @[Compute.scala 150:19:@629.4]
+  wire [32:0] _T_250; // @[Compute.scala 170:16:@778.8]
+  wire [31:0] _T_251; // @[Compute.scala 170:16:@779.8]
+  wire [31:0] _GEN_34; // @[Compute.scala 169:38:@777.6]
+  Dot dot ( // @[Compute.scala 150:19:@738.4]
     .clock(dot_clock),
     .reset(dot_reset),
     .io_start(dot_io_start),
@@ -1127,7 +1434,7 @@ module Compute( // @[:@377.2]
     .io_valid(dot_io_valid),
     .io_res(dot_io_res)
   );
-  Accumulator overallAccum ( // @[Compute.scala 151:28:@632.4]
+  Accumulator overallAccum ( // @[Compute.scala 151:28:@741.4]
     .clock(overallAccum_clock),
     .reset(overallAccum_reset),
     .io_rst(overallAccum_io_rst),
@@ -1136,96 +1443,95 @@ module Compute( // @[:@377.2]
     .io_in(overallAccum_io_in),
     .io_sum(overallAccum_io_sum)
   );
-  assign shift = io_vals_0[7:0]; // @[Compute.scala 49:25:@383.4]
-  assign _T_112 = 3'h0 == state; // @[Conditional.scala 37:30:@391.4]
-  assign _GEN_0 = io_launch ? 3'h1 : state; // @[Compute.scala 69:24:@393.6]
-  assign _T_113 = 3'h1 == state; // @[Conditional.scala 37:30:@398.6]
-  assign _T_114 = 3'h2 == state; // @[Conditional.scala 37:30:@403.8]
-  assign _GEN_1 = io_mem_rd_valid ? 3'h3 : state; // @[Compute.scala 78:30:@405.10]
-  assign _T_115 = 3'h3 == state; // @[Conditional.scala 37:30:@410.10]
-  assign _T_116 = 3'h4 == state; // @[Conditional.scala 37:30:@415.12]
-  assign _GEN_2 = io_mem_rd_valid ? 3'h5 : state; // @[Compute.scala 86:30:@417.14]
-  assign _T_117 = 3'h5 == state; // @[Conditional.scala 37:30:@422.14]
-  assign _T_118 = 3'h6 == state; // @[Conditional.scala 37:30:@427.16]
-  assign _T_120 = io_vals_1 - 32'h1; // @[Compute.scala 95:29:@429.18]
-  assign _T_121 = $unsigned(_T_120); // @[Compute.scala 95:29:@430.18]
-  assign _T_122 = _T_121[31:0]; // @[Compute.scala 95:29:@431.18]
-  assign _T_123 = cnt == _T_122; // @[Compute.scala 95:17:@432.18]
-  assign _GEN_3 = _T_123 ? 3'h0 : 3'h1; // @[Compute.scala 95:37:@433.18]
-  assign _GEN_4 = _T_118 ? _GEN_3 : state; // @[Conditional.scala 39:67:@428.16]
-  assign _GEN_5 = _T_117 ? 3'h6 : _GEN_4; // @[Conditional.scala 39:67:@423.14]
-  assign _GEN_6 = _T_116 ? _GEN_2 : _GEN_5; // @[Conditional.scala 39:67:@416.12]
-  assign _GEN_7 = _T_115 ? 3'h4 : _GEN_6; // @[Conditional.scala 39:67:@411.10]
-  assign _GEN_8 = _T_114 ? _GEN_1 : _GEN_7; // @[Conditional.scala 39:67:@404.8]
-  assign _GEN_9 = _T_113 ? 3'h2 : _GEN_8; // @[Conditional.scala 39:67:@399.6]
-  assign _GEN_10 = _T_112 ? _GEN_0 : _GEN_9; // @[Conditional.scala 40:58:@392.4]
-  assign _T_124 = state == 3'h6; // @[Compute.scala 103:20:@440.4]
-  assign last = _T_124 & _T_123; // @[Compute.scala 103:35:@445.4]
-  assign _T_130 = state == 3'h0; // @[Compute.scala 106:15:@446.4]
-  assign _T_133 = cycles + 32'h1; // @[Compute.scala 109:22:@451.6]
-  assign _T_134 = cycles + 32'h1; // @[Compute.scala 109:22:@452.6]
-  assign _GEN_11 = _T_130 ? 32'h0 : _T_134; // @[Compute.scala 106:26:@447.4]
-  assign _T_138 = raddr1 + 64'h8; // @[Compute.scala 121:22:@466.8]
-  assign _T_139 = raddr1 + 64'h8; // @[Compute.scala 121:22:@467.8]
-  assign _T_141 = raddr2 + 64'h8; // @[Compute.scala 122:22:@469.8]
-  assign _T_142 = raddr2 + 64'h8; // @[Compute.scala 122:22:@470.8]
-  assign _GEN_12 = _T_124 ? _T_139 : raddr1; // @[Compute.scala 120:38:@465.6]
-  assign _GEN_13 = _T_124 ? _T_142 : raddr2; // @[Compute.scala 120:38:@465.6]
-  assign _T_143 = state == 3'h1; // @[Compute.scala 127:29:@473.4]
-  assign _T_144 = state == 3'h3; // @[Compute.scala 127:51:@474.4]
-  assign _T_145 = _T_143 | _T_144; // @[Compute.scala 127:43:@475.4]
-  assign _T_146 = state == 3'h5; // @[Compute.scala 127:73:@476.4]
-  assign _T_154 = _T_143 ? raddr1 : raddr2; // @[Compute.scala 130:72:@486.4]
-  assign _T_156 = state == 3'h2; // @[Compute.scala 133:15:@489.4]
-  assign _T_157 = _T_156 & io_mem_rd_valid; // @[Compute.scala 133:30:@490.4]
-  assign _T_158 = io_mem_rd_bits[7:0]; // @[Compute.scala 135:32:@492.6]
-  assign _T_162 = reset == 1'h0; // @[Compute.scala 136:13:@496.6]
-  assign _T_163 = io_mem_rd_bits[15:8]; // @[Compute.scala 135:32:@500.6]
-  assign _T_168 = io_mem_rd_bits[23:16]; // @[Compute.scala 135:32:@508.6]
-  assign _T_173 = io_mem_rd_bits[31:24]; // @[Compute.scala 135:32:@516.6]
-  assign _T_178 = io_mem_rd_bits[39:32]; // @[Compute.scala 135:32:@524.6]
-  assign _T_183 = io_mem_rd_bits[47:40]; // @[Compute.scala 135:32:@532.6]
-  assign _T_188 = io_mem_rd_bits[55:48]; // @[Compute.scala 135:32:@540.6]
-  assign _T_193 = io_mem_rd_bits[63:56]; // @[Compute.scala 135:32:@548.6]
-  assign _T_198 = state == 3'h4; // @[Compute.scala 140:15:@557.4]
-  assign _T_199 = _T_198 & io_mem_rd_valid; // @[Compute.scala 140:30:@558.4]
-  assign _GEN_35 = {{255'd0}, dot_io_res}; // @[Compute.scala 152:37:@635.4]
-  assign _T_252 = cnt + 32'h1; // @[Compute.scala 170:16:@671.8]
-  assign _T_253 = cnt + 32'h1; // @[Compute.scala 170:16:@672.8]
-  assign _GEN_33 = _T_124 ? _T_253 : cnt; // @[Compute.scala 169:38:@670.6]
-  assign io_finish = overallAccum_io_ready; // @[Compute.scala 175:13:@675.4]
-  assign io_ecnt_0_valid = _T_124 & _T_123; // @[Compute.scala 112:20:@455.4]
-  assign io_ecnt_0_bits = cycles; // @[Compute.scala 113:19:@456.4]
-  assign io_mem_req_valid = _T_145 | _T_146; // @[Compute.scala 127:20:@478.4]
-  assign io_mem_req_opcode = state == 3'h5; // @[Compute.scala 128:21:@480.4]
-  assign io_mem_req_addr = _T_145 ? _T_154 : waddr; // @[Compute.scala 130:19:@488.4]
-  assign io_mem_wr_valid = overallAccum_io_ready; // @[Compute.scala 163:19:@662.4]
-  assign io_mem_wr_bits = overallAccum_io_sum; // @[Compute.scala 164:18:@663.4]
-  assign io_mem_rd_ready = _T_156 | _T_198; // @[Compute.scala 147:19:@628.4]
-  assign dot_clock = clock; // @[:@630.4]
-  assign dot_reset = reset; // @[:@631.4]
-  assign dot_io_start = _T_146 & last; // @[Compute.scala 155:16:@642.4]
-  assign dot_io_arrA_0 = reg1_0[7:0]; // @[Compute.scala 156:15:@643.4]
-  assign dot_io_arrA_1 = reg1_1[7:0]; // @[Compute.scala 156:15:@644.4]
-  assign dot_io_arrA_2 = reg1_2[7:0]; // @[Compute.scala 156:15:@645.4]
-  assign dot_io_arrA_3 = reg1_3[7:0]; // @[Compute.scala 156:15:@646.4]
-  assign dot_io_arrA_4 = reg1_4[7:0]; // @[Compute.scala 156:15:@647.4]
-  assign dot_io_arrA_5 = reg1_5[7:0]; // @[Compute.scala 156:15:@648.4]
-  assign dot_io_arrA_6 = reg1_6[7:0]; // @[Compute.scala 156:15:@649.4]
-  assign dot_io_arrA_7 = reg1_7[7:0]; // @[Compute.scala 156:15:@650.4]
-  assign dot_io_arrB_0 = reg2_0[7:0]; // @[Compute.scala 157:15:@651.4]
-  assign dot_io_arrB_1 = reg2_1[7:0]; // @[Compute.scala 157:15:@652.4]
-  assign dot_io_arrB_2 = reg2_2[7:0]; // @[Compute.scala 157:15:@653.4]
-  assign dot_io_arrB_3 = reg2_3[7:0]; // @[Compute.scala 157:15:@654.4]
-  assign dot_io_arrB_4 = reg2_4[7:0]; // @[Compute.scala 157:15:@655.4]
-  assign dot_io_arrB_5 = reg2_5[7:0]; // @[Compute.scala 157:15:@656.4]
-  assign dot_io_arrB_6 = reg2_6[7:0]; // @[Compute.scala 157:15:@657.4]
-  assign dot_io_arrB_7 = reg2_7[7:0]; // @[Compute.scala 157:15:@658.4]
-  assign overallAccum_clock = clock; // @[:@633.4]
-  assign overallAccum_reset = reset; // @[:@634.4]
-  assign overallAccum_io_rst = io_vals_2[0]; // @[Compute.scala 158:23:@659.4]
-  assign overallAccum_io_valid = validReg; // @[Compute.scala 159:25:@660.4]
-  assign overallAccum_io_in = shiftReg[62:0]; // @[Compute.scala 160:22:@661.4]
+  assign shift = io_vals_0[7:0]; // @[Compute.scala 49:25:@491.4]
+  assign _T_112 = 3'h0 == state; // @[Conditional.scala 37:30:@499.4]
+  assign _GEN_0 = io_launch ? 3'h1 : state; // @[Compute.scala 69:24:@501.6]
+  assign _T_113 = 3'h1 == state; // @[Conditional.scala 37:30:@506.6]
+  assign _T_114 = 3'h2 == state; // @[Conditional.scala 37:30:@511.8]
+  assign _GEN_1 = io_mem_rd_valid ? 3'h3 : state; // @[Compute.scala 78:30:@513.10]
+  assign _T_115 = 3'h3 == state; // @[Conditional.scala 37:30:@518.10]
+  assign _T_116 = 3'h4 == state; // @[Conditional.scala 37:30:@523.12]
+  assign _GEN_2 = io_mem_rd_valid ? 3'h5 : state; // @[Compute.scala 86:30:@525.14]
+  assign _T_117 = 3'h5 == state; // @[Conditional.scala 37:30:@530.14]
+  assign _T_118 = 3'h6 == state; // @[Conditional.scala 37:30:@535.16]
+  assign _T_120 = io_vals_1 - 32'h1; // @[Compute.scala 95:29:@537.18]
+  assign _T_121 = $unsigned(_T_120); // @[Compute.scala 95:29:@538.18]
+  assign _T_122 = _T_121[31:0]; // @[Compute.scala 95:29:@539.18]
+  assign _T_123 = cnt == _T_122; // @[Compute.scala 95:17:@540.18]
+  assign _GEN_3 = _T_123 ? 3'h0 : 3'h1; // @[Compute.scala 95:37:@541.18]
+  assign _GEN_4 = _T_118 ? _GEN_3 : state; // @[Conditional.scala 39:67:@536.16]
+  assign _GEN_5 = _T_117 ? 3'h6 : _GEN_4; // @[Conditional.scala 39:67:@531.14]
+  assign _GEN_6 = _T_116 ? _GEN_2 : _GEN_5; // @[Conditional.scala 39:67:@524.12]
+  assign _GEN_7 = _T_115 ? 3'h4 : _GEN_6; // @[Conditional.scala 39:67:@519.10]
+  assign _GEN_8 = _T_114 ? _GEN_1 : _GEN_7; // @[Conditional.scala 39:67:@512.8]
+  assign _GEN_9 = _T_113 ? 3'h2 : _GEN_8; // @[Conditional.scala 39:67:@507.6]
+  assign _GEN_10 = _T_112 ? _GEN_0 : _GEN_9; // @[Conditional.scala 40:58:@500.4]
+  assign _T_124 = state == 3'h6; // @[Compute.scala 103:20:@548.4]
+  assign _T_130 = state == 3'h0; // @[Compute.scala 106:15:@554.4]
+  assign _T_133 = cycles + 32'h1; // @[Compute.scala 109:22:@559.6]
+  assign _T_134 = cycles + 32'h1; // @[Compute.scala 109:22:@560.6]
+  assign _GEN_11 = _T_130 ? 32'h0 : _T_134; // @[Compute.scala 106:26:@555.4]
+  assign _T_138 = raddr1 + 64'h8; // @[Compute.scala 121:22:@574.8]
+  assign _T_139 = raddr1 + 64'h8; // @[Compute.scala 121:22:@575.8]
+  assign _T_141 = raddr2 + 64'h8; // @[Compute.scala 122:22:@577.8]
+  assign _T_142 = raddr2 + 64'h8; // @[Compute.scala 122:22:@578.8]
+  assign _GEN_12 = _T_124 ? _T_139 : raddr1; // @[Compute.scala 120:38:@573.6]
+  assign _GEN_13 = _T_124 ? _T_142 : raddr2; // @[Compute.scala 120:38:@573.6]
+  assign _T_143 = state == 3'h1; // @[Compute.scala 127:29:@582.4]
+  assign _T_144 = state == 3'h3; // @[Compute.scala 127:51:@583.4]
+  assign _T_145 = _T_143 | _T_144; // @[Compute.scala 127:43:@584.4]
+  assign _T_146 = state == 3'h5; // @[Compute.scala 127:73:@585.4]
+  assign _T_154 = _T_143 ? raddr1 : raddr2; // @[Compute.scala 130:72:@595.4]
+  assign _T_156 = state == 3'h2; // @[Compute.scala 133:15:@598.4]
+  assign _T_157 = _T_156 & io_mem_rd_valid; // @[Compute.scala 133:30:@599.4]
+  assign _T_158 = io_mem_rd_bits[7:0]; // @[Compute.scala 135:32:@601.6]
+  assign _T_162 = reset == 1'h0; // @[Compute.scala 136:13:@605.6]
+  assign _T_163 = io_mem_rd_bits[15:8]; // @[Compute.scala 135:32:@609.6]
+  assign _T_168 = io_mem_rd_bits[23:16]; // @[Compute.scala 135:32:@617.6]
+  assign _T_173 = io_mem_rd_bits[31:24]; // @[Compute.scala 135:32:@625.6]
+  assign _T_178 = io_mem_rd_bits[39:32]; // @[Compute.scala 135:32:@633.6]
+  assign _T_183 = io_mem_rd_bits[47:40]; // @[Compute.scala 135:32:@641.6]
+  assign _T_188 = io_mem_rd_bits[55:48]; // @[Compute.scala 135:32:@649.6]
+  assign _T_193 = io_mem_rd_bits[63:56]; // @[Compute.scala 135:32:@657.6]
+  assign _T_198 = state == 3'h4; // @[Compute.scala 140:15:@666.4]
+  assign _T_199 = _T_198 & io_mem_rd_valid; // @[Compute.scala 140:30:@667.4]
+  assign _GEN_36 = {{255'd0}, dot_io_res}; // @[Compute.scala 152:37:@744.4]
+  assign _T_250 = cnt + 32'h1; // @[Compute.scala 170:16:@778.8]
+  assign _T_251 = cnt + 32'h1; // @[Compute.scala 170:16:@779.8]
+  assign _GEN_34 = _T_124 ? _T_251 : cnt; // @[Compute.scala 169:38:@777.6]
+  assign io_finish = overallAccum_io_ready; // @[Compute.scala 175:13:@782.4]
+  assign io_ecnt_0_valid = _T_124 & _T_123; // @[Compute.scala 112:20:@563.4]
+  assign io_ecnt_0_bits = cycles; // @[Compute.scala 113:19:@564.4]
+  assign io_mem_req_valid = _T_145 | _T_146; // @[Compute.scala 127:20:@587.4]
+  assign io_mem_req_opcode = state == 3'h5; // @[Compute.scala 128:21:@589.4]
+  assign io_mem_req_addr = _T_145 ? _T_154 : waddr; // @[Compute.scala 130:19:@597.4]
+  assign io_mem_wr_valid = overallAccum_io_ready; // @[Compute.scala 163:19:@769.4]
+  assign io_mem_wr_bits = overallAccum_io_sum; // @[Compute.scala 164:18:@770.4]
+  assign io_mem_rd_ready = _T_156 | _T_198; // @[Compute.scala 147:19:@737.4]
+  assign dot_clock = clock; // @[:@739.4]
+  assign dot_reset = reset; // @[:@740.4]
+  assign dot_io_start = _T_124 & _T_123; // @[Compute.scala 155:16:@749.4]
+  assign dot_io_arrA_0 = reg1_0[7:0]; // @[Compute.scala 156:15:@750.4]
+  assign dot_io_arrA_1 = reg1_1[7:0]; // @[Compute.scala 156:15:@751.4]
+  assign dot_io_arrA_2 = reg1_2[7:0]; // @[Compute.scala 156:15:@752.4]
+  assign dot_io_arrA_3 = reg1_3[7:0]; // @[Compute.scala 156:15:@753.4]
+  assign dot_io_arrA_4 = reg1_4[7:0]; // @[Compute.scala 156:15:@754.4]
+  assign dot_io_arrA_5 = reg1_5[7:0]; // @[Compute.scala 156:15:@755.4]
+  assign dot_io_arrA_6 = reg1_6[7:0]; // @[Compute.scala 156:15:@756.4]
+  assign dot_io_arrA_7 = reg1_7[7:0]; // @[Compute.scala 156:15:@757.4]
+  assign dot_io_arrB_0 = reg2_0[7:0]; // @[Compute.scala 157:15:@758.4]
+  assign dot_io_arrB_1 = reg2_1[7:0]; // @[Compute.scala 157:15:@759.4]
+  assign dot_io_arrB_2 = reg2_2[7:0]; // @[Compute.scala 157:15:@760.4]
+  assign dot_io_arrB_3 = reg2_3[7:0]; // @[Compute.scala 157:15:@761.4]
+  assign dot_io_arrB_4 = reg2_4[7:0]; // @[Compute.scala 157:15:@762.4]
+  assign dot_io_arrB_5 = reg2_5[7:0]; // @[Compute.scala 157:15:@763.4]
+  assign dot_io_arrB_6 = reg2_6[7:0]; // @[Compute.scala 157:15:@764.4]
+  assign dot_io_arrB_7 = reg2_7[7:0]; // @[Compute.scala 157:15:@765.4]
+  assign overallAccum_clock = clock; // @[:@742.4]
+  assign overallAccum_reset = reset; // @[:@743.4]
+  assign overallAccum_io_rst = io_vals_2[0]; // @[Compute.scala 158:23:@766.4]
+  assign overallAccum_io_valid = validReg; // @[Compute.scala 159:25:@767.4]
+  assign overallAccum_io_in = shiftReg[62:0]; // @[Compute.scala 160:22:@768.4]
 `ifdef RANDOMIZE_GARBAGE_ASSIGN
 `define RANDOMIZE
 `endif
@@ -1451,7 +1757,7 @@ module Compute( // @[:@377.2]
       cnt <= 32'h0;
     end else begin
       if (_T_124) begin
-        cnt <= _T_253;
+        cnt <= _T_251;
       end
     end
     if (_T_130) begin
@@ -1471,14 +1777,14 @@ module Compute( // @[:@377.2]
     if (_T_130) begin
       waddr <= io_ptrs_2;
     end
-    shiftReg <= _GEN_35 << shift;
+    shiftReg <= _GEN_36 << shift;
     validReg <= dot_io_valid;
     `ifndef SYNTHESIS
     `ifdef PRINTF_COND
       if (`PRINTF_COND) begin
     `endif
         if (_T_157 & _T_162) begin
-          $fwrite(32'h80000002,"slice inputs1: %d \n",_T_158); // @[Compute.scala 136:13:@498.8]
+          $fwrite(32'h80000002,"slice inputs1: %d \n",_T_158); // @[Compute.scala 136:13:@607.8]
         end
     `ifdef PRINTF_COND
       end
@@ -1489,7 +1795,7 @@ module Compute( // @[:@377.2]
       if (`PRINTF_COND) begin
     `endif
         if (_T_157 & _T_162) begin
-          $fwrite(32'h80000002,"slice inputs1: %d \n",_T_163); // @[Compute.scala 136:13:@506.8]
+          $fwrite(32'h80000002,"slice inputs1: %d \n",_T_163); // @[Compute.scala 136:13:@615.8]
         end
     `ifdef PRINTF_COND
       end
@@ -1500,7 +1806,7 @@ module Compute( // @[:@377.2]
       if (`PRINTF_COND) begin
     `endif
         if (_T_157 & _T_162) begin
-          $fwrite(32'h80000002,"slice inputs1: %d \n",_T_168); // @[Compute.scala 136:13:@514.8]
+          $fwrite(32'h80000002,"slice inputs1: %d \n",_T_168); // @[Compute.scala 136:13:@623.8]
         end
     `ifdef PRINTF_COND
       end
@@ -1511,7 +1817,7 @@ module Compute( // @[:@377.2]
       if (`PRINTF_COND) begin
     `endif
         if (_T_157 & _T_162) begin
-          $fwrite(32'h80000002,"slice inputs1: %d \n",_T_173); // @[Compute.scala 136:13:@522.8]
+          $fwrite(32'h80000002,"slice inputs1: %d \n",_T_173); // @[Compute.scala 136:13:@631.8]
         end
     `ifdef PRINTF_COND
       end
@@ -1522,7 +1828,7 @@ module Compute( // @[:@377.2]
       if (`PRINTF_COND) begin
     `endif
         if (_T_157 & _T_162) begin
-          $fwrite(32'h80000002,"slice inputs1: %d \n",_T_178); // @[Compute.scala 136:13:@530.8]
+          $fwrite(32'h80000002,"slice inputs1: %d \n",_T_178); // @[Compute.scala 136:13:@639.8]
         end
     `ifdef PRINTF_COND
       end
@@ -1533,7 +1839,7 @@ module Compute( // @[:@377.2]
       if (`PRINTF_COND) begin
     `endif
         if (_T_157 & _T_162) begin
-          $fwrite(32'h80000002,"slice inputs1: %d \n",_T_183); // @[Compute.scala 136:13:@538.8]
+          $fwrite(32'h80000002,"slice inputs1: %d \n",_T_183); // @[Compute.scala 136:13:@647.8]
         end
     `ifdef PRINTF_COND
       end
@@ -1544,7 +1850,7 @@ module Compute( // @[:@377.2]
       if (`PRINTF_COND) begin
     `endif
         if (_T_157 & _T_162) begin
-          $fwrite(32'h80000002,"slice inputs1: %d \n",_T_188); // @[Compute.scala 136:13:@546.8]
+          $fwrite(32'h80000002,"slice inputs1: %d \n",_T_188); // @[Compute.scala 136:13:@655.8]
         end
     `ifdef PRINTF_COND
       end
@@ -1555,7 +1861,7 @@ module Compute( // @[:@377.2]
       if (`PRINTF_COND) begin
     `endif
         if (_T_157 & _T_162) begin
-          $fwrite(32'h80000002,"slice inputs1: %d \n",_T_193); // @[Compute.scala 136:13:@554.8]
+          $fwrite(32'h80000002,"slice inputs1: %d \n",_T_193); // @[Compute.scala 136:13:@663.8]
         end
     `ifdef PRINTF_COND
       end
@@ -1566,7 +1872,7 @@ module Compute( // @[:@377.2]
       if (`PRINTF_COND) begin
     `endif
         if (_T_199 & _T_162) begin
-          $fwrite(32'h80000002,"slice inputs2: %d\n\n",_T_158); // @[Compute.scala 143:13:@566.8]
+          $fwrite(32'h80000002,"slice inputs2: %d\n",_T_158); // @[Compute.scala 143:13:@675.8]
         end
     `ifdef PRINTF_COND
       end
@@ -1577,7 +1883,7 @@ module Compute( // @[:@377.2]
       if (`PRINTF_COND) begin
     `endif
         if (_T_199 & _T_162) begin
-          $fwrite(32'h80000002,"slice inputs2: %d\n\n",_T_163); // @[Compute.scala 143:13:@574.8]
+          $fwrite(32'h80000002,"slice inputs2: %d\n",_T_163); // @[Compute.scala 143:13:@683.8]
         end
     `ifdef PRINTF_COND
       end
@@ -1588,7 +1894,7 @@ module Compute( // @[:@377.2]
       if (`PRINTF_COND) begin
     `endif
         if (_T_199 & _T_162) begin
-          $fwrite(32'h80000002,"slice inputs2: %d\n\n",_T_168); // @[Compute.scala 143:13:@582.8]
+          $fwrite(32'h80000002,"slice inputs2: %d\n",_T_168); // @[Compute.scala 143:13:@691.8]
         end
     `ifdef PRINTF_COND
       end
@@ -1599,7 +1905,7 @@ module Compute( // @[:@377.2]
       if (`PRINTF_COND) begin
     `endif
         if (_T_199 & _T_162) begin
-          $fwrite(32'h80000002,"slice inputs2: %d\n\n",_T_173); // @[Compute.scala 143:13:@590.8]
+          $fwrite(32'h80000002,"slice inputs2: %d\n",_T_173); // @[Compute.scala 143:13:@699.8]
         end
     `ifdef PRINTF_COND
       end
@@ -1610,7 +1916,7 @@ module Compute( // @[:@377.2]
       if (`PRINTF_COND) begin
     `endif
         if (_T_199 & _T_162) begin
-          $fwrite(32'h80000002,"slice inputs2: %d\n\n",_T_178); // @[Compute.scala 143:13:@598.8]
+          $fwrite(32'h80000002,"slice inputs2: %d\n",_T_178); // @[Compute.scala 143:13:@707.8]
         end
     `ifdef PRINTF_COND
       end
@@ -1621,7 +1927,7 @@ module Compute( // @[:@377.2]
       if (`PRINTF_COND) begin
     `endif
         if (_T_199 & _T_162) begin
-          $fwrite(32'h80000002,"slice inputs2: %d\n\n",_T_183); // @[Compute.scala 143:13:@606.8]
+          $fwrite(32'h80000002,"slice inputs2: %d\n",_T_183); // @[Compute.scala 143:13:@715.8]
         end
     `ifdef PRINTF_COND
       end
@@ -1632,7 +1938,7 @@ module Compute( // @[:@377.2]
       if (`PRINTF_COND) begin
     `endif
         if (_T_199 & _T_162) begin
-          $fwrite(32'h80000002,"slice inputs2: %d\n\n",_T_188); // @[Compute.scala 143:13:@614.8]
+          $fwrite(32'h80000002,"slice inputs2: %d\n",_T_188); // @[Compute.scala 143:13:@723.8]
         end
     `ifdef PRINTF_COND
       end
@@ -1643,7 +1949,7 @@ module Compute( // @[:@377.2]
       if (`PRINTF_COND) begin
     `endif
         if (_T_199 & _T_162) begin
-          $fwrite(32'h80000002,"slice inputs2: %d\n\n",_T_193); // @[Compute.scala 143:13:@622.8]
+          $fwrite(32'h80000002,"slice inputs2: %d\n",_T_193); // @[Compute.scala 143:13:@731.8]
         end
     `ifdef PRINTF_COND
       end
@@ -1651,65 +1957,65 @@ module Compute( // @[:@377.2]
     `endif // SYNTHESIS
   end
 endmodule
-module Accel( // @[:@677.2]
-  input         clock, // @[:@678.4]
-  input         reset, // @[:@679.4]
-  input         io_host_req_valid, // @[:@680.4]
-  input         io_host_req_opcode, // @[:@680.4]
-  input  [7:0]  io_host_req_addr, // @[:@680.4]
-  input  [31:0] io_host_req_value, // @[:@680.4]
-  output        io_host_req_deq, // @[:@680.4]
-  output        io_host_resp_valid, // @[:@680.4]
-  output [31:0] io_host_resp_bits, // @[:@680.4]
-  output        io_mem_req_valid, // @[:@680.4]
-  output        io_mem_req_opcode, // @[:@680.4]
-  output [63:0] io_mem_req_addr, // @[:@680.4]
-  output        io_mem_wr_valid, // @[:@680.4]
-  output [63:0] io_mem_wr_bits, // @[:@680.4]
-  output        io_mem_rd_ready, // @[:@680.4]
-  input         io_mem_rd_valid, // @[:@680.4]
-  input  [63:0] io_mem_rd_bits // @[:@680.4]
+module Accel( // @[:@784.2]
+  input         clock, // @[:@785.4]
+  input         reset, // @[:@786.4]
+  input         io_host_req_valid, // @[:@787.4]
+  input         io_host_req_opcode, // @[:@787.4]
+  input  [7:0]  io_host_req_addr, // @[:@787.4]
+  input  [31:0] io_host_req_value, // @[:@787.4]
+  output        io_host_req_deq, // @[:@787.4]
+  output        io_host_resp_valid, // @[:@787.4]
+  output [31:0] io_host_resp_bits, // @[:@787.4]
+  output        io_mem_req_valid, // @[:@787.4]
+  output        io_mem_req_opcode, // @[:@787.4]
+  output [63:0] io_mem_req_addr, // @[:@787.4]
+  output        io_mem_wr_valid, // @[:@787.4]
+  output [63:0] io_mem_wr_bits, // @[:@787.4]
+  output        io_mem_rd_ready, // @[:@787.4]
+  input         io_mem_rd_valid, // @[:@787.4]
+  input  [63:0] io_mem_rd_bits // @[:@787.4]
 );
-  wire  rf_clock; // @[Accel.scala 53:18:@682.4]
-  wire  rf_reset; // @[Accel.scala 53:18:@682.4]
-  wire  rf_io_launch; // @[Accel.scala 53:18:@682.4]
-  wire  rf_io_finish; // @[Accel.scala 53:18:@682.4]
-  wire  rf_io_ecnt_0_valid; // @[Accel.scala 53:18:@682.4]
-  wire [31:0] rf_io_ecnt_0_bits; // @[Accel.scala 53:18:@682.4]
-  wire [31:0] rf_io_vals_0; // @[Accel.scala 53:18:@682.4]
-  wire [31:0] rf_io_vals_1; // @[Accel.scala 53:18:@682.4]
-  wire [31:0] rf_io_vals_2; // @[Accel.scala 53:18:@682.4]
-  wire [63:0] rf_io_ptrs_0; // @[Accel.scala 53:18:@682.4]
-  wire [63:0] rf_io_ptrs_1; // @[Accel.scala 53:18:@682.4]
-  wire [63:0] rf_io_ptrs_2; // @[Accel.scala 53:18:@682.4]
-  wire  rf_io_host_req_valid; // @[Accel.scala 53:18:@682.4]
-  wire  rf_io_host_req_opcode; // @[Accel.scala 53:18:@682.4]
-  wire [7:0] rf_io_host_req_addr; // @[Accel.scala 53:18:@682.4]
-  wire [31:0] rf_io_host_req_value; // @[Accel.scala 53:18:@682.4]
-  wire  rf_io_host_req_deq; // @[Accel.scala 53:18:@682.4]
-  wire  rf_io_host_resp_valid; // @[Accel.scala 53:18:@682.4]
-  wire [31:0] rf_io_host_resp_bits; // @[Accel.scala 53:18:@682.4]
-  wire  ce_clock; // @[Accel.scala 54:18:@685.4]
-  wire  ce_reset; // @[Accel.scala 54:18:@685.4]
-  wire  ce_io_launch; // @[Accel.scala 54:18:@685.4]
-  wire  ce_io_finish; // @[Accel.scala 54:18:@685.4]
-  wire  ce_io_ecnt_0_valid; // @[Accel.scala 54:18:@685.4]
-  wire [31:0] ce_io_ecnt_0_bits; // @[Accel.scala 54:18:@685.4]
-  wire [31:0] ce_io_vals_0; // @[Accel.scala 54:18:@685.4]
-  wire [31:0] ce_io_vals_1; // @[Accel.scala 54:18:@685.4]
-  wire [31:0] ce_io_vals_2; // @[Accel.scala 54:18:@685.4]
-  wire [63:0] ce_io_ptrs_0; // @[Accel.scala 54:18:@685.4]
-  wire [63:0] ce_io_ptrs_1; // @[Accel.scala 54:18:@685.4]
-  wire [63:0] ce_io_ptrs_2; // @[Accel.scala 54:18:@685.4]
-  wire  ce_io_mem_req_valid; // @[Accel.scala 54:18:@685.4]
-  wire  ce_io_mem_req_opcode; // @[Accel.scala 54:18:@685.4]
-  wire [63:0] ce_io_mem_req_addr; // @[Accel.scala 54:18:@685.4]
-  wire  ce_io_mem_wr_valid; // @[Accel.scala 54:18:@685.4]
-  wire [63:0] ce_io_mem_wr_bits; // @[Accel.scala 54:18:@685.4]
-  wire  ce_io_mem_rd_ready; // @[Accel.scala 54:18:@685.4]
-  wire  ce_io_mem_rd_valid; // @[Accel.scala 54:18:@685.4]
-  wire [63:0] ce_io_mem_rd_bits; // @[Accel.scala 54:18:@685.4]
-  RegFile rf ( // @[Accel.scala 53:18:@682.4]
+  wire  rf_clock; // @[Accel.scala 53:18:@789.4]
+  wire  rf_reset; // @[Accel.scala 53:18:@789.4]
+  wire  rf_io_launch; // @[Accel.scala 53:18:@789.4]
+  wire  rf_io_finish; // @[Accel.scala 53:18:@789.4]
+  wire  rf_io_ecnt_0_valid; // @[Accel.scala 53:18:@789.4]
+  wire [31:0] rf_io_ecnt_0_bits; // @[Accel.scala 53:18:@789.4]
+  wire [31:0] rf_io_vals_0; // @[Accel.scala 53:18:@789.4]
+  wire [31:0] rf_io_vals_1; // @[Accel.scala 53:18:@789.4]
+  wire [31:0] rf_io_vals_2; // @[Accel.scala 53:18:@789.4]
+  wire [63:0] rf_io_ptrs_0; // @[Accel.scala 53:18:@789.4]
+  wire [63:0] rf_io_ptrs_1; // @[Accel.scala 53:18:@789.4]
+  wire [63:0] rf_io_ptrs_2; // @[Accel.scala 53:18:@789.4]
+  wire  rf_io_host_req_valid; // @[Accel.scala 53:18:@789.4]
+  wire  rf_io_host_req_opcode; // @[Accel.scala 53:18:@789.4]
+  wire [7:0] rf_io_host_req_addr; // @[Accel.scala 53:18:@789.4]
+  wire [31:0] rf_io_host_req_value; // @[Accel.scala 53:18:@789.4]
+  wire  rf_io_host_req_deq; // @[Accel.scala 53:18:@789.4]
+  wire  rf_io_host_resp_valid; // @[Accel.scala 53:18:@789.4]
+  wire [31:0] rf_io_host_resp_bits; // @[Accel.scala 53:18:@789.4]
+  wire  ce_clock; // @[Accel.scala 54:18:@792.4]
+  wire  ce_reset; // @[Accel.scala 54:18:@792.4]
+  wire  ce_io_launch; // @[Accel.scala 54:18:@792.4]
+  wire  ce_io_finish; // @[Accel.scala 54:18:@792.4]
+  wire  ce_io_ecnt_0_valid; // @[Accel.scala 54:18:@792.4]
+  wire [31:0] ce_io_ecnt_0_bits; // @[Accel.scala 54:18:@792.4]
+  wire [31:0] ce_io_vals_0; // @[Accel.scala 54:18:@792.4]
+  wire [31:0] ce_io_vals_1; // @[Accel.scala 54:18:@792.4]
+  wire [31:0] ce_io_vals_2; // @[Accel.scala 54:18:@792.4]
+  wire [63:0] ce_io_ptrs_0; // @[Accel.scala 54:18:@792.4]
+  wire [63:0] ce_io_ptrs_1; // @[Accel.scala 54:18:@792.4]
+  wire [63:0] ce_io_ptrs_2; // @[Accel.scala 54:18:@792.4]
+  wire  ce_io_mem_req_valid; // @[Accel.scala 54:18:@792.4]
+  wire  ce_io_mem_req_opcode; // @[Accel.scala 54:18:@792.4]
+  wire [63:0] ce_io_mem_req_addr; // @[Accel.scala 54:18:@792.4]
+  wire  ce_io_mem_wr_valid; // @[Accel.scala 54:18:@792.4]
+  wire [63:0] ce_io_mem_wr_bits; // @[Accel.scala 54:18:@792.4]
+  wire  ce_io_mem_rd_ready; // @[Accel.scala 54:18:@792.4]
+  wire  ce_io_mem_rd_valid; // @[Accel.scala 54:18:@792.4]
+  wire [63:0] ce_io_mem_rd_bits; // @[Accel.scala 54:18:@792.4]
+  RegFile rf ( // @[Accel.scala 53:18:@789.4]
     .clock(rf_clock),
     .reset(rf_reset),
     .io_launch(rf_io_launch),
@@ -1730,7 +2036,7 @@ module Accel( // @[:@677.2]
     .io_host_resp_valid(rf_io_host_resp_valid),
     .io_host_resp_bits(rf_io_host_resp_bits)
   );
-  Compute ce ( // @[Accel.scala 54:18:@685.4]
+  Compute ce ( // @[Accel.scala 54:18:@792.4]
     .clock(ce_clock),
     .reset(ce_reset),
     .io_launch(ce_io_launch),
@@ -1752,79 +2058,79 @@ module Accel( // @[:@677.2]
     .io_mem_rd_valid(ce_io_mem_rd_valid),
     .io_mem_rd_bits(ce_io_mem_rd_bits)
   );
-  assign io_host_req_deq = rf_io_host_req_deq; // @[Accel.scala 55:14:@690.4]
-  assign io_host_resp_valid = rf_io_host_resp_valid; // @[Accel.scala 55:14:@689.4]
-  assign io_host_resp_bits = rf_io_host_resp_bits; // @[Accel.scala 55:14:@688.4]
-  assign io_mem_req_valid = ce_io_mem_req_valid; // @[Accel.scala 56:10:@703.4]
-  assign io_mem_req_opcode = ce_io_mem_req_opcode; // @[Accel.scala 56:10:@702.4]
-  assign io_mem_req_addr = ce_io_mem_req_addr; // @[Accel.scala 56:10:@700.4]
-  assign io_mem_wr_valid = ce_io_mem_wr_valid; // @[Accel.scala 56:10:@699.4]
-  assign io_mem_wr_bits = ce_io_mem_wr_bits; // @[Accel.scala 56:10:@698.4]
-  assign io_mem_rd_ready = ce_io_mem_rd_ready; // @[Accel.scala 56:10:@697.4]
-  assign rf_clock = clock; // @[:@683.4]
-  assign rf_reset = reset; // @[:@684.4]
-  assign rf_io_finish = ce_io_finish; // @[Accel.scala 58:16:@705.4]
-  assign rf_io_ecnt_0_valid = ce_io_ecnt_0_valid; // @[Accel.scala 59:14:@707.4]
-  assign rf_io_ecnt_0_bits = ce_io_ecnt_0_bits; // @[Accel.scala 59:14:@706.4]
-  assign rf_io_host_req_valid = io_host_req_valid; // @[Accel.scala 55:14:@694.4]
-  assign rf_io_host_req_opcode = io_host_req_opcode; // @[Accel.scala 55:14:@693.4]
-  assign rf_io_host_req_addr = io_host_req_addr; // @[Accel.scala 55:14:@692.4]
-  assign rf_io_host_req_value = io_host_req_value; // @[Accel.scala 55:14:@691.4]
-  assign ce_clock = clock; // @[:@686.4]
-  assign ce_reset = reset; // @[:@687.4]
-  assign ce_io_launch = rf_io_launch; // @[Accel.scala 57:16:@704.4]
-  assign ce_io_vals_0 = rf_io_vals_0; // @[Accel.scala 60:14:@708.4]
-  assign ce_io_vals_1 = rf_io_vals_1; // @[Accel.scala 60:14:@709.4]
-  assign ce_io_vals_2 = rf_io_vals_2; // @[Accel.scala 60:14:@710.4]
-  assign ce_io_ptrs_0 = rf_io_ptrs_0; // @[Accel.scala 61:14:@712.4]
-  assign ce_io_ptrs_1 = rf_io_ptrs_1; // @[Accel.scala 61:14:@713.4]
-  assign ce_io_ptrs_2 = rf_io_ptrs_2; // @[Accel.scala 61:14:@714.4]
-  assign ce_io_mem_rd_valid = io_mem_rd_valid; // @[Accel.scala 56:10:@696.4]
-  assign ce_io_mem_rd_bits = io_mem_rd_bits; // @[Accel.scala 56:10:@695.4]
+  assign io_host_req_deq = rf_io_host_req_deq; // @[Accel.scala 55:14:@797.4]
+  assign io_host_resp_valid = rf_io_host_resp_valid; // @[Accel.scala 55:14:@796.4]
+  assign io_host_resp_bits = rf_io_host_resp_bits; // @[Accel.scala 55:14:@795.4]
+  assign io_mem_req_valid = ce_io_mem_req_valid; // @[Accel.scala 56:10:@810.4]
+  assign io_mem_req_opcode = ce_io_mem_req_opcode; // @[Accel.scala 56:10:@809.4]
+  assign io_mem_req_addr = ce_io_mem_req_addr; // @[Accel.scala 56:10:@807.4]
+  assign io_mem_wr_valid = ce_io_mem_wr_valid; // @[Accel.scala 56:10:@806.4]
+  assign io_mem_wr_bits = ce_io_mem_wr_bits; // @[Accel.scala 56:10:@805.4]
+  assign io_mem_rd_ready = ce_io_mem_rd_ready; // @[Accel.scala 56:10:@804.4]
+  assign rf_clock = clock; // @[:@790.4]
+  assign rf_reset = reset; // @[:@791.4]
+  assign rf_io_finish = ce_io_finish; // @[Accel.scala 58:16:@812.4]
+  assign rf_io_ecnt_0_valid = ce_io_ecnt_0_valid; // @[Accel.scala 59:14:@814.4]
+  assign rf_io_ecnt_0_bits = ce_io_ecnt_0_bits; // @[Accel.scala 59:14:@813.4]
+  assign rf_io_host_req_valid = io_host_req_valid; // @[Accel.scala 55:14:@801.4]
+  assign rf_io_host_req_opcode = io_host_req_opcode; // @[Accel.scala 55:14:@800.4]
+  assign rf_io_host_req_addr = io_host_req_addr; // @[Accel.scala 55:14:@799.4]
+  assign rf_io_host_req_value = io_host_req_value; // @[Accel.scala 55:14:@798.4]
+  assign ce_clock = clock; // @[:@793.4]
+  assign ce_reset = reset; // @[:@794.4]
+  assign ce_io_launch = rf_io_launch; // @[Accel.scala 57:16:@811.4]
+  assign ce_io_vals_0 = rf_io_vals_0; // @[Accel.scala 60:14:@815.4]
+  assign ce_io_vals_1 = rf_io_vals_1; // @[Accel.scala 60:14:@816.4]
+  assign ce_io_vals_2 = rf_io_vals_2; // @[Accel.scala 60:14:@817.4]
+  assign ce_io_ptrs_0 = rf_io_ptrs_0; // @[Accel.scala 61:14:@819.4]
+  assign ce_io_ptrs_1 = rf_io_ptrs_1; // @[Accel.scala 61:14:@820.4]
+  assign ce_io_ptrs_2 = rf_io_ptrs_2; // @[Accel.scala 61:14:@821.4]
+  assign ce_io_mem_rd_valid = io_mem_rd_valid; // @[Accel.scala 56:10:@803.4]
+  assign ce_io_mem_rd_bits = io_mem_rd_bits; // @[Accel.scala 56:10:@802.4]
 endmodule
-module TestAccel( // @[:@716.2]
-  input   clock, // @[:@717.4]
-  input   reset, // @[:@718.4]
-  input   sim_clock, // @[:@719.4]
-  output  sim_wait // @[:@720.4]
+module TestAccel( // @[:@823.2]
+  input   clock, // @[:@824.4]
+  input   reset, // @[:@825.4]
+  input   sim_clock, // @[:@826.4]
+  output  sim_wait // @[:@827.4]
 );
-  wire  sim_shell_clock; // @[TestAccel.scala 59:25:@722.4]
-  wire  sim_shell_reset; // @[TestAccel.scala 59:25:@722.4]
-  wire  sim_shell_host_req_valid; // @[TestAccel.scala 59:25:@722.4]
-  wire  sim_shell_host_req_opcode; // @[TestAccel.scala 59:25:@722.4]
-  wire [7:0] sim_shell_host_req_addr; // @[TestAccel.scala 59:25:@722.4]
-  wire [31:0] sim_shell_host_req_value; // @[TestAccel.scala 59:25:@722.4]
-  wire  sim_shell_host_req_deq; // @[TestAccel.scala 59:25:@722.4]
-  wire  sim_shell_host_resp_valid; // @[TestAccel.scala 59:25:@722.4]
-  wire [31:0] sim_shell_host_resp_bits; // @[TestAccel.scala 59:25:@722.4]
-  wire  sim_shell_mem_req_valid; // @[TestAccel.scala 59:25:@722.4]
-  wire  sim_shell_mem_req_opcode; // @[TestAccel.scala 59:25:@722.4]
-  wire [63:0] sim_shell_mem_req_addr; // @[TestAccel.scala 59:25:@722.4]
-  wire  sim_shell_mem_wr_valid; // @[TestAccel.scala 59:25:@722.4]
-  wire [63:0] sim_shell_mem_wr_bits; // @[TestAccel.scala 59:25:@722.4]
-  wire  sim_shell_mem_rd_ready; // @[TestAccel.scala 59:25:@722.4]
-  wire  sim_shell_mem_rd_valid; // @[TestAccel.scala 59:25:@722.4]
-  wire [63:0] sim_shell_mem_rd_bits; // @[TestAccel.scala 59:25:@722.4]
-  wire  sim_shell_sim_clock; // @[TestAccel.scala 59:25:@722.4]
-  wire  sim_shell_sim_wait; // @[TestAccel.scala 59:25:@722.4]
-  wire  vta_accel_clock; // @[TestAccel.scala 60:25:@725.4]
-  wire  vta_accel_reset; // @[TestAccel.scala 60:25:@725.4]
-  wire  vta_accel_io_host_req_valid; // @[TestAccel.scala 60:25:@725.4]
-  wire  vta_accel_io_host_req_opcode; // @[TestAccel.scala 60:25:@725.4]
-  wire [7:0] vta_accel_io_host_req_addr; // @[TestAccel.scala 60:25:@725.4]
-  wire [31:0] vta_accel_io_host_req_value; // @[TestAccel.scala 60:25:@725.4]
-  wire  vta_accel_io_host_req_deq; // @[TestAccel.scala 60:25:@725.4]
-  wire  vta_accel_io_host_resp_valid; // @[TestAccel.scala 60:25:@725.4]
-  wire [31:0] vta_accel_io_host_resp_bits; // @[TestAccel.scala 60:25:@725.4]
-  wire  vta_accel_io_mem_req_valid; // @[TestAccel.scala 60:25:@725.4]
-  wire  vta_accel_io_mem_req_opcode; // @[TestAccel.scala 60:25:@725.4]
-  wire [63:0] vta_accel_io_mem_req_addr; // @[TestAccel.scala 60:25:@725.4]
-  wire  vta_accel_io_mem_wr_valid; // @[TestAccel.scala 60:25:@725.4]
-  wire [63:0] vta_accel_io_mem_wr_bits; // @[TestAccel.scala 60:25:@725.4]
-  wire  vta_accel_io_mem_rd_ready; // @[TestAccel.scala 60:25:@725.4]
-  wire  vta_accel_io_mem_rd_valid; // @[TestAccel.scala 60:25:@725.4]
-  wire [63:0] vta_accel_io_mem_rd_bits; // @[TestAccel.scala 60:25:@725.4]
-  VTASimShell sim_shell ( // @[TestAccel.scala 59:25:@722.4]
+  wire  sim_shell_clock; // @[TestAccel.scala 59:25:@829.4]
+  wire  sim_shell_reset; // @[TestAccel.scala 59:25:@829.4]
+  wire  sim_shell_host_req_valid; // @[TestAccel.scala 59:25:@829.4]
+  wire  sim_shell_host_req_opcode; // @[TestAccel.scala 59:25:@829.4]
+  wire [7:0] sim_shell_host_req_addr; // @[TestAccel.scala 59:25:@829.4]
+  wire [31:0] sim_shell_host_req_value; // @[TestAccel.scala 59:25:@829.4]
+  wire  sim_shell_host_req_deq; // @[TestAccel.scala 59:25:@829.4]
+  wire  sim_shell_host_resp_valid; // @[TestAccel.scala 59:25:@829.4]
+  wire [31:0] sim_shell_host_resp_bits; // @[TestAccel.scala 59:25:@829.4]
+  wire  sim_shell_mem_req_valid; // @[TestAccel.scala 59:25:@829.4]
+  wire  sim_shell_mem_req_opcode; // @[TestAccel.scala 59:25:@829.4]
+  wire [63:0] sim_shell_mem_req_addr; // @[TestAccel.scala 59:25:@829.4]
+  wire  sim_shell_mem_wr_valid; // @[TestAccel.scala 59:25:@829.4]
+  wire [63:0] sim_shell_mem_wr_bits; // @[TestAccel.scala 59:25:@829.4]
+  wire  sim_shell_mem_rd_ready; // @[TestAccel.scala 59:25:@829.4]
+  wire  sim_shell_mem_rd_valid; // @[TestAccel.scala 59:25:@829.4]
+  wire [63:0] sim_shell_mem_rd_bits; // @[TestAccel.scala 59:25:@829.4]
+  wire  sim_shell_sim_clock; // @[TestAccel.scala 59:25:@829.4]
+  wire  sim_shell_sim_wait; // @[TestAccel.scala 59:25:@829.4]
+  wire  vta_accel_clock; // @[TestAccel.scala 60:25:@832.4]
+  wire  vta_accel_reset; // @[TestAccel.scala 60:25:@832.4]
+  wire  vta_accel_io_host_req_valid; // @[TestAccel.scala 60:25:@832.4]
+  wire  vta_accel_io_host_req_opcode; // @[TestAccel.scala 60:25:@832.4]
+  wire [7:0] vta_accel_io_host_req_addr; // @[TestAccel.scala 60:25:@832.4]
+  wire [31:0] vta_accel_io_host_req_value; // @[TestAccel.scala 60:25:@832.4]
+  wire  vta_accel_io_host_req_deq; // @[TestAccel.scala 60:25:@832.4]
+  wire  vta_accel_io_host_resp_valid; // @[TestAccel.scala 60:25:@832.4]
+  wire [31:0] vta_accel_io_host_resp_bits; // @[TestAccel.scala 60:25:@832.4]
+  wire  vta_accel_io_mem_req_valid; // @[TestAccel.scala 60:25:@832.4]
+  wire  vta_accel_io_mem_req_opcode; // @[TestAccel.scala 60:25:@832.4]
+  wire [63:0] vta_accel_io_mem_req_addr; // @[TestAccel.scala 60:25:@832.4]
+  wire  vta_accel_io_mem_wr_valid; // @[TestAccel.scala 60:25:@832.4]
+  wire [63:0] vta_accel_io_mem_wr_bits; // @[TestAccel.scala 60:25:@832.4]
+  wire  vta_accel_io_mem_rd_ready; // @[TestAccel.scala 60:25:@832.4]
+  wire  vta_accel_io_mem_rd_valid; // @[TestAccel.scala 60:25:@832.4]
+  wire [63:0] vta_accel_io_mem_rd_bits; // @[TestAccel.scala 60:25:@832.4]
+  VTASimShell sim_shell ( // @[TestAccel.scala 59:25:@829.4]
     .clock(sim_shell_clock),
     .reset(sim_shell_reset),
     .host_req_valid(sim_shell_host_req_valid),
@@ -1845,7 +2151,7 @@ module TestAccel( // @[:@716.2]
     .sim_clock(sim_shell_sim_clock),
     .sim_wait(sim_shell_sim_wait)
   );
-  Accel vta_accel ( // @[TestAccel.scala 60:25:@725.4]
+  Accel vta_accel ( // @[TestAccel.scala 60:25:@832.4]
     .clock(vta_accel_clock),
     .reset(vta_accel_reset),
     .io_host_req_valid(vta_accel_io_host_req_valid),
@@ -1864,25 +2170,25 @@ module TestAccel( // @[:@716.2]
     .io_mem_rd_valid(vta_accel_io_mem_rd_valid),
     .io_mem_rd_bits(vta_accel_io_mem_rd_bits)
   );
-  assign sim_wait = sim_shell_sim_wait; // @[TestAccel.scala 62:12:@729.4]
-  assign sim_shell_clock = clock; // @[:@723.4]
-  assign sim_shell_reset = reset; // @[:@724.4]
-  assign sim_shell_host_req_deq = vta_accel_io_host_req_deq; // @[TestAccel.scala 64:21:@741.4]
-  assign sim_shell_host_resp_valid = vta_accel_io_host_resp_valid; // @[TestAccel.scala 64:21:@740.4]
-  assign sim_shell_host_resp_bits = vta_accel_io_host_resp_bits; // @[TestAccel.scala 64:21:@739.4]
-  assign sim_shell_mem_req_valid = vta_accel_io_mem_req_valid; // @[TestAccel.scala 63:17:@738.4]
-  assign sim_shell_mem_req_opcode = vta_accel_io_mem_req_opcode; // @[TestAccel.scala 63:17:@737.4]
-  assign sim_shell_mem_req_addr = vta_accel_io_mem_req_addr; // @[TestAccel.scala 63:17:@735.4]
-  assign sim_shell_mem_wr_valid = vta_accel_io_mem_wr_valid; // @[TestAccel.scala 63:17:@734.4]
-  assign sim_shell_mem_wr_bits = vta_accel_io_mem_wr_bits; // @[TestAccel.scala 63:17:@733.4]
-  assign sim_shell_mem_rd_ready = vta_accel_io_mem_rd_ready; // @[TestAccel.scala 63:17:@732.4]
-  assign sim_shell_sim_clock = sim_clock; // @[TestAccel.scala 61:23:@728.4]
-  assign vta_accel_clock = clock; // @[:@726.4]
-  assign vta_accel_reset = reset; // @[:@727.4]
-  assign vta_accel_io_host_req_valid = sim_shell_host_req_valid; // @[TestAccel.scala 64:21:@745.4]
-  assign vta_accel_io_host_req_opcode = sim_shell_host_req_opcode; // @[TestAccel.scala 64:21:@744.4]
-  assign vta_accel_io_host_req_addr = sim_shell_host_req_addr; // @[TestAccel.scala 64:21:@743.4]
-  assign vta_accel_io_host_req_value = sim_shell_host_req_value; // @[TestAccel.scala 64:21:@742.4]
-  assign vta_accel_io_mem_rd_valid = sim_shell_mem_rd_valid; // @[TestAccel.scala 63:17:@731.4]
-  assign vta_accel_io_mem_rd_bits = sim_shell_mem_rd_bits; // @[TestAccel.scala 63:17:@730.4]
+  assign sim_wait = sim_shell_sim_wait; // @[TestAccel.scala 62:12:@836.4]
+  assign sim_shell_clock = clock; // @[:@830.4]
+  assign sim_shell_reset = reset; // @[:@831.4]
+  assign sim_shell_host_req_deq = vta_accel_io_host_req_deq; // @[TestAccel.scala 64:21:@848.4]
+  assign sim_shell_host_resp_valid = vta_accel_io_host_resp_valid; // @[TestAccel.scala 64:21:@847.4]
+  assign sim_shell_host_resp_bits = vta_accel_io_host_resp_bits; // @[TestAccel.scala 64:21:@846.4]
+  assign sim_shell_mem_req_valid = vta_accel_io_mem_req_valid; // @[TestAccel.scala 63:17:@845.4]
+  assign sim_shell_mem_req_opcode = vta_accel_io_mem_req_opcode; // @[TestAccel.scala 63:17:@844.4]
+  assign sim_shell_mem_req_addr = vta_accel_io_mem_req_addr; // @[TestAccel.scala 63:17:@842.4]
+  assign sim_shell_mem_wr_valid = vta_accel_io_mem_wr_valid; // @[TestAccel.scala 63:17:@841.4]
+  assign sim_shell_mem_wr_bits = vta_accel_io_mem_wr_bits; // @[TestAccel.scala 63:17:@840.4]
+  assign sim_shell_mem_rd_ready = vta_accel_io_mem_rd_ready; // @[TestAccel.scala 63:17:@839.4]
+  assign sim_shell_sim_clock = sim_clock; // @[TestAccel.scala 61:23:@835.4]
+  assign vta_accel_clock = clock; // @[:@833.4]
+  assign vta_accel_reset = reset; // @[:@834.4]
+  assign vta_accel_io_host_req_valid = sim_shell_host_req_valid; // @[TestAccel.scala 64:21:@852.4]
+  assign vta_accel_io_host_req_opcode = sim_shell_host_req_opcode; // @[TestAccel.scala 64:21:@851.4]
+  assign vta_accel_io_host_req_addr = sim_shell_host_req_addr; // @[TestAccel.scala 64:21:@850.4]
+  assign vta_accel_io_host_req_value = sim_shell_host_req_value; // @[TestAccel.scala 64:21:@849.4]
+  assign vta_accel_io_mem_rd_valid = sim_shell_mem_rd_valid; // @[TestAccel.scala 63:17:@838.4]
+  assign vta_accel_io_mem_rd_bits = sim_shell_mem_rd_bits; // @[TestAccel.scala 63:17:@837.4]
 endmodule

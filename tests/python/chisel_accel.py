@@ -132,9 +132,8 @@ def test_accel(A, B, w_width, a_width):
     print(b_arr)
     print("here")
 
-    accum = tvm.nd.array(np.array([0]).astype("uint64"), ctx)
-    print(accum)
     for i in range(len(a_arr)):
+        accum = tvm.nd.array(np.array([0]).astype("uint64"), ctx)
         for j in range(len(b_arr)):
             print("im here")
             print(a_arr[i])
@@ -178,7 +177,7 @@ C = np.array([(1, 2, 3, 4, 5, 6, 7, 8), (1, 2, 3, 4, 5, 6, 7, 8)]).astype("uint8
 D = np.array([(1, 2), (3, 4), (5, 6), (7, 8), (1, 2), (3, 4), (5, 6), (7, 8)]).astype("uint8")
 
 tsim.init("chisel")
-matrix_multiply(C, D, 8, 4)
+matrix_multiply(C, D, 8, 8)
 matrix_multiply(C, D, 8, 4)
 matrix_multiply(C, D, 8, 2)
 

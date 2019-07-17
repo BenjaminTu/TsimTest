@@ -120,7 +120,7 @@ class Compute(implicit config: AccelConfig) extends Module {
   } .elsewhen (state === sWriteData) { // increment input array by 8-bytes
     raddr1 := raddr1 + 8.U
     raddr2 := raddr2 + 8.U
-    // waddr := waddr
+    waddr := waddr
   }
 
   // create request
@@ -140,7 +140,7 @@ class Compute(implicit config: AccelConfig) extends Module {
   when (state === sReadBData && io.mem.rd.valid) {
     for(i <- 0 until 8) {
       reg2(i) := io.mem.rd.bits(i*8+7, i*8)
-      printf("slice inputs2: %d\n\n", io.mem.rd.bits(i*8+7, i*8))
+      printf("slice inputs2: %d\n", io.mem.rd.bits(i*8+7, i*8))
     }
   }
 
@@ -152,7 +152,7 @@ class Compute(implicit config: AccelConfig) extends Module {
   val shiftReg = RegNext(dot.io.res << shift)
   val validReg = RegNext(dot.io.valid)
 
-  dot.io.start := state === sWriteReq && last
+  dot.io.start := last
   dot.io.arrA := reg1
   dot.io.arrB := reg2
   overallAccum.io.rst := rstAccum
@@ -184,27 +184,51 @@ class Dot(dataBits: Int = 8, vectorLength: Int = 1) extends Module {
     val valid = Output(Bool())
     val res = Output(UInt(outBits.W))
   })  
+  val sIdle :: sCalculate :: sDone :: Nil = Enum(3)
+  val state = RegInit(sIdle)
   
   val product = RegInit(Vec(Seq.fill(vectorLength)(0.U((2*dataBits).W))))
   val accum = RegInit(Vec(Seq.fill(vectorLength)(0.U(outBits.W))))
-  val cnt = RegInit(0.U((log2Floor(vectorLength)+1).W))
-  when (io.start) {
+  val cnt = RegInit(0.U((log2Down(vectorLength)).W))
+
+    switch (state) {
+    is (sIdle) {
+      when (io.start) {
+        state := sCalculate
+        printf("switching to sCalculate\n")
+      }
+    }
+    is (sCalculate) {
+      when (cnt === (vectorLength - 1).U) {
+        state := sDone
+        printf("switching to sDone\n")
+      }
+    }
+    is (sDone) {
+      state := sIdle
+      printf("switching to sIdle\n")
+    }
+
+  }
+
+  when (state === sIdle) {
     cnt := 0.U 
-  } .otherwise {
+  } .elsewhen (state === sCalculate) {
     accum(0) := product(0)
     product(0) := io.arrA(0) * io.arrB(0)
     for (i <- 1 until vectorLength) {
       product(i) := io.arrA(i) * io.arrB(i)
       accum(i) := accum(i-1) +& product(i)
       // printf("\np(%d): %d, \n", i.U,  product(i))
-      // printf("\na(%d): %d, \n", i.U,  accum(i))
+      printf("cnt: %d\n", cnt)
+      printf("\na(%d): %d, \n\n", i.U, accum(i))
     }   
     cnt := cnt + 1.U 
     // printf("\ncnt: %d, valid: %d\n", cnt, io.valid)
   }
   //printf("\n\n")
   io.res := accum(vectorLength - 1)
-  io.valid := cnt === (vectorLength).U
+  io.valid := state === sDone
 }
 
 class Accumulator(dataBits: Int = 8) extends Module {

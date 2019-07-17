@@ -101,7 +101,7 @@ void VTestAccel::traceChgThis__2(VTestAccel__Syms* __restrict vlSymsp, Verilated
 	vcdp->chgBus(c+47,((0xffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg2_5)),8);
 	vcdp->chgBus(c+48,((0xffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg2_6)),8);
 	vcdp->chgBus(c+49,((0xffU & vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__reg2_7)),8);
-	vcdp->chgBit(c+50,((8U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__cnt))));
+	vcdp->chgBit(c+50,((2U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__state))));
 	vcdp->chgBus(c+51,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_7),23);
 	vcdp->chgBit(c+52,((1U & vlTOPp->TestAccel__DOT__vta_accel__DOT__rf__DOT__reg_4)));
 	vcdp->chgBit(c+53,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__validReg));
@@ -131,9 +131,8 @@ void VTestAccel::traceChgThis__2(VTestAccel__Syms* __restrict vlSymsp, Verilated
 	vcdp->chgQuad(c+75,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr1),64);
 	vcdp->chgQuad(c+77,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__raddr2),64);
 	vcdp->chgQuad(c+79,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__waddr),64);
-	vcdp->chgBit(c+81,(((6U == (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__state)) 
-			    & (IData)(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT___T_123))));
-	vcdp->chgArray(c+82,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__shiftReg),278);
+	vcdp->chgArray(c+81,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__shiftReg),278);
+	vcdp->chgBus(c+90,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__state),2);
 	vcdp->chgBus(c+91,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_0),16);
 	vcdp->chgBus(c+92,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_1),16);
 	vcdp->chgBus(c+93,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__product_2),16);
@@ -149,7 +148,7 @@ void VTestAccel::traceChgThis__2(VTestAccel__Syms* __restrict vlSymsp, Verilated
 	vcdp->chgBus(c+103,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_4),23);
 	vcdp->chgBus(c+104,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_5),23);
 	vcdp->chgBus(c+105,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__accum_6),23);
-	vcdp->chgBus(c+106,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__cnt),4);
+	vcdp->chgBus(c+106,(vlTOPp->TestAccel__DOT__vta_accel__DOT__ce__DOT__dot__DOT__cnt),3);
     }
 }
 
